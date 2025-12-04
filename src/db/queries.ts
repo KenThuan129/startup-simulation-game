@@ -80,6 +80,7 @@ export class DatabaseQueries {
     if (updates.hype !== undefined) dbUpdates.hype = updates.hype;
     if (updates.virality !== undefined) dbUpdates.virality = updates.virality;
     if (updates.skillPoints !== undefined) dbUpdates.skill_points = updates.skillPoints;
+    if (updates.skillPointsSpent !== undefined) dbUpdates.skill_points_spent = updates.skillPointsSpent;
     if (updates.skills !== undefined) dbUpdates.skills = updates.skills;
     if (updates.xp !== undefined) dbUpdates.xp = updates.xp;
     if (updates.level !== undefined) dbUpdates.level = updates.level;
@@ -244,10 +245,20 @@ export class DatabaseQueries {
         // Recalculate skill points based on level
         const calculatedLevel = LevelSystem.calculateLevel(data.xp || 0);
         const totalSkillPointsEarned = LevelSystem.calculateTotalSkillPointsFromLevels(calculatedLevel);
-        const skills = data.skills || {};
-        const spentSkillPoints = Object.values(skills as Record<string, number>).reduce((sum: number, level: number) => sum + level, 0);
-        return Math.max(0, totalSkillPointsEarned - spentSkillPoints);
+        // Use skillPointsSpent if available, otherwise fall back to counting all skill levels (backward compatibility)
+        const skillPointsSpent = data.skill_points_spent !== undefined && data.skill_points_spent !== null
+          ? data.skill_points_spent
+          : Object.values(data.skills || {} as Record<string, number>).reduce((sum: number, level: number) => sum + level, 0);
+        return Math.max(0, totalSkillPointsEarned - skillPointsSpent);
       })(),
+      skillPointsSpent: data.skill_points_spent !== undefined && data.skill_points_spent !== null
+        ? data.skill_points_spent
+        : (() => {
+          // Backward compatibility: calculate from current skill levels (assume all were purchased)
+          // This is not perfect but handles existing data
+          const skills = data.skills || {};
+          return Object.values(skills as Record<string, number>).reduce((sum: number, level: number) => sum + level, 0);
+        })(),
       dailyActions: data.daily_actions || [],
       pendingEvents: data.pending_events || [],
       actionPointsRemaining: data.action_points_remaining,
@@ -286,6 +297,7 @@ export class DatabaseQueries {
       hype: company.hype,
       virality: company.virality,
       skill_points: company.skillPoints,
+      skill_points_spent: company.skillPointsSpent ?? 0,
       skills: company.skills,
       xp: company.xp,
       level: company.level || 1,

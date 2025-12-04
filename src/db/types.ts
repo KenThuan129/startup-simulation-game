@@ -29,6 +29,7 @@ export interface Company {
   hype: number;
   virality: number;
   skillPoints: number;
+  skillPointsSpent: number; // Track only manually purchased skill levels (not event-granted)
   skills: Record<string, number>;
   xp: number;
   level: number; // Level from 1 to 50, calculated from XP

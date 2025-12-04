@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS companies (
   hype NUMERIC DEFAULT 0,
   virality NUMERIC DEFAULT 0,
   skill_points INTEGER DEFAULT 0,
+  skill_points_spent INTEGER DEFAULT 0,
   skills JSONB DEFAULT '{}',
   xp INTEGER DEFAULT 0,
   level INTEGER DEFAULT 1 CHECK (level >= 1 AND level <= 50),

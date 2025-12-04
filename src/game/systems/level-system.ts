@@ -182,7 +182,8 @@ export class LevelSystem {
   } {
     const level = this.calculateLevel(company.xp);
     const totalSkillPointsEarned = this.calculateTotalSkillPointsFromLevels(level);
-    const spentSkillPoints = Object.values(company.skills).reduce((sum, skillLevel) => sum + skillLevel, 0);
+    // Use skillPointsSpent instead of counting all skill levels (event-granted skills are free)
+    const spentSkillPoints = company.skillPointsSpent || 0;
     const availableSkillPoints = Math.max(0, totalSkillPointsEarned - spentSkillPoints);
     
     return {

@@ -32,8 +32,11 @@ export async function execute(interaction: ChatInputCommandInteraction) {
     // Calculate total skill points that should have been earned from levels
     const totalSkillPointsFromLevels = LevelSystem.calculateTotalSkillPointsFromLevels(currentLevel);
     
-    // Calculate skill points that should be available (total earned - spent)
-    const spentSkillPoints = Object.values(company.skills).reduce((sum, level) => sum + level, 0);
+    // Calculate skill points that should be available (total earned - manually spent)
+    // Use skillPointsSpent if available, otherwise fall back to counting all skill levels (backward compatibility)
+    const spentSkillPoints = company.skillPointsSpent !== undefined && company.skillPointsSpent !== null
+      ? company.skillPointsSpent
+      : Object.values(company.skills).reduce((sum, level) => sum + level, 0);
     const availableSkillPoints = totalSkillPointsFromLevels - spentSkillPoints;
     
     // Update company level if it's different

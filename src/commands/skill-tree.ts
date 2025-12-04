@@ -584,6 +584,7 @@ export async function handleAutoEnhance(interaction: any, companyId: string) {
     let remainingPoints = company.skillPoints;
     const updatedSkills = { ...company.skills };
     const upgrades: string[] = [];
+    let skillPointsSpentIncrement = 0;
     
     for (const { skillId } of skillPriorities) {
       if (remainingPoints <= 0) break;
@@ -595,19 +596,24 @@ export async function handleAutoEnhance(interaction: any, companyId: string) {
       if (currentLevel >= skill.maxLevel) continue;
       
       const { newLevel, remainingPoints: newRemaining } = SkillSystem.upgradeSkill(currentLevel, remainingPoints);
+      const levelsGained = newLevel - currentLevel;
       updatedSkills[skillId] = newLevel;
       remainingPoints = newRemaining;
+      skillPointsSpentIncrement += levelsGained; // Track how many levels were purchased
       upgrades.push(`${skill.name} → Level ${newLevel}`);
     }
     
+    // Increment skillPointsSpent by the number of levels purchased
+    const newSkillPointsSpent = (company.skillPointsSpent || 0) + skillPointsSpentIncrement;
+    
     // Recalculate available skill points after spending
-    const spentSkillPoints = Object.values(updatedSkills).reduce((sum, level) => sum + level, 0);
     const totalSkillPointsEarned = LevelSystem.calculateTotalSkillPointsFromLevels(company.level);
-    const finalAvailableSkillPoints = Math.max(0, totalSkillPointsEarned - spentSkillPoints);
+    const finalAvailableSkillPoints = Math.max(0, totalSkillPointsEarned - newSkillPointsSpent);
     
     await DatabaseQueries.updateCompany(companyId, {
       skills: updatedSkills,
       skillPoints: finalAvailableSkillPoints,
+      skillPointsSpent: newSkillPointsSpent,
     });
     
     const embed = EmbedUtils.createSuccessEmbed('Auto-Enhance Complete!');
@@ -872,14 +878,17 @@ export async function handleSkillUpgrade(interaction: any, companyId: string, sk
     const { newLevel, remainingPoints } = SkillSystem.upgradeSkill(currentLevel, 1);
     const updatedSkills = { ...company.skills, [skillId]: newLevel };
     
+    // Increment skillPointsSpent by 1 (only count manually purchased levels)
+    const newSkillPointsSpent = (company.skillPointsSpent || 0) + 1;
+    
     // Recalculate available skill points after spending
-    const spentSkillPoints = Object.values(updatedSkills).reduce((sum, level) => sum + level, 0);
     const totalSkillPointsEarned = LevelSystem.calculateTotalSkillPointsFromLevels(company.level);
-    const finalAvailableSkillPoints = Math.max(0, totalSkillPointsEarned - spentSkillPoints);
+    const finalAvailableSkillPoints = Math.max(0, totalSkillPointsEarned - newSkillPointsSpent);
 
     await DatabaseQueries.updateCompany(companyId, {
       skills: updatedSkills,
       skillPoints: finalAvailableSkillPoints,
+      skillPointsSpent: newSkillPointsSpent,
     });
 
     const embed = EmbedUtils.createSuccessEmbed('Skill Upgraded!');
