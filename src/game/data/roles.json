@@ -1,0 +1,152 @@
+{
+  "roles": [
+    {
+      "roleId": "founder",
+      "name": "Founder",
+      "description": "The visionary leader who started it all. You have a natural talent for inspiring others and making strategic decisions.",
+      "strengths": [
+        "Higher XP gain from all actions (+15%)",
+        "Better event outcome chances (+10% success rate)",
+        "Stronger leadership skills boost team morale"
+      ],
+      "weaknesses": [
+        "Higher burnout risk from overwork",
+        "More expensive operations costs (+5%)",
+        "Struggles with technical details"
+      ],
+      "skillTreeBonuses": {
+        "product": 1.1,
+        "marketing": 1.15,
+        "finance": 1.05,
+        "technology": 0.95
+      }
+    },
+    {
+      "roleId": "cto",
+      "name": "CTO",
+      "description": "The technical mastermind behind the product. You excel at building scalable systems and innovative solutions.",
+      "strengths": [
+        "Technology skills are 20% more effective",
+        "Faster product development cycles",
+        "Better quality outcomes from tech actions"
+      ],
+      "weaknesses": [
+        "Marketing actions are less effective (-15%)",
+        "Higher technical debt if rushed",
+        "Struggles with business development"
+      ],
+      "skillTreeBonuses": {
+        "product": 1.2,
+        "marketing": 0.85,
+        "finance": 1.0,
+        "technology": 1.25
+      }
+    },
+    {
+      "roleId": "cmo",
+      "name": "CMO",
+      "description": "The marketing genius who knows how to reach customers. You understand virality, growth, and brand building.",
+      "strengths": [
+        "Marketing skills are 25% more effective",
+        "Higher virality gain from marketing actions",
+        "Better conversion rates from campaigns"
+      ],
+      "weaknesses": [
+        "Technology actions are less effective (-20%)",
+        "Higher marketing costs",
+        "Struggles with technical product decisions"
+      ],
+      "skillTreeBonuses": {
+        "product": 0.9,
+        "marketing": 1.3,
+        "finance": 1.1,
+        "technology": 0.8
+      }
+    },
+    {
+      "roleId": "cfo",
+      "name": "CFO",
+      "description": "The financial strategist who keeps the company solvent. You excel at managing cash flow and making profitable decisions.",
+      "strengths": [
+        "Finance skills are 30% more effective",
+        "Better loan terms and financial deals",
+        "Reduced operational costs (-10%)"
+      ],
+      "weaknesses": [
+        "Product actions are less effective (-15%)",
+        "More conservative approach limits growth",
+        "Struggles with rapid scaling decisions"
+      ],
+      "skillTreeBonuses": {
+        "product": 0.85,
+        "marketing": 1.0,
+        "finance": 1.35,
+        "technology": 1.0
+      }
+    },
+    {
+      "roleId": "product_manager",
+      "name": "Product Manager",
+      "description": "The bridge between users and technology. You excel at understanding customer needs and delivering value.",
+      "strengths": [
+        "Product skills are 20% more effective",
+        "Better user retention and satisfaction",
+        "Faster feature delivery cycles"
+      ],
+      "weaknesses": [
+        "Finance actions are less effective (-15%)",
+        "Tendency to over-engineer features",
+        "Struggles with budget constraints"
+      ],
+      "skillTreeBonuses": {
+        "product": 1.25,
+        "marketing": 1.1,
+        "finance": 0.85,
+        "technology": 1.15
+      }
+    },
+    {
+      "roleId": "growth_hacker",
+      "name": "Growth Hacker",
+      "description": "The data-driven growth expert. You specialize in rapid user acquisition and viral growth strategies.",
+      "strengths": [
+        "Marketing and product skills are 15% more effective",
+        "Higher virality multipliers",
+        "Better A/B testing and optimization"
+      ],
+      "weaknesses": [
+        "Finance skills are less effective (-20%)",
+        "Focus on growth over profitability",
+        "Struggles with long-term sustainability"
+      ],
+      "skillTreeBonuses": {
+        "product": 1.15,
+        "marketing": 1.2,
+        "finance": 0.8,
+        "technology": 1.05
+      }
+    },
+    {
+      "roleId": "operations_manager",
+      "name": "Operations Manager",
+      "description": "The efficiency expert who keeps everything running smoothly. You excel at process optimization and resource management.",
+      "strengths": [
+        "All actions cost 10% less action points",
+        "Better operational efficiency (+15%)",
+        "Reduced burnout from better work-life balance"
+      ],
+      "weaknesses": [
+        "Lower XP gain from actions (-10%)",
+        "More conservative approach to risks",
+        "Struggles with rapid innovation"
+      ],
+      "skillTreeBonuses": {
+        "product": 1.0,
+        "marketing": 1.0,
+        "finance": 1.2,
+        "technology": 1.1
+      }
+    }
+  ]
+}
+

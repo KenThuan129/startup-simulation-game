@@ -1,0 +1,40 @@
+{
+  "name": "startup-simulation-game",
+  "version": "1.0.0",
+  "description": "A full-featured Discord bot startup simulation game",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "watch": "tsc --watch",
+    "simulate": "ts-node scripts/simulate.ts",
+    "test": "jest",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "game",
+    "startup",
+    "simulation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.25",
+    "@types/uuid": "^9.0.7",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}

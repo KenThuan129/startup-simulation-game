@@ -1,0 +1,293 @@
+{
+  "broadcasts": [
+    {
+      "broadcastId": "tech_boom",
+      "name": "Tech Boom",
+      "description": "A major tech conference is happening, and the industry is buzzing with innovation.",
+      "effects": {
+        "tech": {
+          "xpMultiplier": 1.3,
+          "successRateBonus": 0.15
+        },
+        "marketing": {
+          "xpMultiplier": 1.1,
+          "successRateBonus": 0.05
+        }
+      },
+      "specialEventChance": 0.2
+    },
+    {
+      "broadcastId": "economic_recession",
+      "name": "Economic Recession",
+      "description": "The economy is struggling, and investors are being more cautious.",
+      "effects": {
+        "finance": {
+          "xpMultiplier": 0.8,
+          "successRateBonus": -0.1
+        },
+        "business_dev": {
+          "xpMultiplier": 0.7,
+          "successRateBonus": -0.15
+        },
+        "operations": {
+          "xpMultiplier": 1.2,
+          "successRateBonus": 0.1
+        }
+      },
+      "specialEventChance": 0.25
+    },
+    {
+      "broadcastId": "viral_trend",
+      "name": "Viral Trend",
+      "description": "Social media is exploding with new trends, and users are more receptive to marketing.",
+      "effects": {
+        "marketing": {
+          "xpMultiplier": 1.4,
+          "successRateBonus": 0.2,
+          "viralityBonus": 0.3
+        },
+        "product": {
+          "xpMultiplier": 1.1,
+          "successRateBonus": 0.05
+        }
+      },
+      "specialEventChance": 0.3
+    },
+    {
+      "broadcastId": "startup_competition",
+      "name": "Startup Competition",
+      "description": "A major startup competition is happening, with prizes and investor attention up for grabs.",
+      "effects": {
+        "product": {
+          "xpMultiplier": 1.25,
+          "successRateBonus": 0.1
+        },
+        "marketing": {
+          "xpMultiplier": 1.2,
+          "successRateBonus": 0.15
+        },
+        "business_dev": {
+          "xpMultiplier": 1.3,
+          "successRateBonus": 0.2
+        }
+      },
+      "specialEventChance": 0.35
+    },
+    {
+      "broadcastId": "regulatory_changes",
+      "name": "Regulatory Changes",
+      "description": "New regulations are being introduced that affect the industry.",
+      "effects": {
+        "finance": {
+          "xpMultiplier": 1.15,
+          "successRateBonus": 0.1
+        },
+        "operations": {
+          "xpMultiplier": 0.9,
+          "successRateBonus": -0.1
+        },
+        "high_risk": {
+          "xpMultiplier": 0.7,
+          "successRateBonus": -0.2
+        }
+      },
+      "specialEventChance": 0.2
+    },
+    {
+      "broadcastId": "talent_shortage",
+      "name": "Talent Shortage",
+      "description": "There's a shortage of skilled workers in the tech industry.",
+      "effects": {
+        "tech": {
+          "xpMultiplier": 0.85,
+          "successRateBonus": -0.1
+        },
+        "product": {
+          "xpMultiplier": 0.9,
+          "successRateBonus": -0.05
+        },
+        "operations": {
+          "xpMultiplier": 1.1,
+          "successRateBonus": 0.05
+        }
+      },
+      "specialEventChance": 0.15
+    },
+    {
+      "broadcastId": "investment_frenzy",
+      "name": "Investment Frenzy",
+      "description": "Investors are throwing money at startups, and funding is easier to come by.",
+      "effects": {
+        "finance": {
+          "xpMultiplier": 1.3,
+          "successRateBonus": 0.2
+        },
+        "business_dev": {
+          "xpMultiplier": 1.25,
+          "successRateBonus": 0.15
+        },
+        "cashBonus": 0.15
+      },
+      "specialEventChance": 0.25
+    },
+    {
+      "broadcastId": "market_saturation",
+      "name": "Market Saturation",
+      "description": "The market is becoming saturated, making it harder to stand out.",
+      "effects": {
+        "marketing": {
+          "xpMultiplier": 0.8,
+          "successRateBonus": -0.15
+        },
+        "product": {
+          "xpMultiplier": 1.15,
+          "successRateBonus": 0.1
+        }
+      },
+      "specialEventChance": 0.2
+    }
+  ],
+  "specialEvents": [
+    {
+      "eventId": "broadcast_tech_breakthrough",
+      "name": "Tech Breakthrough Opportunity",
+      "description": "During the tech boom, you've discovered a breakthrough opportunity! This special event doesn't cost action points.",
+      "category": "tech",
+      "choices": [
+        {
+          "choiceId": "broadcast_tech_breakthrough_accept",
+          "type": "success",
+          "text": "Pursue the breakthrough",
+          "effects": {
+            "xp": 50,
+            "quality": 10,
+            "hype": 15
+          }
+        },
+        {
+          "choiceId": "broadcast_tech_breakthrough_skip",
+          "type": "failure",
+          "text": "Focus on current priorities",
+          "effects": {
+            "xp": 10
+          }
+        }
+      ]
+    },
+    {
+      "eventId": "broadcast_investor_meeting",
+      "name": "Chance Investor Meeting",
+      "description": "During the investment frenzy, an investor wants to meet you! This special event doesn't cost action points.",
+      "category": "business_dev",
+      "choices": [
+        {
+          "choiceId": "broadcast_investor_meeting_impress",
+          "type": "critical_success",
+          "text": "Impress the investor",
+          "effects": {
+            "cash": 5000,
+            "xp": 75,
+            "hype": 20
+          }
+        },
+        {
+          "choiceId": "broadcast_investor_meeting_average",
+          "type": "success",
+          "text": "Have a decent meeting",
+          "effects": {
+            "cash": 2000,
+            "xp": 40,
+            "hype": 10
+          }
+        }
+      ]
+    },
+    {
+      "eventId": "broadcast_viral_moment",
+      "name": "Viral Moment Opportunity",
+      "description": "During the viral trend, you have a chance to go viral! This special event doesn't cost action points.",
+      "category": "marketing",
+      "choices": [
+        {
+          "choiceId": "broadcast_viral_moment_seize",
+          "type": "critical_success",
+          "text": "Seize the moment",
+          "effects": {
+            "users": 500,
+            "virality": 15,
+            "hype": 25,
+            "xp": 60
+          }
+        },
+        {
+          "choiceId": "broadcast_viral_moment_moderate",
+          "type": "success",
+          "text": "Take a moderate approach",
+          "effects": {
+            "users": 200,
+            "virality": 8,
+            "hype": 12,
+            "xp": 30
+          }
+        }
+      ]
+    },
+    {
+      "eventId": "broadcast_competition_entry",
+      "name": "Competition Entry Opportunity",
+      "description": "During the startup competition, you can enter! This special event doesn't cost action points.",
+      "category": "product",
+      "choices": [
+        {
+          "choiceId": "broadcast_competition_entry_win",
+          "type": "critical_success",
+          "text": "Win the competition",
+          "effects": {
+            "cash": 10000,
+            "hype": 30,
+            "xp": 100,
+            "quality": 15
+          }
+        },
+        {
+          "choiceId": "broadcast_competition_entry_place",
+          "type": "success",
+          "text": "Place in the competition",
+          "effects": {
+            "cash": 3000,
+            "hype": 15,
+            "xp": 50,
+            "quality": 8
+          }
+        }
+      ]
+    },
+    {
+      "eventId": "broadcast_regulatory_help",
+      "name": "Regulatory Compliance Help",
+      "description": "During regulatory changes, you can get help navigating them! This special event doesn't cost action points.",
+      "category": "finance",
+      "choices": [
+        {
+          "choiceId": "broadcast_regulatory_help_accept",
+          "type": "success",
+          "text": "Get compliance help",
+          "effects": {
+            "xp": 40,
+            "quality": 5,
+            "cash": -500
+          }
+        },
+        {
+          "choiceId": "broadcast_regulatory_help_decline",
+          "type": "failure",
+          "text": "Handle it yourself",
+          "effects": {
+            "xp": 15
+          }
+        }
+      ]
+    }
+  ]
+}
+

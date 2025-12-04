@@ -1,0 +1,661 @@
+[
+  {
+    "actionId": "boss_attack_1",
+    "type": "attack",
+    "name": "Aggressive Marketing Blitz",
+    "description": "The competitor launches a massive marketing campaign targeting your users.",
+    "effects": {
+      "users": -50,
+      "hype": -10
+    }
+  },
+  {
+    "actionId": "boss_attack_2",
+    "type": "attack",
+    "name": "Price War",
+    "description": "The competitor slashes prices, forcing you to match or lose customers.",
+    "effects": {
+      "cash": -2000,
+      "users": -30
+    }
+  },
+  {
+    "actionId": "boss_attack_3",
+    "type": "attack",
+    "name": "Talent Poaching",
+    "description": "The competitor poaches your key employees.",
+    "effects": {
+      "quality": -15,
+      "hype": -8
+    }
+  },
+  {
+    "actionId": "boss_attack_4",
+    "type": "attack",
+    "name": "Feature Copy",
+    "description": "The competitor copies your key features and launches them first.",
+    "effects": {
+      "users": -80,
+      "hype": -15
+    }
+  },
+  {
+    "actionId": "boss_attack_5",
+    "type": "attack",
+    "name": "Negative PR Campaign",
+    "description": "The competitor spreads negative rumors about your company.",
+    "effects": {
+      "hype": -25,
+      "users": -40
+    }
+  },
+  {
+    "actionId": "boss_defense_1",
+    "type": "defense",
+    "name": "Counter-Marketing Campaign",
+    "description": "Launch your own marketing campaign to retain users.",
+    "effects": {
+      "cash": -1500,
+      "users": 20,
+      "hype": 5
+    }
+  },
+  {
+    "actionId": "boss_defense_2",
+    "type": "defense",
+    "name": "Focus on Quality",
+    "description": "Double down on product quality to differentiate.",
+    "effects": {
+      "cash": -1000,
+      "quality": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_3",
+    "type": "defense",
+    "name": "Innovation Push",
+    "description": "Accelerate innovation to stay ahead.",
+    "effects": {
+      "cash": -2000,
+      "quality": 15,
+      "hype": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_4",
+    "type": "defense",
+    "name": "Customer Loyalty Program",
+    "description": "Launch a loyalty program to retain customers.",
+    "effects": {
+      "cash": -800,
+      "users": 30,
+      "hype": 8
+    }
+  },
+  {
+    "actionId": "boss_defense_5",
+    "type": "defense",
+    "name": "Strategic Partnership",
+    "description": "Form a strategic partnership to counter the threat.",
+    "effects": {
+      "cash": -1200,
+      "users": 50,
+      "hype": 12
+    }
+  },
+  {
+    "actionId": "boss_attack_6",
+    "type": "attack",
+    "name": "Market Saturation",
+    "description": "The competitor floods the market, making it harder to stand out.",
+    "effects": {
+      "users": -60,
+      "hype": -12
+    }
+  },
+  {
+    "actionId": "boss_attack_7",
+    "type": "attack",
+    "name": "Exclusive Deals",
+    "description": "The competitor signs exclusive deals with key partners.",
+    "effects": {
+      "users": -70,
+      "hype": -18
+    }
+  },
+  {
+    "actionId": "boss_defense_6",
+    "type": "defense",
+    "name": "Rapid Feature Development",
+    "description": "Quickly develop new features to compete.",
+    "effects": {
+      "cash": -1800,
+      "quality": 12,
+      "users": 25
+    }
+  },
+  {
+    "actionId": "boss_defense_7",
+    "type": "defense",
+    "name": "Community Building",
+    "description": "Build a strong community to defend against attacks.",
+    "effects": {
+      "cash": -600,
+      "users": 40,
+      "hype": 15
+    }
+  },
+  {
+    "actionId": "boss_attack_8",
+    "type": "attack",
+    "name": "Technology Superiority",
+    "description": "The competitor showcases superior technology.",
+    "effects": {
+      "quality": -10,
+      "hype": -20
+    }
+  },
+  {
+    "actionId": "boss_attack_9",
+    "type": "attack",
+    "name": "Viral Campaign",
+    "description": "The competitor launches a viral marketing campaign that steals your thunder.",
+    "effects": {
+      "users": -90,
+      "hype": -22,
+      "virality": -5
+    }
+  },
+  {
+    "actionId": "boss_attack_10",
+    "type": "attack",
+    "name": "Acquisition Spree",
+    "description": "The competitor acquires key suppliers, making it harder for you to operate.",
+    "effects": {
+      "cash": -2500,
+      "quality": -12
+    }
+  },
+  {
+    "actionId": "boss_attack_11",
+    "type": "attack",
+    "name": "Patent Infringement Claim",
+    "description": "The competitor files a patent lawsuit against you.",
+    "effects": {
+      "cash": -3000,
+      "hype": -15,
+      "quality": -8
+    }
+  },
+  {
+    "actionId": "boss_attack_12",
+    "type": "attack",
+    "name": "Data Breach Exploitation",
+    "description": "The competitor exploits a security vulnerability in your system.",
+    "effects": {
+      "users": -100,
+      "hype": -30,
+      "quality": -15
+    }
+  },
+  {
+    "actionId": "boss_attack_13",
+    "type": "attack",
+    "name": "Platform Lockout",
+    "description": "The competitor gets your app removed from major platforms.",
+    "effects": {
+      "users": -120,
+      "hype": -25
+    }
+  },
+  {
+    "actionId": "boss_attack_14",
+    "type": "attack",
+    "name": "Influencer Poaching",
+    "description": "The competitor signs exclusive deals with your key influencers.",
+    "effects": {
+      "users": -80,
+      "hype": -18,
+      "virality": -4
+    }
+  },
+  {
+    "actionId": "boss_attack_15",
+    "type": "attack",
+    "name": "Regulatory Complaint",
+    "description": "The competitor files regulatory complaints against you.",
+    "effects": {
+      "cash": -2000,
+      "hype": -20,
+      "quality": -10
+    }
+  },
+  {
+    "actionId": "boss_attack_16",
+    "type": "attack",
+    "name": "Free Tier Expansion",
+    "description": "The competitor expands their free tier, making it harder to compete.",
+    "effects": {
+      "users": -70,
+      "cash": -1500
+    }
+  },
+  {
+    "actionId": "boss_attack_17",
+    "type": "attack",
+    "name": "Open Source Alternative",
+    "description": "The competitor releases an open-source alternative to your product.",
+    "effects": {
+      "users": -110,
+      "hype": -28,
+      "cash": -1800
+    }
+  },
+  {
+    "actionId": "boss_attack_18",
+    "type": "attack",
+    "name": "Customer Data Theft",
+    "description": "The competitor uses unethical means to access your customer database.",
+    "effects": {
+      "users": -95,
+      "hype": -32,
+      "quality": -12
+    }
+  },
+  {
+    "actionId": "boss_attack_19",
+    "type": "attack",
+    "name": "Supply Chain Disruption",
+    "description": "The competitor disrupts your supply chain or partnerships.",
+    "effects": {
+      "cash": -2200,
+      "quality": -14
+    }
+  },
+  {
+    "actionId": "boss_attack_20",
+    "type": "attack",
+    "name": "Media Smear Campaign",
+    "description": "The competitor orchestrates negative media coverage about your company.",
+    "effects": {
+      "hype": -35,
+      "users": -85,
+      "virality": -6
+    }
+  },
+  {
+    "actionId": "boss_attack_21",
+    "type": "attack",
+    "name": "Talent Acquisition War",
+    "description": "The competitor offers massive salaries to poach your entire team.",
+    "effects": {
+      "quality": -18,
+      "cash": -2800,
+      "hype": -12
+    }
+  },
+  {
+    "actionId": "boss_attack_22",
+    "type": "attack",
+    "name": "API Rate Limiting",
+    "description": "The competitor restricts your access to critical APIs or services.",
+    "effects": {
+      "quality": -11,
+      "users": -60
+    }
+  },
+  {
+    "actionId": "boss_attack_23",
+    "type": "attack",
+    "name": "Customer Migration Incentive",
+    "description": "The competitor offers huge incentives for your customers to switch.",
+    "effects": {
+      "users": -130,
+      "cash": -2000
+    }
+  },
+  {
+    "actionId": "boss_attack_24",
+    "type": "attack",
+    "name": "Infrastructure Attack",
+    "description": "The competitor launches DDoS attacks or infrastructure sabotage.",
+    "effects": {
+      "quality": -16,
+      "users": -75,
+      "hype": -15
+    }
+  },
+  {
+    "actionId": "boss_attack_25",
+    "type": "attack",
+    "name": "Trade Secret Theft",
+    "description": "The competitor steals your trade secrets through corporate espionage.",
+    "effects": {
+      "quality": -20,
+      "hype": -25
+    }
+  },
+  {
+    "actionId": "boss_defense_8",
+    "type": "defense",
+    "name": "Legal Counterattack",
+    "description": "File counter-suits and legal defenses.",
+    "effects": {
+      "cash": -2500,
+      "hype": 8,
+      "quality": 5
+    }
+  },
+  {
+    "actionId": "boss_defense_9",
+    "type": "defense",
+    "name": "Security Hardening",
+    "description": "Invest heavily in security infrastructure.",
+    "effects": {
+      "cash": -2200,
+      "quality": 18,
+      "hype": 6
+    }
+  },
+  {
+    "actionId": "boss_defense_10",
+    "type": "defense",
+    "name": "Exclusive Content",
+    "description": "Launch exclusive features or content to retain users.",
+    "effects": {
+      "cash": -1600,
+      "users": 45,
+      "hype": 12,
+      "quality": 8
+    }
+  },
+  {
+    "actionId": "boss_defense_11",
+    "type": "defense",
+    "name": "Employee Retention Program",
+    "description": "Implement retention bonuses and better benefits.",
+    "effects": {
+      "cash": -3000,
+      "quality": 20,
+      "hype": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_12",
+    "type": "defense",
+    "name": "White Label Solution",
+    "description": "Offer white-label solutions to partners.",
+    "effects": {
+      "cash": -1400,
+      "users": 60,
+      "revenueMultiplier": 1.05
+    }
+  },
+  {
+    "actionId": "boss_defense_13",
+    "type": "defense",
+    "name": "Open Source Strategy",
+    "description": "Open source parts of your product to build community.",
+    "effects": {
+      "users": 80,
+      "hype": 20,
+      "virality": 8
+    }
+  },
+  {
+    "actionId": "boss_defense_14",
+    "type": "defense",
+    "name": "Customer Success Team",
+    "description": "Build a dedicated customer success team.",
+    "effects": {
+      "cash": -1800,
+      "users": 50,
+      "quality": 12,
+      "hype": 8
+    }
+  },
+  {
+    "actionId": "boss_defense_15",
+    "type": "defense",
+    "name": "Platform Diversification",
+    "description": "Expand to multiple platforms to reduce dependency.",
+    "effects": {
+      "cash": -2000,
+      "users": 70,
+      "quality": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_16",
+    "type": "defense",
+    "name": "Transparency Campaign",
+    "description": "Be transparent about challenges and build trust.",
+    "effects": {
+      "hype": 18,
+      "users": 35,
+      "virality": 5
+    }
+  },
+  {
+    "actionId": "boss_defense_17",
+    "type": "defense",
+    "name": "API Marketplace",
+    "description": "Create an API marketplace to generate revenue.",
+    "effects": {
+      "cash": -1500,
+      "revenueMultiplier": 1.06,
+      "users": 40
+    }
+  },
+  {
+    "actionId": "boss_defense_18",
+    "type": "defense",
+    "name": "Enterprise Sales Push",
+    "description": "Focus on high-value enterprise customers.",
+    "effects": {
+      "cash": -2500,
+      "revenueMultiplier": 1.08,
+      "users": 25
+    }
+  },
+  {
+    "actionId": "boss_defense_19",
+    "type": "defense",
+    "name": "International Expansion",
+    "description": "Expand to international markets.",
+    "effects": {
+      "cash": -3000,
+      "users": 100,
+      "hype": 15
+    }
+  },
+  {
+    "actionId": "boss_defense_20",
+    "type": "defense",
+    "name": "Acquisition Defense",
+    "description": "Acquire complementary companies to strengthen position.",
+    "effects": {
+      "cash": -5000,
+      "users": 90,
+      "quality": 15,
+      "hype": 12
+    }
+  },
+  {
+    "actionId": "boss_defense_21",
+    "type": "defense",
+    "name": "Data Privacy Leadership",
+    "description": "Become a leader in data privacy and security.",
+    "effects": {
+      "cash": -1200,
+      "hype": 22,
+      "quality": 14,
+      "users": 30
+    }
+  },
+  {
+    "actionId": "boss_defense_22",
+    "type": "defense",
+    "name": "Freemium Model",
+    "description": "Launch a freemium model to compete.",
+    "effects": {
+      "cash": -1000,
+      "users": 120,
+      "virality": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_23",
+    "type": "defense",
+    "name": "Customer Advocacy Program",
+    "description": "Turn customers into advocates and ambassadors.",
+    "effects": {
+      "cash": -800,
+      "users": 55,
+      "hype": 16,
+      "virality": 7
+    }
+  },
+  {
+    "actionId": "boss_defense_24",
+    "type": "defense",
+    "name": "Technical Excellence Showcase",
+    "description": "Showcase technical achievements and innovations.",
+    "effects": {
+      "cash": -1500,
+      "quality": 22,
+      "hype": 14
+    }
+  },
+  {
+    "actionId": "boss_defense_25",
+    "type": "defense",
+    "name": "Subscription Model",
+    "description": "Switch to a subscription model for predictable revenue.",
+    "effects": {
+      "cash": -1800,
+      "revenueMultiplier": 1.07,
+      "users": 40
+    }
+  },
+  {
+    "actionId": "boss_defense_26",
+    "type": "defense",
+    "name": "Content Marketing Blitz",
+    "description": "Launch massive content marketing campaign.",
+    "effects": {
+      "cash": -2000,
+      "users": 85,
+      "hype": 18,
+      "virality": 9
+    }
+  },
+  {
+    "actionId": "boss_defense_27",
+    "type": "defense",
+    "name": "Developer Relations",
+    "description": "Build strong developer community and relations.",
+    "effects": {
+      "cash": -1200,
+      "users": 65,
+      "hype": 12,
+      "quality": 11
+    }
+  },
+  {
+    "actionId": "boss_defense_28",
+    "type": "defense",
+    "name": "Customer Feedback Loop",
+    "description": "Implement rapid customer feedback and iteration.",
+    "effects": {
+      "cash": -900,
+      "quality": 16,
+      "users": 50,
+      "hype": 10
+    }
+  },
+  {
+    "actionId": "boss_defense_29",
+    "type": "defense",
+    "name": "Partnership Ecosystem",
+    "description": "Build a comprehensive partnership ecosystem.",
+    "effects": {
+      "cash": -2200,
+      "users": 75,
+      "revenueMultiplier": 1.05,
+      "hype": 13
+    }
+  },
+  {
+    "actionId": "boss_defense_30",
+    "type": "defense",
+    "name": "Brand Differentiation",
+    "description": "Strongly differentiate your brand from competitors.",
+    "effects": {
+      "cash": -1600,
+      "hype": 25,
+      "users": 45,
+      "virality": 6
+    }
+  },
+  {
+    "actionId": "boss_defense_31",
+    "type": "defense",
+    "name": "Customer Support Excellence",
+    "description": "Invest in world-class customer support.",
+    "effects": {
+      "cash": -1900,
+      "users": 60,
+      "quality": 13,
+      "hype": 11
+    }
+  },
+  {
+    "actionId": "boss_defense_32",
+    "type": "defense",
+    "name": "Innovation Lab",
+    "description": "Create an innovation lab for cutting-edge features.",
+    "effects": {
+      "cash": -2800,
+      "quality": 20,
+      "hype": 16,
+      "users": 35
+    }
+  },
+  {
+    "actionId": "boss_defense_33",
+    "type": "defense",
+    "name": "Sustainability Initiative",
+    "description": "Launch sustainability initiatives to build brand value.",
+    "effects": {
+      "cash": -1400,
+      "hype": 20,
+      "users": 40,
+      "virality": 5
+    }
+  },
+  {
+    "actionId": "boss_defense_34",
+    "type": "defense",
+    "name": "Mobile-First Strategy",
+    "description": "Double down on mobile-first approach.",
+    "effects": {
+      "cash": -2100,
+      "users": 95,
+      "quality": 12,
+      "hype": 14
+    }
+  },
+  {
+    "actionId": "boss_defense_35",
+    "type": "defense",
+    "name": "AI Integration",
+    "description": "Integrate AI features to stay ahead.",
+    "effects": {
+      "cash": -3000,
+      "quality": 18,
+      "hype": 19,
+      "revenueMultiplier": 1.04
+    }
+  }
+]

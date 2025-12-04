@@ -1,0 +1,663 @@
+[
+  {
+    "skillId": "product_engineering",
+    "tree": "product",
+    "name": "Product Engineering",
+    "description": "Improve product development speed and quality",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "product_ux",
+    "tree": "product",
+    "name": "User Experience",
+    "description": "Enhance user satisfaction and retention",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.03,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_social",
+    "tree": "marketing",
+    "name": "Social Media Marketing",
+    "description": "Improve social media campaign effectiveness",
+    "maxLevel": 10,
+    "effects": {
+      "viralityBonus": 0.05,
+      "conversionBonus": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_content",
+    "tree": "marketing",
+    "name": "Content Marketing",
+    "description": "Create more engaging and effective content",
+    "maxLevel": 10,
+    "effects": {
+      "viralityBonus": 0.04,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_pr",
+    "tree": "marketing",
+    "name": "Public Relations",
+    "description": "Better handle PR and media relations",
+    "maxLevel": 10,
+    "effects": {
+      "hypeBonus": 0.05,
+      "eventOutcomeBonus": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_influencer",
+    "tree": "marketing",
+    "name": "Influencer Marketing",
+    "description": "Better leverage influencer partnerships",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "viralityBonus": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_community",
+    "tree": "marketing",
+    "name": "Community Building",
+    "description": "Build and engage communities better",
+    "maxLevel": 10,
+    "effects": {
+      "viralityBonus": 0.05,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "marketing_growth",
+    "tree": "marketing",
+    "name": "Growth Hacking",
+    "description": "Find creative ways to grow user base",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.05,
+      "viralityBonus": 0.04
+    }
+  },
+  {
+    "skillId": "marketing_email",
+    "tree": "marketing",
+    "name": "Email Marketing",
+    "description": "Improve email campaign performance",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.03,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_seo",
+    "tree": "marketing",
+    "name": "SEO Optimization",
+    "description": "Improve search engine visibility",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "revenueMultiplier": 1.03
+    }
+  },
+  {
+    "skillId": "marketing_ads",
+    "tree": "marketing",
+    "name": "Paid Advertising",
+    "description": "Optimize paid ad campaigns",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.05,
+      "costReduction": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_partnerships",
+    "tree": "marketing",
+    "name": "Partnership Marketing",
+    "description": "Better leverage marketing partnerships",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.04,
+      "viralityBonus": 0.03
+    }
+  },
+  {
+    "skillId": "finance_budgeting",
+    "tree": "finance",
+    "name": "Budget Management",
+    "description": "Better manage and optimize budgets",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.05,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "finance_pricing",
+    "tree": "finance",
+    "name": "Pricing Strategy",
+    "description": "Optimize pricing for maximum revenue",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.05,
+      "conversionBonus": 0.02
+    }
+  },
+  {
+    "skillId": "finance_fundraising",
+    "tree": "finance",
+    "name": "Fundraising",
+    "description": "Better negotiate funding and loans",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "finance_analysis",
+    "tree": "finance",
+    "name": "Financial Analysis",
+    "description": "Better understand financial metrics",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "costReduction": 0.03
+    }
+  },
+  {
+    "skillId": "tech_infrastructure",
+    "tree": "technology",
+    "name": "Infrastructure",
+    "description": "Build more scalable and reliable infrastructure",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.04,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "tech_security",
+    "tree": "technology",
+    "name": "Security",
+    "description": "Better protect against security threats",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "tech_devops",
+    "tree": "technology",
+    "name": "DevOps",
+    "description": "Improve deployment and operations",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "eventOutcomeBonus": 0.04
+    }
+  },
+  {
+    "skillId": "tech_database",
+    "tree": "technology",
+    "name": "Database Management",
+    "description": "Optimize database performance",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "tech_engineering",
+    "tree": "technology",
+    "name": "Software Engineering",
+    "description": "Improve overall engineering practices",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "costReduction": 0.03
+    }
+  },
+  {
+    "skillId": "product_research",
+    "tree": "product",
+    "name": "User Research",
+    "description": "Better understand user needs and pain points",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "product_analytics",
+    "tree": "product",
+    "name": "Product Analytics",
+    "description": "Make data-driven product decisions",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "product_iteration",
+    "tree": "product",
+    "name": "Rapid Iteration",
+    "description": "Faster product development cycles",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "product_testing",
+    "tree": "product",
+    "name": "Quality Assurance",
+    "description": "Better testing and bug prevention",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "product_design",
+    "tree": "product",
+    "name": "Product Design",
+    "description": "Create more intuitive and beautiful designs",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.05,
+      "viralityBonus": 0.03
+    }
+  },
+  {
+    "skillId": "product_onboarding",
+    "tree": "product",
+    "name": "User Onboarding",
+    "description": "Improve new user activation and retention",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "product_mobile",
+    "tree": "product",
+    "name": "Mobile Optimization",
+    "description": "Better mobile app experience",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.03,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "product_accessibility",
+    "tree": "product",
+    "name": "Accessibility",
+    "description": "Make products accessible to all users",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.03,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "product_integration",
+    "tree": "product",
+    "name": "API Integration",
+    "description": "Better third-party integrations",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "eventOutcomeBonus": 0.02
+    }
+  },
+  {
+    "skillId": "product_personalization",
+    "tree": "product",
+    "name": "Personalization",
+    "description": "Customize experience for each user",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "product_gamification",
+    "tree": "product",
+    "name": "Gamification",
+    "description": "Add game-like elements to increase engagement",
+    "maxLevel": 10,
+    "effects": {
+      "viralityBonus": 0.04,
+      "conversionBonus": 0.03
+    }
+  },
+  {
+    "skillId": "product_notifications",
+    "tree": "product",
+    "name": "Push Notifications",
+    "description": "Better notification strategies",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.03,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "product_ai",
+    "tree": "product",
+    "name": "AI Features",
+    "description": "Leverage AI to enhance product capabilities",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.04,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_retargeting",
+    "tree": "marketing",
+    "name": "Retargeting",
+    "description": "Better retargeting campaigns",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_affiliate",
+    "tree": "marketing",
+    "name": "Affiliate Marketing",
+    "description": "Build effective affiliate programs",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "viralityBonus": 0.02
+    }
+  },
+  {
+    "skillId": "marketing_webinar",
+    "tree": "marketing",
+    "name": "Webinar Marketing",
+    "description": "Host effective webinars and events",
+    "maxLevel": 10,
+    "effects": {
+      "conversionBonus": 0.04,
+      "hypeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_video",
+    "tree": "marketing",
+    "name": "Video Marketing",
+    "description": "Create engaging video content",
+    "maxLevel": 10,
+    "effects": {
+      "viralityBonus": 0.05,
+      "conversionBonus": 0.03
+    }
+  },
+  {
+    "skillId": "marketing_automation",
+    "tree": "marketing",
+    "name": "Marketing Automation",
+    "description": "Automate marketing workflows",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.04,
+      "conversionBonus": 0.03
+    }
+  },
+  {
+    "skillId": "finance_accounting",
+    "tree": "finance",
+    "name": "Accounting",
+    "description": "Better financial record keeping",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "eventOutcomeBonus": 0.02
+    }
+  },
+  {
+    "skillId": "finance_tax",
+    "tree": "finance",
+    "name": "Tax Optimization",
+    "description": "Minimize tax burden legally",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.04,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "finance_forecasting",
+    "tree": "finance",
+    "name": "Financial Forecasting",
+    "description": "Better predict future financial needs",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "finance_investor",
+    "tree": "finance",
+    "name": "Investor Relations",
+    "description": "Better manage investor relationships",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "finance_cashflow",
+    "tree": "finance",
+    "name": "Cash Flow Management",
+    "description": "Optimize cash flow timing",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "revenueMultiplier": 1.03
+    }
+  },
+  {
+    "skillId": "finance_contracts",
+    "tree": "finance",
+    "name": "Contract Negotiation",
+    "description": "Better negotiate deals and contracts",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.04,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "finance_equity",
+    "tree": "finance",
+    "name": "Equity Management",
+    "description": "Better manage equity and cap table",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "finance_risk",
+    "tree": "finance",
+    "name": "Risk Management",
+    "description": "Identify and mitigate financial risks",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "finance_compliance",
+    "tree": "finance",
+    "name": "Regulatory Compliance",
+    "description": "Stay compliant with regulations",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "costReduction": 0.03
+    }
+  },
+  {
+    "skillId": "finance_mergers",
+    "tree": "finance",
+    "name": "M&A Strategy",
+    "description": "Better evaluate acquisition opportunities",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.04,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "finance_valuation",
+    "tree": "finance",
+    "name": "Company Valuation",
+    "description": "Better understand and increase company value",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "tech_cloud",
+    "tree": "technology",
+    "name": "Cloud Architecture",
+    "description": "Optimize cloud infrastructure costs",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.05,
+      "eventOutcomeBonus": 0.02
+    }
+  },
+  {
+    "skillId": "tech_api",
+    "tree": "technology",
+    "name": "API Development",
+    "description": "Build robust and scalable APIs",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "tech_monitoring",
+    "tree": "technology",
+    "name": "System Monitoring",
+    "description": "Better track system performance",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "eventOutcomeBonus": 0.04
+    }
+  },
+  {
+    "skillId": "tech_testing",
+    "tree": "technology",
+    "name": "Automated Testing",
+    "description": "Implement comprehensive test coverage",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.05,
+      "costReduction": 0.02
+    }
+  },
+  {
+    "skillId": "tech_scalability",
+    "tree": "technology",
+    "name": "Scalability",
+    "description": "Build systems that scale efficiently",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.04,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "tech_microservices",
+    "tree": "technology",
+    "name": "Microservices",
+    "description": "Adopt microservices architecture",
+    "maxLevel": 10,
+    "effects": {
+      "eventOutcomeBonus": 0.04,
+      "costReduction": 0.03
+    }
+  },
+  {
+    "skillId": "tech_caching",
+    "tree": "technology",
+    "name": "Caching Strategy",
+    "description": "Optimize caching for performance",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.03,
+      "revenueMultiplier": 1.02
+    }
+  },
+  {
+    "skillId": "tech_cdn",
+    "tree": "technology",
+    "name": "CDN Optimization",
+    "description": "Improve content delivery speed",
+    "maxLevel": 10,
+    "effects": {
+      "costReduction": 0.02,
+      "conversionBonus": 0.03
+    }
+  },
+  {
+    "skillId": "tech_analytics",
+    "tree": "technology",
+    "name": "Data Analytics",
+    "description": "Better analyze user and system data",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.03,
+      "eventOutcomeBonus": 0.03
+    }
+  },
+  {
+    "skillId": "tech_machine_learning",
+    "tree": "technology",
+    "name": "Machine Learning",
+    "description": "Implement ML features and recommendations",
+    "maxLevel": 10,
+    "effects": {
+      "revenueMultiplier": 1.04,
+      "conversionBonus": 0.03
+    }
+  }
+]
+

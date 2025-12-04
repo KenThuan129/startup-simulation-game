@@ -1,0 +1,1362 @@
+[
+  {
+    "actionId": "product_action_1",
+    "category": "product",
+    "name": "Build New Feature",
+    "description": "Design and develop a new product feature that addresses user needs and market opportunities. Requires careful planning, user research, and iterative development.",
+    "eventPool": [
+      "product_event_1",
+      "product_event_2",
+      "product_event_3",
+      "product_event_4"
+    ]
+  },
+  {
+    "actionId": "product_action_2",
+    "category": "product",
+    "name": "Improve User Experience",
+    "description": "Improve user experience through research, design iteration, and usability testing. Focus on reducing friction and increasing satisfaction.",
+    "eventPool": [
+      "product_event_5",
+      "product_event_6",
+      "product_event_7",
+      "product_event_8"
+    ]
+  },
+  {
+    "actionId": "product_action_3",
+    "category": "product",
+    "name": "Fix Critical Bugs",
+    "description": "Identify and fix critical bugs that are impacting user experience or causing data issues. Prioritize based on severity and user impact.",
+    "eventPool": [
+      "product_event_9",
+      "product_event_10",
+      "product_event_11",
+      "product_event_12"
+    ]
+  },
+  {
+    "actionId": "product_action_4",
+    "category": "product",
+    "name": "Performance Optimization",
+    "description": "Optimize system performance to improve load times, reduce server costs, and enhance user experience. Analyze bottlenecks and implement solutions.",
+    "eventPool": [
+      "product_event_13",
+      "product_event_14",
+      "product_event_15",
+      "product_event_16"
+    ]
+  },
+  {
+    "actionId": "product_action_5",
+    "category": "product",
+    "name": "Add Mobile Support",
+    "description": "Develop or improve mobile experience to reach users on their preferred devices. Consider native apps vs. responsive web.",
+    "eventPool": [
+      "product_event_17",
+      "product_event_18",
+      "product_event_19",
+      "product_event_20"
+    ]
+  },
+  {
+    "actionId": "product_action_6",
+    "category": "product",
+    "name": "Implement Analytics",
+    "description": "Implement comprehensive analytics to track user behavior, feature adoption, and business metrics. Enable data-driven decision making.",
+    "eventPool": [
+      "product_event_21",
+      "product_event_22",
+      "product_event_23",
+      "product_event_24"
+    ]
+  },
+  {
+    "actionId": "product_action_7",
+    "category": "product",
+    "name": "User Onboarding Flow",
+    "description": "Create an intuitive onboarding experience that helps new users understand value and get started quickly. Reduce time-to-value.",
+    "eventPool": [
+      "product_event_25",
+      "product_event_26",
+      "product_event_27",
+      "product_event_28"
+    ]
+  },
+  {
+    "actionId": "product_action_8",
+    "category": "product",
+    "name": "A/B Testing Framework",
+    "description": "Launch beta program to gather early feedback from select users. Iterate based on insights before public release.",
+    "eventPool": [
+      "product_event_29",
+      "product_event_30",
+      "product_event_31",
+      "product_event_32"
+    ]
+  },
+  {
+    "actionId": "product_action_9",
+    "category": "product",
+    "name": "API Development",
+    "description": "Design and build APIs for integrations and internal services. Focus on documentation, versioning, and developer experience.",
+    "eventPool": [
+      "product_event_33",
+      "product_event_34",
+      "product_event_35",
+      "product_event_36"
+    ]
+  },
+  {
+    "actionId": "product_action_10",
+    "category": "product",
+    "name": "Accessibility Improvements",
+    "description": "Ensure your product is accessible to users with disabilities. Meet WCAG standards and improve usability for all.",
+    "eventPool": [
+      "product_event_37",
+      "product_event_38",
+      "product_event_39",
+      "product_event_40"
+    ]
+  },
+  {
+    "actionId": "product_action_11",
+    "category": "product",
+    "name": "Internationalization",
+    "description": "Add multi-language support and adapt product for global markets. Consider cultural differences and localization needs.",
+    "eventPool": [
+      "product_event_41",
+      "product_event_42",
+      "product_event_43",
+      "product_event_44"
+    ]
+  },
+  {
+    "actionId": "product_action_12",
+    "category": "product",
+    "name": "Product Documentation",
+    "description": "Create comprehensive documentation for users, developers, and internal teams. Improve product adoption and reduce support burden.",
+    "eventPool": [
+      "product_event_45",
+      "product_event_46",
+      "product_event_47",
+      "product_event_48"
+    ]
+  },
+  {
+    "actionId": "product_action_13",
+    "category": "product",
+    "name": "Beta Testing Program",
+    "description": "Launch beta program to gather early feedback from select users. Iterate based on insights before public release.",
+    "eventPool": [
+      "product_event_49",
+      "product_event_50",
+      "product_event_51",
+      "product_event_52"
+    ]
+  },
+  {
+    "actionId": "product_action_14",
+    "category": "product",
+    "name": "Feature Flags System",
+    "description": "Design and develop a new product feature that addresses user needs and market opportunities. Requires careful planning, user research, and iterative development.",
+    "eventPool": [
+      "product_event_53",
+      "product_event_54",
+      "product_event_55",
+      "product_event_56"
+    ]
+  },
+  {
+    "actionId": "marketing_action_1",
+    "category": "marketing",
+    "name": "Social Media Campaign",
+    "description": "Launch coordinated social media campaigns across platforms to increase brand awareness and engage with your audience.",
+    "eventPool": [
+      "marketing_event_1",
+      "marketing_event_2",
+      "marketing_event_3",
+      "marketing_event_4"
+    ]
+  },
+  {
+    "actionId": "marketing_action_2",
+    "category": "marketing",
+    "name": "Influencer Partnership",
+    "description": "Partner with influencers and creators to authentically reach new audiences and build trust.",
+    "eventPool": [
+      "marketing_event_5",
+      "marketing_event_6",
+      "marketing_event_7",
+      "marketing_event_8"
+    ]
+  },
+  {
+    "actionId": "marketing_action_3",
+    "category": "marketing",
+    "name": "Content Marketing",
+    "description": "Create valuable content (blog posts, videos, guides) to attract, educate, and convert your target audience.",
+    "eventPool": [
+      "marketing_event_9",
+      "marketing_event_10",
+      "marketing_event_11",
+      "marketing_event_12"
+    ]
+  },
+  {
+    "actionId": "marketing_action_4",
+    "category": "marketing",
+    "name": "Paid Advertising",
+    "description": "Run targeted paid advertising campaigns on Google, Facebook, LinkedIn, or other platforms to acquire new customers cost-effectively.",
+    "eventPool": [
+      "marketing_event_13",
+      "marketing_event_14",
+      "marketing_event_15",
+      "marketing_event_16"
+    ]
+  },
+  {
+    "actionId": "marketing_action_5",
+    "category": "marketing",
+    "name": "Email Marketing",
+    "description": "Design and execute email marketing campaigns to nurture leads, retain customers, and drive conversions.",
+    "eventPool": [
+      "marketing_event_17",
+      "marketing_event_18",
+      "marketing_event_19",
+      "marketing_event_20"
+    ]
+  },
+  {
+    "actionId": "marketing_action_6",
+    "category": "marketing",
+    "name": "SEO Optimization",
+    "description": "Optimize website and content for search engines to improve organic visibility and drive qualified traffic.",
+    "eventPool": [
+      "marketing_event_21",
+      "marketing_event_22",
+      "marketing_event_23",
+      "marketing_event_24"
+    ]
+  },
+  {
+    "actionId": "marketing_action_7",
+    "category": "marketing",
+    "name": "Webinar Series",
+    "description": "Host educational webinars to establish thought leadership, generate qualified leads, and engage with your audience.",
+    "eventPool": [
+      "marketing_event_25",
+      "marketing_event_26",
+      "marketing_event_27",
+      "marketing_event_28"
+    ]
+  },
+  {
+    "actionId": "marketing_action_8",
+    "category": "marketing",
+    "name": "Community Building",
+    "description": "Build and nurture an active community around your product through forums, Discord, Slack, or social platforms.",
+    "eventPool": [
+      "marketing_event_29",
+      "marketing_event_30",
+      "marketing_event_31",
+      "marketing_event_32"
+    ]
+  },
+  {
+    "actionId": "marketing_action_9",
+    "category": "marketing",
+    "name": "Referral Program",
+    "description": "Create an incentive program that rewards users for bringing in new customers. Leverage word-of-mouth growth.",
+    "eventPool": [
+      "marketing_event_33",
+      "marketing_event_34",
+      "marketing_event_35",
+      "marketing_event_36"
+    ]
+  },
+  {
+    "actionId": "marketing_action_10",
+    "category": "marketing",
+    "name": "PR Campaign",
+    "description": "Work with media outlets, bloggers, and influencers to get press coverage and increase brand visibility.",
+    "eventPool": [
+      "marketing_event_37",
+      "marketing_event_38",
+      "marketing_event_39",
+      "marketing_event_40"
+    ]
+  },
+  {
+    "actionId": "marketing_action_11",
+    "category": "marketing",
+    "name": "Trade Show Participation",
+    "description": "Exhibit at industry conferences and trade shows to network, showcase your product, and generate leads.",
+    "eventPool": [
+      "marketing_event_41",
+      "marketing_event_42",
+      "marketing_event_43",
+      "marketing_event_44"
+    ]
+  },
+  {
+    "actionId": "marketing_action_12",
+    "category": "marketing",
+    "name": "Partnership Marketing",
+    "description": "Execute marketing initiatives to increase brand awareness, acquire customers, and drive growth.",
+    "eventPool": [
+      "marketing_event_45",
+      "marketing_event_46",
+      "marketing_event_47",
+      "marketing_event_48"
+    ]
+  },
+  {
+    "actionId": "marketing_action_13",
+    "category": "marketing",
+    "name": "Video Marketing",
+    "description": "Produce engaging video content for YouTube, TikTok, or other platforms to educate, entertain, and convert viewers.",
+    "eventPool": [
+      "marketing_event_49",
+      "marketing_event_50",
+      "marketing_event_51",
+      "marketing_event_52"
+    ]
+  },
+  {
+    "actionId": "marketing_action_14",
+    "category": "marketing",
+    "name": "Podcast Sponsorship",
+    "description": "Execute marketing initiatives to increase brand awareness, acquire customers, and drive growth.",
+    "eventPool": [
+      "marketing_event_53",
+      "marketing_event_54",
+      "marketing_event_55",
+      "marketing_event_56"
+    ]
+  },
+  {
+    "actionId": "tech_action_1",
+    "category": "tech",
+    "name": "Upgrade Infrastructure",
+    "description": "Scale infrastructure to handle increased traffic, improve reliability, and reduce costs. Plan for future growth.",
+    "eventPool": [
+      "tech_event_1",
+      "tech_event_2",
+      "tech_event_3",
+      "tech_event_4"
+    ]
+  },
+  {
+    "actionId": "tech_action_2",
+    "category": "tech",
+    "name": "Security Audit",
+    "description": "Conduct security audits and implement measures to protect user data and prevent breaches. Critical for trust and compliance.",
+    "eventPool": [
+      "tech_event_5",
+      "tech_event_6",
+      "tech_event_7",
+      "tech_event_8"
+    ]
+  },
+  {
+    "actionId": "tech_action_3",
+    "category": "tech",
+    "name": "Implement CI/CD",
+    "description": "Set up continuous integration and deployment pipelines for faster, safer releases. Automate testing and deployment.",
+    "eventPool": [
+      "tech_event_9",
+      "tech_event_10",
+      "tech_event_11",
+      "tech_event_12"
+    ]
+  },
+  {
+    "actionId": "tech_action_4",
+    "category": "tech",
+    "name": "Database Optimization",
+    "description": "Optimize database performance through better schema design, indexing, and query optimization. Improve response times.",
+    "eventPool": [
+      "tech_event_13",
+      "tech_event_14",
+      "tech_event_15",
+      "tech_event_16"
+    ]
+  },
+  {
+    "actionId": "tech_action_5",
+    "category": "tech",
+    "name": "API Rate Limiting",
+    "description": "Improve technical infrastructure and systems to support growth, reliability, and performance.",
+    "eventPool": [
+      "tech_event_17",
+      "tech_event_18",
+      "tech_event_19",
+      "tech_event_20"
+    ]
+  },
+  {
+    "actionId": "tech_action_6",
+    "category": "tech",
+    "name": "Monitoring System",
+    "description": "Set up comprehensive monitoring and alerting for infrastructure and applications. Catch issues before users notice.",
+    "eventPool": [
+      "tech_event_21",
+      "tech_event_22",
+      "tech_event_23",
+      "tech_event_24"
+    ]
+  },
+  {
+    "actionId": "tech_action_7",
+    "category": "tech",
+    "name": "Load Testing",
+    "description": "Perform load testing to identify bottlenecks and ensure system can handle peak traffic. Prevent outages.",
+    "eventPool": [
+      "tech_event_25",
+      "tech_event_26",
+      "tech_event_27",
+      "tech_event_28"
+    ]
+  },
+  {
+    "actionId": "tech_action_8",
+    "category": "tech",
+    "name": "Backup System",
+    "description": "Implement automated backup and disaster recovery systems to protect critical data. Ensure business continuity.",
+    "eventPool": [
+      "tech_event_29",
+      "tech_event_30",
+      "tech_event_31",
+      "tech_event_32"
+    ]
+  },
+  {
+    "actionId": "tech_action_9",
+    "category": "tech",
+    "name": "Code Review Process",
+    "description": "Establish code review practices to maintain quality, share knowledge, and catch bugs early.",
+    "eventPool": [
+      "tech_event_33",
+      "tech_event_34",
+      "tech_event_35",
+      "tech_event_36"
+    ]
+  },
+  {
+    "actionId": "tech_action_10",
+    "category": "tech",
+    "name": "Automated Testing",
+    "description": "Perform load testing to identify bottlenecks and ensure system can handle peak traffic. Prevent outages.",
+    "eventPool": [
+      "tech_event_37",
+      "tech_event_38",
+      "tech_event_39",
+      "tech_event_40"
+    ]
+  },
+  {
+    "actionId": "tech_action_11",
+    "category": "tech",
+    "name": "Cloud Migration",
+    "description": "Migrate infrastructure to cloud for better scalability, cost efficiency, and reliability. Modernize tech stack.",
+    "eventPool": [
+      "tech_event_41",
+      "tech_event_42",
+      "tech_event_43",
+      "tech_event_44"
+    ]
+  },
+  {
+    "actionId": "tech_action_12",
+    "category": "tech",
+    "name": "Microservices Architecture",
+    "description": "Refactor monolithic architecture into microservices for better scalability and team autonomy.",
+    "eventPool": [
+      "tech_event_45",
+      "tech_event_46",
+      "tech_event_47",
+      "tech_event_48"
+    ]
+  },
+  {
+    "actionId": "tech_action_13",
+    "category": "tech",
+    "name": "Container Orchestration",
+    "description": "Set up container orchestration to manage containerized applications efficiently. Improve deployment and scaling.",
+    "eventPool": [
+      "tech_event_49",
+      "tech_event_50",
+      "tech_event_51",
+      "tech_event_52"
+    ]
+  },
+  {
+    "actionId": "tech_action_14",
+    "category": "tech",
+    "name": "Service Mesh",
+    "description": "Implement service mesh for better service-to-service communication, security, and observability.",
+    "eventPool": [
+      "tech_event_53",
+      "tech_event_54",
+      "tech_event_55",
+      "tech_event_56"
+    ]
+  },
+  {
+    "actionId": "business_action_1",
+    "category": "business_dev",
+    "name": "Strategic Partnership",
+    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "eventPool": [
+      "business_event_1",
+      "business_event_2",
+      "business_event_3",
+      "business_event_4"
+    ]
+  },
+  {
+    "actionId": "business_action_2",
+    "category": "business_dev",
+    "name": "Pitch to Investors",
+    "description": "Prepare and deliver compelling pitches to potential investors. Secure funding to fuel growth.",
+    "eventPool": [
+      "business_event_5",
+      "business_event_6",
+      "business_event_7",
+      "business_event_8"
+    ]
+  },
+  {
+    "actionId": "business_action_3",
+    "category": "business_dev",
+    "name": "Customer Discovery",
+    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "eventPool": [
+      "business_event_9",
+      "business_event_10",
+      "business_event_11",
+      "business_event_12"
+    ]
+  },
+  {
+    "actionId": "business_action_4",
+    "category": "business_dev",
+    "name": "B2B Sales Outreach",
+    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "eventPool": [
+      "business_event_13",
+      "business_event_14",
+      "business_event_15",
+      "business_event_16"
+    ]
+  },
+  {
+    "actionId": "business_action_5",
+    "category": "business_dev",
+    "name": "Channel Partnerships",
+    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "eventPool": [
+      "business_event_17",
+      "business_event_18",
+      "business_event_19",
+      "business_event_20"
+    ]
+  },
+  {
+    "actionId": "business_action_6",
+    "category": "business_dev",
+    "name": "Enterprise Sales",
+    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "eventPool": [
+      "business_event_21",
+      "business_event_22",
+      "business_event_23",
+      "business_event_24"
+    ]
+  },
+  {
+    "actionId": "business_action_7",
+    "category": "business_dev",
+    "name": "Strategic Alliances",
+    "description": "Develop long-term strategic plans and set company goals. Align team around shared objectives.",
+    "eventPool": [
+      "business_event_25",
+      "business_event_26",
+      "business_event_27",
+      "business_event_28"
+    ]
+  },
+  {
+    "actionId": "business_action_8",
+    "category": "business_dev",
+    "name": "Investor Relations",
+    "description": "Prepare and deliver compelling pitches to potential investors. Secure funding to fuel growth.",
+    "eventPool": [
+      "business_event_29",
+      "business_event_30",
+      "business_event_31",
+      "business_event_32"
+    ]
+  },
+  {
+    "actionId": "business_action_9",
+    "category": "business_dev",
+    "name": "Customer Success Program",
+    "description": "Implement customer success programs to reduce churn, increase expansion revenue, and build strong relationships.",
+    "eventPool": [
+      "business_event_33",
+      "business_event_34",
+      "business_event_35",
+      "business_event_36"
+    ]
+  },
+  {
+    "actionId": "business_action_10",
+    "category": "business_dev",
+    "name": "Sales Team Building",
+    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "eventPool": [
+      "business_event_37",
+      "business_event_38",
+      "business_event_39",
+      "business_event_40"
+    ]
+  },
+  {
+    "actionId": "business_action_11",
+    "category": "business_dev",
+    "name": "Market Expansion",
+    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "eventPool": [
+      "business_event_41",
+      "business_event_42",
+      "business_event_43",
+      "business_event_44"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "business_action_12",
+    "category": "business_dev",
+    "name": "Distribution Partnerships",
+    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "eventPool": [
+      "business_event_45",
+      "business_event_46",
+      "business_event_47",
+      "business_event_48"
+    ]
+  },
+  {
+    "actionId": "business_action_13",
+    "category": "business_dev",
+    "name": "Strategic Acquisition",
+    "description": "Develop long-term strategic plans and set company goals. Align team around shared objectives.",
+    "eventPool": [
+      "business_event_49",
+      "business_event_50",
+      "business_event_51",
+      "business_event_52"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "business_action_14",
+    "category": "business_dev",
+    "name": "Joint Ventures",
+    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "eventPool": [
+      "business_event_53",
+      "business_event_54",
+      "business_event_55",
+      "business_event_56"
+    ]
+  },
+  {
+    "actionId": "operations_action_1",
+    "category": "operations",
+    "name": "Hire Developer",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_1",
+      "operations_event_2",
+      "operations_event_3",
+      "operations_event_4"
+    ]
+  },
+  {
+    "actionId": "operations_action_2",
+    "category": "operations",
+    "name": "Hire Marketer",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_5",
+      "operations_event_6",
+      "operations_event_7",
+      "operations_event_8"
+    ]
+  },
+  {
+    "actionId": "operations_action_3",
+    "category": "operations",
+    "name": "Improve Processes",
+    "description": "Streamline internal processes to improve efficiency, reduce waste, and enable team to focus on high-value work.",
+    "eventPool": [
+      "operations_event_9",
+      "operations_event_10",
+      "operations_event_11",
+      "operations_event_12"
+    ]
+  },
+  {
+    "actionId": "operations_action_4",
+    "category": "operations",
+    "name": "Team Building",
+    "description": "Organize team building activities and improve collaboration. Boost morale and productivity.",
+    "eventPool": [
+      "operations_event_13",
+      "operations_event_14",
+      "operations_event_15",
+      "operations_event_16"
+    ]
+  },
+  {
+    "actionId": "operations_action_5",
+    "category": "operations",
+    "name": "Office Setup",
+    "description": "Set up physical or remote office infrastructure for your team. Create productive work environment.",
+    "eventPool": [
+      "operations_event_17",
+      "operations_event_18",
+      "operations_event_19",
+      "operations_event_20"
+    ]
+  },
+  {
+    "actionId": "operations_action_6",
+    "category": "operations",
+    "name": "Remote Work Infrastructure",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_21",
+      "operations_event_22",
+      "operations_event_23",
+      "operations_event_24"
+    ]
+  },
+  {
+    "actionId": "operations_action_7",
+    "category": "operations",
+    "name": "HR Policies",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_25",
+      "operations_event_26",
+      "operations_event_27",
+      "operations_event_28"
+    ]
+  },
+  {
+    "actionId": "operations_action_8",
+    "category": "operations",
+    "name": "Employee Training",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_29",
+      "operations_event_30",
+      "operations_event_31",
+      "operations_event_32"
+    ]
+  },
+  {
+    "actionId": "operations_action_9",
+    "category": "operations",
+    "name": "Vendor Management",
+    "description": "Evaluate and manage relationships with vendors and service providers. Optimize costs and quality.",
+    "eventPool": [
+      "operations_event_33",
+      "operations_event_34",
+      "operations_event_35",
+      "operations_event_36"
+    ]
+  },
+  {
+    "actionId": "operations_action_10",
+    "category": "operations",
+    "name": "Supply Chain Optimization",
+    "description": "Streamline internal processes to improve efficiency, reduce waste, and enable team to focus on high-value work.",
+    "eventPool": [
+      "operations_event_37",
+      "operations_event_38",
+      "operations_event_39",
+      "operations_event_40"
+    ]
+  },
+  {
+    "actionId": "operations_action_11",
+    "category": "operations",
+    "name": "Quality Assurance",
+    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "eventPool": [
+      "operations_event_41",
+      "operations_event_42",
+      "operations_event_43",
+      "operations_event_44"
+    ]
+  },
+  {
+    "actionId": "operations_action_12",
+    "category": "operations",
+    "name": "Customer Support",
+    "description": "Set up or improve customer support systems to handle user inquiries effectively. Build customer satisfaction.",
+    "eventPool": [
+      "operations_event_45",
+      "operations_event_46",
+      "operations_event_47",
+      "operations_event_48"
+    ]
+  },
+  {
+    "actionId": "operations_action_13",
+    "category": "operations",
+    "name": "Legal Compliance",
+    "description": "Ensure compliance with regulations like GDPR, CCPA, or industry-specific requirements. Avoid legal issues.",
+    "eventPool": [
+      "operations_event_49",
+      "operations_event_50",
+      "operations_event_51",
+      "operations_event_52"
+    ]
+  },
+  {
+    "actionId": "operations_action_14",
+    "category": "operations",
+    "name": "Risk Management",
+    "description": "Identify and mitigate operational risks that could impact the business. Build resilience.",
+    "eventPool": [
+      "operations_event_53",
+      "operations_event_54",
+      "operations_event_55",
+      "operations_event_56"
+    ]
+  },
+  {
+    "actionId": "finance_action_1",
+    "category": "finance",
+    "name": "Budget Review",
+    "description": "Review and adjust budgets to optimize spending and ensure financial health. Make data-driven decisions.",
+    "eventPool": [
+      "finance_event_1",
+      "finance_event_2",
+      "finance_event_3",
+      "finance_event_4"
+    ]
+  },
+  {
+    "actionId": "finance_action_2",
+    "category": "finance",
+    "name": "Cost Cutting",
+    "description": "Identify and eliminate unnecessary expenses to improve profitability. Balance cost reduction with growth needs.",
+    "eventPool": [
+      "finance_event_5",
+      "finance_event_6",
+      "finance_event_7",
+      "finance_event_8"
+    ]
+  },
+  {
+    "actionId": "finance_action_3",
+    "category": "finance",
+    "name": "Pricing Strategy",
+    "description": "Analyze market and develop pricing models to maximize revenue while remaining competitive.",
+    "eventPool": [
+      "finance_event_9",
+      "finance_event_10",
+      "finance_event_11",
+      "finance_event_12"
+    ]
+  },
+  {
+    "actionId": "finance_action_4",
+    "category": "finance",
+    "name": "Revenue Optimization",
+    "description": "Identify opportunities to increase revenue through upselling, new revenue streams, or optimization.",
+    "eventPool": [
+      "finance_event_13",
+      "finance_event_14",
+      "finance_event_15",
+      "finance_event_16"
+    ]
+  },
+  {
+    "actionId": "finance_action_5",
+    "category": "finance",
+    "name": "Financial Planning",
+    "description": "Create financial forecasts and plan for future funding needs. Ensure adequate runway.",
+    "eventPool": [
+      "finance_event_17",
+      "finance_event_18",
+      "finance_event_19",
+      "finance_event_20"
+    ]
+  },
+  {
+    "actionId": "finance_action_6",
+    "category": "finance",
+    "name": "Tax Optimization",
+    "description": "Work with accountants to optimize tax strategy and ensure compliance. Minimize tax burden legally.",
+    "eventPool": [
+      "finance_event_21",
+      "finance_event_22",
+      "finance_event_23",
+      "finance_event_24"
+    ]
+  },
+  {
+    "actionId": "finance_action_7",
+    "category": "finance",
+    "name": "Invoice Management",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_25",
+      "finance_event_26",
+      "finance_event_27",
+      "finance_event_28"
+    ]
+  },
+  {
+    "actionId": "finance_action_8",
+    "category": "finance",
+    "name": "Expense Tracking",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_29",
+      "finance_event_30",
+      "finance_event_31",
+      "finance_event_32"
+    ]
+  },
+  {
+    "actionId": "finance_action_9",
+    "category": "finance",
+    "name": "Financial Reporting",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_33",
+      "finance_event_34",
+      "finance_event_35",
+      "finance_event_36"
+    ]
+  },
+  {
+    "actionId": "finance_action_10",
+    "category": "finance",
+    "name": "Cash Flow Management",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_37",
+      "finance_event_38",
+      "finance_event_39",
+      "finance_event_40"
+    ]
+  },
+  {
+    "actionId": "finance_action_11",
+    "category": "finance",
+    "name": "Investment Strategy",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_41",
+      "finance_event_42",
+      "finance_event_43",
+      "finance_event_44"
+    ]
+  },
+  {
+    "actionId": "finance_action_12",
+    "category": "finance",
+    "name": "Credit Line",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_45",
+      "finance_event_46",
+      "finance_event_47",
+      "finance_event_48"
+    ]
+  },
+  {
+    "actionId": "finance_action_13",
+    "category": "finance",
+    "name": "Equity Financing",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_49",
+      "finance_event_50",
+      "finance_event_51",
+      "finance_event_52"
+    ]
+  },
+  {
+    "actionId": "finance_action_14",
+    "category": "finance",
+    "name": "Debt Refinancing",
+    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "eventPool": [
+      "finance_event_53",
+      "finance_event_54",
+      "finance_event_55",
+      "finance_event_56"
+    ]
+  },
+  {
+    "actionId": "research_action_1",
+    "category": "research",
+    "name": "Market Research",
+    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "eventPool": [
+      "research_event_1",
+      "research_event_2",
+      "research_event_3",
+      "research_event_4"
+    ]
+  },
+  {
+    "actionId": "research_action_2",
+    "category": "research",
+    "name": "User Research",
+    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "eventPool": [
+      "research_event_5",
+      "research_event_6",
+      "research_event_7",
+      "research_event_8"
+    ]
+  },
+  {
+    "actionId": "research_action_3",
+    "category": "research",
+    "name": "Technology Research",
+    "description": "Research new technologies and evaluate their potential for your product. Stay innovative.",
+    "eventPool": [
+      "research_event_9",
+      "research_event_10",
+      "research_event_11",
+      "research_event_12"
+    ]
+  },
+  {
+    "actionId": "research_action_4",
+    "category": "research",
+    "name": "Competitive Analysis",
+    "description": "Research competitors to understand their strengths, weaknesses, and strategies. Identify opportunities.",
+    "eventPool": [
+      "research_event_13",
+      "research_event_14",
+      "research_event_15",
+      "research_event_16"
+    ]
+  },
+  {
+    "actionId": "research_action_5",
+    "category": "research",
+    "name": "User Interviews",
+    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "eventPool": [
+      "research_event_17",
+      "research_event_18",
+      "research_event_19",
+      "research_event_20"
+    ]
+  },
+  {
+    "actionId": "research_action_6",
+    "category": "research",
+    "name": "Surveys and Polls",
+    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "eventPool": [
+      "research_event_21",
+      "research_event_22",
+      "research_event_23",
+      "research_event_24"
+    ]
+  },
+  {
+    "actionId": "research_action_7",
+    "category": "research",
+    "name": "Data Analysis",
+    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "eventPool": [
+      "research_event_25",
+      "research_event_26",
+      "research_event_27",
+      "research_event_28"
+    ]
+  },
+  {
+    "actionId": "research_action_8",
+    "category": "research",
+    "name": "Trend Analysis",
+    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "eventPool": [
+      "research_event_29",
+      "research_event_30",
+      "research_event_31",
+      "research_event_32"
+    ]
+  },
+  {
+    "actionId": "research_action_9",
+    "category": "research",
+    "name": "Technology Evaluation",
+    "description": "Research new technologies and evaluate their potential for your product. Stay innovative.",
+    "eventPool": [
+      "research_event_33",
+      "research_event_34",
+      "research_event_35",
+      "research_event_36"
+    ]
+  },
+  {
+    "actionId": "research_action_10",
+    "category": "research",
+    "name": "Customer Segmentation",
+    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "eventPool": [
+      "research_event_37",
+      "research_event_38",
+      "research_event_39",
+      "research_event_40"
+    ]
+  },
+  {
+    "actionId": "research_action_11",
+    "category": "research",
+    "name": "Market Validation",
+    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "eventPool": [
+      "research_event_41",
+      "research_event_42",
+      "research_event_43",
+      "research_event_44"
+    ]
+  },
+  {
+    "actionId": "research_action_12",
+    "category": "research",
+    "name": "Product-Market Fit",
+    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "eventPool": [
+      "research_event_45",
+      "research_event_46",
+      "research_event_47",
+      "research_event_48"
+    ]
+  },
+  {
+    "actionId": "research_action_13",
+    "category": "research",
+    "name": "User Personas",
+    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "eventPool": [
+      "research_event_49",
+      "research_event_50",
+      "research_event_51",
+      "research_event_52"
+    ]
+  },
+  {
+    "actionId": "research_action_14",
+    "category": "research",
+    "name": "Market Sizing",
+    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "eventPool": [
+      "research_event_53",
+      "research_event_54",
+      "research_event_55",
+      "research_event_56"
+    ]
+  },
+  {
+    "actionId": "high_risk_action_1",
+    "category": "high_risk",
+    "name": "Rapid Expansion",
+    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "eventPool": [
+      "high_risk_event_1",
+      "high_risk_event_2",
+      "high_risk_event_3",
+      "high_risk_event_4"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_2",
+    "category": "high_risk",
+    "name": "Major Pivot",
+    "description": "Consider pivoting your product or business model based on market feedback. High risk but potentially high reward.",
+    "eventPool": [
+      "high_risk_event_5",
+      "high_risk_event_6",
+      "high_risk_event_7",
+      "high_risk_event_8"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_3",
+    "category": "high_risk",
+    "name": "Acquisition Attempt",
+    "description": "Evaluate and potentially acquire another company or product. Complex and risky but can accelerate growth.",
+    "eventPool": [
+      "high_risk_event_9",
+      "high_risk_event_10",
+      "high_risk_event_11",
+      "high_risk_event_12"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_4",
+    "category": "high_risk",
+    "name": "All-In Marketing Blitz",
+    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "eventPool": [
+      "high_risk_event_13",
+      "high_risk_event_14",
+      "high_risk_event_15",
+      "high_risk_event_16"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_5",
+    "category": "high_risk",
+    "name": "Major Technology Rewrite",
+    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "eventPool": [
+      "high_risk_event_17",
+      "high_risk_event_18",
+      "high_risk_event_19",
+      "high_risk_event_20"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_6",
+    "category": "high_risk",
+    "name": "International Expansion",
+    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "eventPool": [
+      "high_risk_event_21",
+      "high_risk_event_22",
+      "high_risk_event_23",
+      "high_risk_event_24"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_7",
+    "category": "high_risk",
+    "name": "Competitive Attack",
+    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "eventPool": [
+      "high_risk_event_25",
+      "high_risk_event_26",
+      "high_risk_event_27",
+      "high_risk_event_28"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_8",
+    "category": "high_risk",
+    "name": "High-Stakes Partnership",
+    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "eventPool": [
+      "high_risk_event_29",
+      "high_risk_event_30",
+      "high_risk_event_31",
+      "high_risk_event_32"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_9",
+    "category": "high_risk",
+    "name": "Major Hiring Spree",
+    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "eventPool": [
+      "high_risk_event_33",
+      "high_risk_event_34",
+      "high_risk_event_35",
+      "high_risk_event_36"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_10",
+    "category": "high_risk",
+    "name": "Product Line Expansion",
+    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "eventPool": [
+      "high_risk_event_37",
+      "high_risk_event_38",
+      "high_risk_event_39",
+      "high_risk_event_40"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_11",
+    "category": "high_risk",
+    "name": "Market Disruption",
+    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "eventPool": [
+      "high_risk_event_41",
+      "high_risk_event_42",
+      "high_risk_event_43",
+      "high_risk_event_44"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_12",
+    "category": "high_risk",
+    "name": "Regulatory Challenge",
+    "description": "Navigate complex regulatory requirements or legal challenges. Expensive but necessary for compliance.",
+    "eventPool": [
+      "high_risk_event_45",
+      "high_risk_event_46",
+      "high_risk_event_47",
+      "high_risk_event_48"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_13",
+    "category": "high_risk",
+    "name": "Major Investment",
+    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "eventPool": [
+      "high_risk_event_49",
+      "high_risk_event_50",
+      "high_risk_event_51",
+      "high_risk_event_52"
+    ],
+    "weight": 2
+  },
+  {
+    "actionId": "high_risk_action_14",
+    "category": "high_risk",
+    "name": "Strategic Bet",
+    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "eventPool": [
+      "high_risk_event_53",
+      "high_risk_event_54",
+      "high_risk_event_55",
+      "high_risk_event_56"
+    ],
+    "weight": 2
+  }
+]
