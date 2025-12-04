@@ -248,7 +248,7 @@ export class DatabaseQueries {
         // Use skillPointsSpent if available, otherwise fall back to counting all skill levels (backward compatibility)
         const skillPointsSpent = data.skill_points_spent !== undefined && data.skill_points_spent !== null
           ? data.skill_points_spent
-          : Object.values(data.skills || {} as Record<string, number>).reduce((sum: number, level: number) => sum + level, 0);
+          : Object.values((data.skills || {}) as Record<string, number>).reduce((sum: number, level: number) => sum + level, 0);
         return Math.max(0, totalSkillPointsEarned - skillPointsSpent);
       })(),
       skillPointsSpent: data.skill_points_spent !== undefined && data.skill_points_spent !== null

@@ -54,6 +54,7 @@ describe('Formulas', () => {
       hype: 0,
       virality: 0,
       skillPoints: 0,
+      skillPointsSpent: 0,
       skills: {},
       xp: 0,
       level: 1,
