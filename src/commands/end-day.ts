@@ -6,6 +6,7 @@ import { EmbedUtils } from '../utils/embeds';
 import { gameConfig } from '../config/bot.config';
 import { BossSystem } from '../game/systems/boss-system';
 import { AnomalySystem } from '../game/systems/anomaly-system';
+import { EventDataLoader } from '../game/data/event-loader';
 
 export const data = new SlashCommandBuilder()
   .setName('end-day')
@@ -40,12 +41,31 @@ export async function execute(interaction: ChatInputCommandInteraction) {
 
     // Auto-resolve any remaining pending events if action points are 0
     // (Player exhausted actions but didn't resolve all events)
-    let autoResolvedEvents = 0;
+    const autoResolvedEventsList: Array<{
+      eventName: string;
+      choiceLabel: string;
+      choiceText: string;
+      outcomeType: string;
+    }> = [];
+    
     if (company.pendingEvents.length > 0 && company.actionPointsRemaining === 0) {
       // Auto-resolve by applying the first choice of each pending event
       for (const event of company.pendingEvents) {
         if (event.choices.length > 0) {
           const defaultChoice = event.choices[0]; // Use first choice as default
+          
+          // Get event data for display
+          const eventData = EventDataLoader.getEvent(event.eventId);
+          const eventName = eventData?.name || event.eventId;
+          
+          // Track auto-resolved event details
+          autoResolvedEventsList.push({
+            eventName,
+            choiceLabel: defaultChoice.label || 'Option A',
+            choiceText: defaultChoice.text,
+            outcomeType: defaultChoice.type,
+          });
+          
           company = CompanyState.applyOutcome(company, defaultChoice.effects);
           
           // Check for anomalies
@@ -56,8 +76,6 @@ export async function execute(interaction: ChatInputCommandInteraction) {
           if (anomaly) {
             company = await AnomalySystem.applyAnomaly(company, anomaly);
           }
-          
-          autoResolvedEvents++;
         }
       }
       // Clear all pending events
@@ -119,8 +137,22 @@ export async function execute(interaction: ChatInputCommandInteraction) {
     let description = `**Day ${company.day} Complete!**\n\n`;
 
     // Show message if events were auto-resolved
-    if (autoResolvedEvents > 0) {
-      description += `⚠️ **Note:** ${autoResolvedEvents} pending event${autoResolvedEvents > 1 ? 's were' : ' was'} auto-resolved (you ran out of action points).\n\n`;
+    if (autoResolvedEventsList.length > 0) {
+      description += `⚠️ **Note:** ${autoResolvedEventsList.length} pending event${autoResolvedEventsList.length > 1 ? 's were' : ' was'} auto-resolved (you ran out of action points).\n\n`;
+      
+      // Display details of auto-resolved events
+      description += `**Auto-Resolved Events:**\n`;
+      for (const resolvedEvent of autoResolvedEventsList) {
+        const outcomeEmoji = {
+          'critical_success': '🎯',
+          'success': '✅',
+          'failure': '❌',
+          'critical_failure': '💥'
+        }[resolvedEvent.outcomeType] || '⚪';
+        
+        description += `${outcomeEmoji} **${resolvedEvent.eventName}** - ${resolvedEvent.choiceLabel}: ${resolvedEvent.choiceText}\n`;
+      }
+      description += `\n`;
     }
 
     if (!updatedCompany.alive) {

@@ -3,7 +3,7 @@
     "actionId": "product_action_1",
     "category": "product",
     "name": "Build New Feature",
-    "description": "Design and develop a new product feature that addresses user needs and market opportunities. Requires careful planning, user research, and iterative development.",
+    "description": "Perform build new feature",
     "eventPool": [
       "product_event_1",
       "product_event_2",
@@ -15,7 +15,7 @@
     "actionId": "product_action_2",
     "category": "product",
     "name": "Improve User Experience",
-    "description": "Improve user experience through research, design iteration, and usability testing. Focus on reducing friction and increasing satisfaction.",
+    "description": "Perform improve user experience",
     "eventPool": [
       "product_event_5",
       "product_event_6",
@@ -27,7 +27,7 @@
     "actionId": "product_action_3",
     "category": "product",
     "name": "Fix Critical Bugs",
-    "description": "Identify and fix critical bugs that are impacting user experience or causing data issues. Prioritize based on severity and user impact.",
+    "description": "Perform fix critical bugs",
     "eventPool": [
       "product_event_9",
       "product_event_10",
@@ -39,7 +39,7 @@
     "actionId": "product_action_4",
     "category": "product",
     "name": "Performance Optimization",
-    "description": "Optimize system performance to improve load times, reduce server costs, and enhance user experience. Analyze bottlenecks and implement solutions.",
+    "description": "Perform performance optimization",
     "eventPool": [
       "product_event_13",
       "product_event_14",
@@ -51,7 +51,7 @@
     "actionId": "product_action_5",
     "category": "product",
     "name": "Add Mobile Support",
-    "description": "Develop or improve mobile experience to reach users on their preferred devices. Consider native apps vs. responsive web.",
+    "description": "Perform add mobile support",
     "eventPool": [
       "product_event_17",
       "product_event_18",
@@ -63,7 +63,7 @@
     "actionId": "product_action_6",
     "category": "product",
     "name": "Implement Analytics",
-    "description": "Implement comprehensive analytics to track user behavior, feature adoption, and business metrics. Enable data-driven decision making.",
+    "description": "Perform implement analytics",
     "eventPool": [
       "product_event_21",
       "product_event_22",
@@ -75,7 +75,7 @@
     "actionId": "product_action_7",
     "category": "product",
     "name": "User Onboarding Flow",
-    "description": "Create an intuitive onboarding experience that helps new users understand value and get started quickly. Reduce time-to-value.",
+    "description": "Perform user onboarding flow",
     "eventPool": [
       "product_event_25",
       "product_event_26",
@@ -87,7 +87,7 @@
     "actionId": "product_action_8",
     "category": "product",
     "name": "A/B Testing Framework",
-    "description": "Launch beta program to gather early feedback from select users. Iterate based on insights before public release.",
+    "description": "Perform a/b testing framework",
     "eventPool": [
       "product_event_29",
       "product_event_30",
@@ -99,7 +99,7 @@
     "actionId": "product_action_9",
     "category": "product",
     "name": "API Development",
-    "description": "Design and build APIs for integrations and internal services. Focus on documentation, versioning, and developer experience.",
+    "description": "Perform api development",
     "eventPool": [
       "product_event_33",
       "product_event_34",
@@ -111,7 +111,7 @@
     "actionId": "product_action_10",
     "category": "product",
     "name": "Accessibility Improvements",
-    "description": "Ensure your product is accessible to users with disabilities. Meet WCAG standards and improve usability for all.",
+    "description": "Perform accessibility improvements",
     "eventPool": [
       "product_event_37",
       "product_event_38",
@@ -123,7 +123,7 @@
     "actionId": "product_action_11",
     "category": "product",
     "name": "Internationalization",
-    "description": "Add multi-language support and adapt product for global markets. Consider cultural differences and localization needs.",
+    "description": "Perform internationalization",
     "eventPool": [
       "product_event_41",
       "product_event_42",
@@ -135,7 +135,7 @@
     "actionId": "product_action_12",
     "category": "product",
     "name": "Product Documentation",
-    "description": "Create comprehensive documentation for users, developers, and internal teams. Improve product adoption and reduce support burden.",
+    "description": "Perform product documentation",
     "eventPool": [
       "product_event_45",
       "product_event_46",
@@ -147,7 +147,7 @@
     "actionId": "product_action_13",
     "category": "product",
     "name": "Beta Testing Program",
-    "description": "Launch beta program to gather early feedback from select users. Iterate based on insights before public release.",
+    "description": "Perform beta testing program",
     "eventPool": [
       "product_event_49",
       "product_event_50",
@@ -159,7 +159,7 @@
     "actionId": "product_action_14",
     "category": "product",
     "name": "Feature Flags System",
-    "description": "Design and develop a new product feature that addresses user needs and market opportunities. Requires careful planning, user research, and iterative development.",
+    "description": "Perform feature flags system",
     "eventPool": [
       "product_event_53",
       "product_event_54",
@@ -171,7 +171,7 @@
     "actionId": "marketing_action_1",
     "category": "marketing",
     "name": "Social Media Campaign",
-    "description": "Launch coordinated social media campaigns across platforms to increase brand awareness and engage with your audience.",
+    "description": "Perform social media campaign",
     "eventPool": [
       "marketing_event_1",
       "marketing_event_2",
@@ -183,7 +183,7 @@
     "actionId": "marketing_action_2",
     "category": "marketing",
     "name": "Influencer Partnership",
-    "description": "Partner with influencers and creators to authentically reach new audiences and build trust.",
+    "description": "Perform influencer partnership",
     "eventPool": [
       "marketing_event_5",
       "marketing_event_6",
@@ -195,7 +195,7 @@
     "actionId": "marketing_action_3",
     "category": "marketing",
     "name": "Content Marketing",
-    "description": "Create valuable content (blog posts, videos, guides) to attract, educate, and convert your target audience.",
+    "description": "Perform content marketing",
     "eventPool": [
       "marketing_event_9",
       "marketing_event_10",
@@ -207,7 +207,7 @@
     "actionId": "marketing_action_4",
     "category": "marketing",
     "name": "Paid Advertising",
-    "description": "Run targeted paid advertising campaigns on Google, Facebook, LinkedIn, or other platforms to acquire new customers cost-effectively.",
+    "description": "Perform paid advertising",
     "eventPool": [
       "marketing_event_13",
       "marketing_event_14",
@@ -219,7 +219,7 @@
     "actionId": "marketing_action_5",
     "category": "marketing",
     "name": "Email Marketing",
-    "description": "Design and execute email marketing campaigns to nurture leads, retain customers, and drive conversions.",
+    "description": "Perform email marketing",
     "eventPool": [
       "marketing_event_17",
       "marketing_event_18",
@@ -231,7 +231,7 @@
     "actionId": "marketing_action_6",
     "category": "marketing",
     "name": "SEO Optimization",
-    "description": "Optimize website and content for search engines to improve organic visibility and drive qualified traffic.",
+    "description": "Perform seo optimization",
     "eventPool": [
       "marketing_event_21",
       "marketing_event_22",
@@ -243,7 +243,7 @@
     "actionId": "marketing_action_7",
     "category": "marketing",
     "name": "Webinar Series",
-    "description": "Host educational webinars to establish thought leadership, generate qualified leads, and engage with your audience.",
+    "description": "Perform webinar series",
     "eventPool": [
       "marketing_event_25",
       "marketing_event_26",
@@ -255,7 +255,7 @@
     "actionId": "marketing_action_8",
     "category": "marketing",
     "name": "Community Building",
-    "description": "Build and nurture an active community around your product through forums, Discord, Slack, or social platforms.",
+    "description": "Perform community building",
     "eventPool": [
       "marketing_event_29",
       "marketing_event_30",
@@ -267,7 +267,7 @@
     "actionId": "marketing_action_9",
     "category": "marketing",
     "name": "Referral Program",
-    "description": "Create an incentive program that rewards users for bringing in new customers. Leverage word-of-mouth growth.",
+    "description": "Perform referral program",
     "eventPool": [
       "marketing_event_33",
       "marketing_event_34",
@@ -279,7 +279,7 @@
     "actionId": "marketing_action_10",
     "category": "marketing",
     "name": "PR Campaign",
-    "description": "Work with media outlets, bloggers, and influencers to get press coverage and increase brand visibility.",
+    "description": "Perform pr campaign",
     "eventPool": [
       "marketing_event_37",
       "marketing_event_38",
@@ -291,7 +291,7 @@
     "actionId": "marketing_action_11",
     "category": "marketing",
     "name": "Trade Show Participation",
-    "description": "Exhibit at industry conferences and trade shows to network, showcase your product, and generate leads.",
+    "description": "Perform trade show participation",
     "eventPool": [
       "marketing_event_41",
       "marketing_event_42",
@@ -303,7 +303,7 @@
     "actionId": "marketing_action_12",
     "category": "marketing",
     "name": "Partnership Marketing",
-    "description": "Execute marketing initiatives to increase brand awareness, acquire customers, and drive growth.",
+    "description": "Perform partnership marketing",
     "eventPool": [
       "marketing_event_45",
       "marketing_event_46",
@@ -315,7 +315,7 @@
     "actionId": "marketing_action_13",
     "category": "marketing",
     "name": "Video Marketing",
-    "description": "Produce engaging video content for YouTube, TikTok, or other platforms to educate, entertain, and convert viewers.",
+    "description": "Perform video marketing",
     "eventPool": [
       "marketing_event_49",
       "marketing_event_50",
@@ -327,7 +327,7 @@
     "actionId": "marketing_action_14",
     "category": "marketing",
     "name": "Podcast Sponsorship",
-    "description": "Execute marketing initiatives to increase brand awareness, acquire customers, and drive growth.",
+    "description": "Perform podcast sponsorship",
     "eventPool": [
       "marketing_event_53",
       "marketing_event_54",
@@ -339,7 +339,7 @@
     "actionId": "tech_action_1",
     "category": "tech",
     "name": "Upgrade Infrastructure",
-    "description": "Scale infrastructure to handle increased traffic, improve reliability, and reduce costs. Plan for future growth.",
+    "description": "Perform upgrade infrastructure",
     "eventPool": [
       "tech_event_1",
       "tech_event_2",
@@ -351,7 +351,7 @@
     "actionId": "tech_action_2",
     "category": "tech",
     "name": "Security Audit",
-    "description": "Conduct security audits and implement measures to protect user data and prevent breaches. Critical for trust and compliance.",
+    "description": "Perform security audit",
     "eventPool": [
       "tech_event_5",
       "tech_event_6",
@@ -363,7 +363,7 @@
     "actionId": "tech_action_3",
     "category": "tech",
     "name": "Implement CI/CD",
-    "description": "Set up continuous integration and deployment pipelines for faster, safer releases. Automate testing and deployment.",
+    "description": "Perform implement ci/cd",
     "eventPool": [
       "tech_event_9",
       "tech_event_10",
@@ -375,7 +375,7 @@
     "actionId": "tech_action_4",
     "category": "tech",
     "name": "Database Optimization",
-    "description": "Optimize database performance through better schema design, indexing, and query optimization. Improve response times.",
+    "description": "Perform database optimization",
     "eventPool": [
       "tech_event_13",
       "tech_event_14",
@@ -387,7 +387,7 @@
     "actionId": "tech_action_5",
     "category": "tech",
     "name": "API Rate Limiting",
-    "description": "Improve technical infrastructure and systems to support growth, reliability, and performance.",
+    "description": "Perform api rate limiting",
     "eventPool": [
       "tech_event_17",
       "tech_event_18",
@@ -399,7 +399,7 @@
     "actionId": "tech_action_6",
     "category": "tech",
     "name": "Monitoring System",
-    "description": "Set up comprehensive monitoring and alerting for infrastructure and applications. Catch issues before users notice.",
+    "description": "Perform monitoring system",
     "eventPool": [
       "tech_event_21",
       "tech_event_22",
@@ -411,7 +411,7 @@
     "actionId": "tech_action_7",
     "category": "tech",
     "name": "Load Testing",
-    "description": "Perform load testing to identify bottlenecks and ensure system can handle peak traffic. Prevent outages.",
+    "description": "Perform load testing",
     "eventPool": [
       "tech_event_25",
       "tech_event_26",
@@ -423,7 +423,7 @@
     "actionId": "tech_action_8",
     "category": "tech",
     "name": "Backup System",
-    "description": "Implement automated backup and disaster recovery systems to protect critical data. Ensure business continuity.",
+    "description": "Perform backup system",
     "eventPool": [
       "tech_event_29",
       "tech_event_30",
@@ -435,7 +435,7 @@
     "actionId": "tech_action_9",
     "category": "tech",
     "name": "Code Review Process",
-    "description": "Establish code review practices to maintain quality, share knowledge, and catch bugs early.",
+    "description": "Perform code review process",
     "eventPool": [
       "tech_event_33",
       "tech_event_34",
@@ -447,7 +447,7 @@
     "actionId": "tech_action_10",
     "category": "tech",
     "name": "Automated Testing",
-    "description": "Perform load testing to identify bottlenecks and ensure system can handle peak traffic. Prevent outages.",
+    "description": "Perform automated testing",
     "eventPool": [
       "tech_event_37",
       "tech_event_38",
@@ -459,7 +459,7 @@
     "actionId": "tech_action_11",
     "category": "tech",
     "name": "Cloud Migration",
-    "description": "Migrate infrastructure to cloud for better scalability, cost efficiency, and reliability. Modernize tech stack.",
+    "description": "Perform cloud migration",
     "eventPool": [
       "tech_event_41",
       "tech_event_42",
@@ -471,7 +471,7 @@
     "actionId": "tech_action_12",
     "category": "tech",
     "name": "Microservices Architecture",
-    "description": "Refactor monolithic architecture into microservices for better scalability and team autonomy.",
+    "description": "Perform microservices architecture",
     "eventPool": [
       "tech_event_45",
       "tech_event_46",
@@ -483,7 +483,7 @@
     "actionId": "tech_action_13",
     "category": "tech",
     "name": "Container Orchestration",
-    "description": "Set up container orchestration to manage containerized applications efficiently. Improve deployment and scaling.",
+    "description": "Perform container orchestration",
     "eventPool": [
       "tech_event_49",
       "tech_event_50",
@@ -495,7 +495,7 @@
     "actionId": "tech_action_14",
     "category": "tech",
     "name": "Service Mesh",
-    "description": "Implement service mesh for better service-to-service communication, security, and observability.",
+    "description": "Perform service mesh",
     "eventPool": [
       "tech_event_53",
       "tech_event_54",
@@ -507,7 +507,7 @@
     "actionId": "business_action_1",
     "category": "business_dev",
     "name": "Strategic Partnership",
-    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "description": "Perform strategic partnership",
     "eventPool": [
       "business_event_1",
       "business_event_2",
@@ -519,7 +519,7 @@
     "actionId": "business_action_2",
     "category": "business_dev",
     "name": "Pitch to Investors",
-    "description": "Prepare and deliver compelling pitches to potential investors. Secure funding to fuel growth.",
+    "description": "Perform pitch to investors",
     "eventPool": [
       "business_event_5",
       "business_event_6",
@@ -531,7 +531,7 @@
     "actionId": "business_action_3",
     "category": "business_dev",
     "name": "Customer Discovery",
-    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "description": "Perform customer discovery",
     "eventPool": [
       "business_event_9",
       "business_event_10",
@@ -543,7 +543,7 @@
     "actionId": "business_action_4",
     "category": "business_dev",
     "name": "B2B Sales Outreach",
-    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "description": "Perform b2b sales outreach",
     "eventPool": [
       "business_event_13",
       "business_event_14",
@@ -555,7 +555,7 @@
     "actionId": "business_action_5",
     "category": "business_dev",
     "name": "Channel Partnerships",
-    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "description": "Perform channel partnerships",
     "eventPool": [
       "business_event_17",
       "business_event_18",
@@ -567,7 +567,7 @@
     "actionId": "business_action_6",
     "category": "business_dev",
     "name": "Enterprise Sales",
-    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "description": "Perform enterprise sales",
     "eventPool": [
       "business_event_21",
       "business_event_22",
@@ -579,7 +579,7 @@
     "actionId": "business_action_7",
     "category": "business_dev",
     "name": "Strategic Alliances",
-    "description": "Develop long-term strategic plans and set company goals. Align team around shared objectives.",
+    "description": "Perform strategic alliances",
     "eventPool": [
       "business_event_25",
       "business_event_26",
@@ -591,7 +591,7 @@
     "actionId": "business_action_8",
     "category": "business_dev",
     "name": "Investor Relations",
-    "description": "Prepare and deliver compelling pitches to potential investors. Secure funding to fuel growth.",
+    "description": "Perform investor relations",
     "eventPool": [
       "business_event_29",
       "business_event_30",
@@ -603,7 +603,7 @@
     "actionId": "business_action_9",
     "category": "business_dev",
     "name": "Customer Success Program",
-    "description": "Implement customer success programs to reduce churn, increase expansion revenue, and build strong relationships.",
+    "description": "Perform customer success program",
     "eventPool": [
       "business_event_33",
       "business_event_34",
@@ -615,7 +615,7 @@
     "actionId": "business_action_10",
     "category": "business_dev",
     "name": "Sales Team Building",
-    "description": "Develop and execute sales strategy to acquire enterprise customers and drive revenue growth.",
+    "description": "Perform sales team building",
     "eventPool": [
       "business_event_37",
       "business_event_38",
@@ -627,20 +627,19 @@
     "actionId": "business_action_11",
     "category": "business_dev",
     "name": "Market Expansion",
-    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "description": "Perform market expansion",
     "eventPool": [
       "business_event_41",
       "business_event_42",
       "business_event_43",
       "business_event_44"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "business_action_12",
     "category": "business_dev",
     "name": "Distribution Partnerships",
-    "description": "Identify and develop strategic partnerships that can accelerate growth, expand reach, or add value to your product.",
+    "description": "Perform distribution partnerships",
     "eventPool": [
       "business_event_45",
       "business_event_46",
@@ -652,20 +651,19 @@
     "actionId": "business_action_13",
     "category": "business_dev",
     "name": "Strategic Acquisition",
-    "description": "Develop long-term strategic plans and set company goals. Align team around shared objectives.",
+    "description": "Perform strategic acquisition",
     "eventPool": [
       "business_event_49",
       "business_event_50",
       "business_event_51",
       "business_event_52"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "business_action_14",
     "category": "business_dev",
     "name": "Joint Ventures",
-    "description": "Develop business relationships and strategies to drive growth, partnerships, and market expansion.",
+    "description": "Perform joint ventures",
     "eventPool": [
       "business_event_53",
       "business_event_54",
@@ -677,7 +675,7 @@
     "actionId": "operations_action_1",
     "category": "operations",
     "name": "Hire Developer",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform hire developer",
     "eventPool": [
       "operations_event_1",
       "operations_event_2",
@@ -689,7 +687,7 @@
     "actionId": "operations_action_2",
     "category": "operations",
     "name": "Hire Marketer",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform hire marketer",
     "eventPool": [
       "operations_event_5",
       "operations_event_6",
@@ -701,7 +699,7 @@
     "actionId": "operations_action_3",
     "category": "operations",
     "name": "Improve Processes",
-    "description": "Streamline internal processes to improve efficiency, reduce waste, and enable team to focus on high-value work.",
+    "description": "Perform improve processes",
     "eventPool": [
       "operations_event_9",
       "operations_event_10",
@@ -713,7 +711,7 @@
     "actionId": "operations_action_4",
     "category": "operations",
     "name": "Team Building",
-    "description": "Organize team building activities and improve collaboration. Boost morale and productivity.",
+    "description": "Perform team building",
     "eventPool": [
       "operations_event_13",
       "operations_event_14",
@@ -725,7 +723,7 @@
     "actionId": "operations_action_5",
     "category": "operations",
     "name": "Office Setup",
-    "description": "Set up physical or remote office infrastructure for your team. Create productive work environment.",
+    "description": "Perform office setup",
     "eventPool": [
       "operations_event_17",
       "operations_event_18",
@@ -737,7 +735,7 @@
     "actionId": "operations_action_6",
     "category": "operations",
     "name": "Remote Work Infrastructure",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform remote work infrastructure",
     "eventPool": [
       "operations_event_21",
       "operations_event_22",
@@ -749,7 +747,7 @@
     "actionId": "operations_action_7",
     "category": "operations",
     "name": "HR Policies",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform hr policies",
     "eventPool": [
       "operations_event_25",
       "operations_event_26",
@@ -761,7 +759,7 @@
     "actionId": "operations_action_8",
     "category": "operations",
     "name": "Employee Training",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform employee training",
     "eventPool": [
       "operations_event_29",
       "operations_event_30",
@@ -773,7 +771,7 @@
     "actionId": "operations_action_9",
     "category": "operations",
     "name": "Vendor Management",
-    "description": "Evaluate and manage relationships with vendors and service providers. Optimize costs and quality.",
+    "description": "Perform vendor management",
     "eventPool": [
       "operations_event_33",
       "operations_event_34",
@@ -785,7 +783,7 @@
     "actionId": "operations_action_10",
     "category": "operations",
     "name": "Supply Chain Optimization",
-    "description": "Streamline internal processes to improve efficiency, reduce waste, and enable team to focus on high-value work.",
+    "description": "Perform supply chain optimization",
     "eventPool": [
       "operations_event_37",
       "operations_event_38",
@@ -797,7 +795,7 @@
     "actionId": "operations_action_11",
     "category": "operations",
     "name": "Quality Assurance",
-    "description": "Improve operational efficiency and build systems to support sustainable growth.",
+    "description": "Perform quality assurance",
     "eventPool": [
       "operations_event_41",
       "operations_event_42",
@@ -809,7 +807,7 @@
     "actionId": "operations_action_12",
     "category": "operations",
     "name": "Customer Support",
-    "description": "Set up or improve customer support systems to handle user inquiries effectively. Build customer satisfaction.",
+    "description": "Perform customer support",
     "eventPool": [
       "operations_event_45",
       "operations_event_46",
@@ -821,7 +819,7 @@
     "actionId": "operations_action_13",
     "category": "operations",
     "name": "Legal Compliance",
-    "description": "Ensure compliance with regulations like GDPR, CCPA, or industry-specific requirements. Avoid legal issues.",
+    "description": "Perform legal compliance",
     "eventPool": [
       "operations_event_49",
       "operations_event_50",
@@ -833,7 +831,7 @@
     "actionId": "operations_action_14",
     "category": "operations",
     "name": "Risk Management",
-    "description": "Identify and mitigate operational risks that could impact the business. Build resilience.",
+    "description": "Perform risk management",
     "eventPool": [
       "operations_event_53",
       "operations_event_54",
@@ -845,7 +843,7 @@
     "actionId": "finance_action_1",
     "category": "finance",
     "name": "Budget Review",
-    "description": "Review and adjust budgets to optimize spending and ensure financial health. Make data-driven decisions.",
+    "description": "Perform budget review",
     "eventPool": [
       "finance_event_1",
       "finance_event_2",
@@ -857,7 +855,7 @@
     "actionId": "finance_action_2",
     "category": "finance",
     "name": "Cost Cutting",
-    "description": "Identify and eliminate unnecessary expenses to improve profitability. Balance cost reduction with growth needs.",
+    "description": "Perform cost cutting",
     "eventPool": [
       "finance_event_5",
       "finance_event_6",
@@ -869,7 +867,7 @@
     "actionId": "finance_action_3",
     "category": "finance",
     "name": "Pricing Strategy",
-    "description": "Analyze market and develop pricing models to maximize revenue while remaining competitive.",
+    "description": "Perform pricing strategy",
     "eventPool": [
       "finance_event_9",
       "finance_event_10",
@@ -881,7 +879,7 @@
     "actionId": "finance_action_4",
     "category": "finance",
     "name": "Revenue Optimization",
-    "description": "Identify opportunities to increase revenue through upselling, new revenue streams, or optimization.",
+    "description": "Perform revenue optimization",
     "eventPool": [
       "finance_event_13",
       "finance_event_14",
@@ -893,7 +891,7 @@
     "actionId": "finance_action_5",
     "category": "finance",
     "name": "Financial Planning",
-    "description": "Create financial forecasts and plan for future funding needs. Ensure adequate runway.",
+    "description": "Perform financial planning",
     "eventPool": [
       "finance_event_17",
       "finance_event_18",
@@ -905,7 +903,7 @@
     "actionId": "finance_action_6",
     "category": "finance",
     "name": "Tax Optimization",
-    "description": "Work with accountants to optimize tax strategy and ensure compliance. Minimize tax burden legally.",
+    "description": "Perform tax optimization",
     "eventPool": [
       "finance_event_21",
       "finance_event_22",
@@ -917,7 +915,7 @@
     "actionId": "finance_action_7",
     "category": "finance",
     "name": "Invoice Management",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform invoice management",
     "eventPool": [
       "finance_event_25",
       "finance_event_26",
@@ -929,7 +927,7 @@
     "actionId": "finance_action_8",
     "category": "finance",
     "name": "Expense Tracking",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform expense tracking",
     "eventPool": [
       "finance_event_29",
       "finance_event_30",
@@ -941,7 +939,7 @@
     "actionId": "finance_action_9",
     "category": "finance",
     "name": "Financial Reporting",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform financial reporting",
     "eventPool": [
       "finance_event_33",
       "finance_event_34",
@@ -953,7 +951,7 @@
     "actionId": "finance_action_10",
     "category": "finance",
     "name": "Cash Flow Management",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform cash flow management",
     "eventPool": [
       "finance_event_37",
       "finance_event_38",
@@ -965,7 +963,7 @@
     "actionId": "finance_action_11",
     "category": "finance",
     "name": "Investment Strategy",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform investment strategy",
     "eventPool": [
       "finance_event_41",
       "finance_event_42",
@@ -977,7 +975,7 @@
     "actionId": "finance_action_12",
     "category": "finance",
     "name": "Credit Line",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform credit line",
     "eventPool": [
       "finance_event_45",
       "finance_event_46",
@@ -989,7 +987,7 @@
     "actionId": "finance_action_13",
     "category": "finance",
     "name": "Equity Financing",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform equity financing",
     "eventPool": [
       "finance_event_49",
       "finance_event_50",
@@ -1001,7 +999,7 @@
     "actionId": "finance_action_14",
     "category": "finance",
     "name": "Debt Refinancing",
-    "description": "Manage finances strategically to ensure sustainability, profitability, and growth.",
+    "description": "Perform debt refinancing",
     "eventPool": [
       "finance_event_53",
       "finance_event_54",
@@ -1013,7 +1011,7 @@
     "actionId": "research_action_1",
     "category": "research",
     "name": "Market Research",
-    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "description": "Perform market research",
     "eventPool": [
       "research_event_1",
       "research_event_2",
@@ -1025,7 +1023,7 @@
     "actionId": "research_action_2",
     "category": "research",
     "name": "User Research",
-    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "description": "Perform user research",
     "eventPool": [
       "research_event_5",
       "research_event_6",
@@ -1037,7 +1035,7 @@
     "actionId": "research_action_3",
     "category": "research",
     "name": "Technology Research",
-    "description": "Research new technologies and evaluate their potential for your product. Stay innovative.",
+    "description": "Perform technology research",
     "eventPool": [
       "research_event_9",
       "research_event_10",
@@ -1049,7 +1047,7 @@
     "actionId": "research_action_4",
     "category": "research",
     "name": "Competitive Analysis",
-    "description": "Research competitors to understand their strengths, weaknesses, and strategies. Identify opportunities.",
+    "description": "Perform competitive analysis",
     "eventPool": [
       "research_event_13",
       "research_event_14",
@@ -1061,7 +1059,7 @@
     "actionId": "research_action_5",
     "category": "research",
     "name": "User Interviews",
-    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "description": "Perform user interviews",
     "eventPool": [
       "research_event_17",
       "research_event_18",
@@ -1073,7 +1071,7 @@
     "actionId": "research_action_6",
     "category": "research",
     "name": "Surveys and Polls",
-    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "description": "Perform surveys and polls",
     "eventPool": [
       "research_event_21",
       "research_event_22",
@@ -1085,7 +1083,7 @@
     "actionId": "research_action_7",
     "category": "research",
     "name": "Data Analysis",
-    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "description": "Perform data analysis",
     "eventPool": [
       "research_event_25",
       "research_event_26",
@@ -1097,7 +1095,7 @@
     "actionId": "research_action_8",
     "category": "research",
     "name": "Trend Analysis",
-    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "description": "Perform trend analysis",
     "eventPool": [
       "research_event_29",
       "research_event_30",
@@ -1109,7 +1107,7 @@
     "actionId": "research_action_9",
     "category": "research",
     "name": "Technology Evaluation",
-    "description": "Research new technologies and evaluate their potential for your product. Stay innovative.",
+    "description": "Perform technology evaluation",
     "eventPool": [
       "research_event_33",
       "research_event_34",
@@ -1121,7 +1119,7 @@
     "actionId": "research_action_10",
     "category": "research",
     "name": "Customer Segmentation",
-    "description": "Conduct research to inform strategic decisions and stay competitive in the market.",
+    "description": "Perform customer segmentation",
     "eventPool": [
       "research_event_37",
       "research_event_38",
@@ -1133,7 +1131,7 @@
     "actionId": "research_action_11",
     "category": "research",
     "name": "Market Validation",
-    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "description": "Perform market validation",
     "eventPool": [
       "research_event_41",
       "research_event_42",
@@ -1145,7 +1143,7 @@
     "actionId": "research_action_12",
     "category": "research",
     "name": "Product-Market Fit",
-    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "description": "Perform product-market fit",
     "eventPool": [
       "research_event_45",
       "research_event_46",
@@ -1157,7 +1155,7 @@
     "actionId": "research_action_13",
     "category": "research",
     "name": "User Personas",
-    "description": "Conduct interviews, surveys, and usability tests to understand user needs and pain points.",
+    "description": "Perform user personas",
     "eventPool": [
       "research_event_49",
       "research_event_50",
@@ -1169,7 +1167,7 @@
     "actionId": "research_action_14",
     "category": "research",
     "name": "Market Sizing",
-    "description": "Analyze market trends and opportunities to inform product and business decisions. Stay ahead of competition.",
+    "description": "Perform market sizing",
     "eventPool": [
       "research_event_53",
       "research_event_54",
@@ -1181,182 +1179,168 @@
     "actionId": "high_risk_action_1",
     "category": "high_risk",
     "name": "Rapid Expansion",
-    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "description": "Perform rapid expansion",
     "eventPool": [
       "high_risk_event_1",
       "high_risk_event_2",
       "high_risk_event_3",
       "high_risk_event_4"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_2",
     "category": "high_risk",
     "name": "Major Pivot",
-    "description": "Consider pivoting your product or business model based on market feedback. High risk but potentially high reward.",
+    "description": "Perform major pivot",
     "eventPool": [
       "high_risk_event_5",
       "high_risk_event_6",
       "high_risk_event_7",
       "high_risk_event_8"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_3",
     "category": "high_risk",
     "name": "Acquisition Attempt",
-    "description": "Evaluate and potentially acquire another company or product. Complex and risky but can accelerate growth.",
+    "description": "Perform acquisition attempt",
     "eventPool": [
       "high_risk_event_9",
       "high_risk_event_10",
       "high_risk_event_11",
       "high_risk_event_12"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_4",
     "category": "high_risk",
     "name": "All-In Marketing Blitz",
-    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "description": "Perform all-in marketing blitz",
     "eventPool": [
       "high_risk_event_13",
       "high_risk_event_14",
       "high_risk_event_15",
       "high_risk_event_16"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_5",
     "category": "high_risk",
     "name": "Major Technology Rewrite",
-    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "description": "Perform major technology rewrite",
     "eventPool": [
       "high_risk_event_17",
       "high_risk_event_18",
       "high_risk_event_19",
       "high_risk_event_20"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_6",
     "category": "high_risk",
     "name": "International Expansion",
-    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "description": "Perform international expansion",
     "eventPool": [
       "high_risk_event_21",
       "high_risk_event_22",
       "high_risk_event_23",
       "high_risk_event_24"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_7",
     "category": "high_risk",
     "name": "Competitive Attack",
-    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "description": "Perform competitive attack",
     "eventPool": [
       "high_risk_event_25",
       "high_risk_event_26",
       "high_risk_event_27",
       "high_risk_event_28"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_8",
     "category": "high_risk",
     "name": "High-Stakes Partnership",
-    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "description": "Perform high-stakes partnership",
     "eventPool": [
       "high_risk_event_29",
       "high_risk_event_30",
       "high_risk_event_31",
       "high_risk_event_32"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_9",
     "category": "high_risk",
     "name": "Major Hiring Spree",
-    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "description": "Perform major hiring spree",
     "eventPool": [
       "high_risk_event_33",
       "high_risk_event_34",
       "high_risk_event_35",
       "high_risk_event_36"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_10",
     "category": "high_risk",
     "name": "Product Line Expansion",
-    "description": "Rapidly expand into new markets or launch new products. High risk but can accelerate growth significantly.",
+    "description": "Perform product line expansion",
     "eventPool": [
       "high_risk_event_37",
       "high_risk_event_38",
       "high_risk_event_39",
       "high_risk_event_40"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_11",
     "category": "high_risk",
     "name": "Market Disruption",
-    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "description": "Perform market disruption",
     "eventPool": [
       "high_risk_event_41",
       "high_risk_event_42",
       "high_risk_event_43",
       "high_risk_event_44"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_12",
     "category": "high_risk",
     "name": "Regulatory Challenge",
-    "description": "Navigate complex regulatory requirements or legal challenges. Expensive but necessary for compliance.",
+    "description": "Perform regulatory challenge",
     "eventPool": [
       "high_risk_event_45",
       "high_risk_event_46",
       "high_risk_event_47",
       "high_risk_event_48"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_13",
     "category": "high_risk",
     "name": "Major Investment",
-    "description": "Make a significant investment in infrastructure, marketing, or talent. High cost but potential for major impact.",
+    "description": "Perform major investment",
     "eventPool": [
       "high_risk_event_49",
       "high_risk_event_50",
       "high_risk_event_51",
       "high_risk_event_52"
-    ],
-    "weight": 2
+    ]
   },
   {
     "actionId": "high_risk_action_14",
     "category": "high_risk",
     "name": "Strategic Bet",
-    "description": "Take calculated risks to accelerate growth or overcome major challenges. High potential reward but significant risk.",
+    "description": "Perform strategic bet",
     "eventPool": [
       "high_risk_event_53",
       "high_risk_event_54",
       "high_risk_event_55",
       "high_risk_event_56"
-    ],
-    "weight": 2
+    ]
   }
 ]

@@ -1,0 +1,462 @@
+[
+  {
+    "anomalyId": "anomaly_1",
+    "name": "Surprise Enterprise Client",
+    "description": "An unexpected event: surprise enterprise client",
+    "effects": {
+      "cash": 50000,
+      "users": 200,
+      "hype": 20,
+      "xp": 100
+    },
+    "triggers": [
+      "business_dev",
+      "marketing"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_2",
+    "name": "Infrastructure Breakdown",
+    "description": "An unexpected event: infrastructure breakdown",
+    "effects": {
+      "cash": -5000,
+      "users": -150,
+      "quality": -15,
+      "hype": -25,
+      "xp": 10
+    },
+    "triggers": [
+      "tech",
+      "operations"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_3",
+    "name": "Market Crash",
+    "description": "An unexpected event: market crash",
+    "effects": {
+      "cash": -10000,
+      "users": -100,
+      "hype": -20,
+      "xp": 5
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_4",
+    "name": "Viral Moment",
+    "description": "An unexpected event: viral moment",
+    "effects": {
+      "cash": -2000,
+      "users": 1000,
+      "hype": 50,
+      "xp": 150
+    },
+    "triggers": [
+      "marketing",
+      "product"
+    ],
+    "flags": [
+      "viral_moment"
+    ]
+  },
+  {
+    "anomalyId": "anomaly_5",
+    "name": "Key Employee Leaves",
+    "description": "An unexpected event: key employee leaves",
+    "effects": {
+      "cash": -3000,
+      "quality": -10,
+      "hype": -10,
+      "xp": 5
+    },
+    "triggers": [
+      "operations"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_6",
+    "name": "Competitor Launch",
+    "description": "An unexpected event: competitor launch",
+    "effects": {
+      "cash": -2000,
+      "users": -200,
+      "hype": -15,
+      "xp": 8
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_7",
+    "name": "Investor Interest",
+    "description": "An unexpected event: investor interest",
+    "effects": {
+      "cash": 30000,
+      "hype": 30,
+      "xp": 80
+    },
+    "triggers": [
+      "business_dev",
+      "finance"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_8",
+    "name": "Regulatory Change",
+    "description": "An unexpected event: regulatory change",
+    "effects": {
+      "cash": -8000,
+      "quality": -5,
+      "xp": 15
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_9",
+    "name": "Major Media Coverage",
+    "description": "An unexpected event: major media coverage",
+    "effects": {
+      "cash": -1000,
+      "users": 400,
+      "hype": 35,
+      "xp": 90
+    },
+    "triggers": [
+      "marketing",
+      "business_dev"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_10",
+    "name": "Data Breach Attempt",
+    "description": "An unexpected event: data breach attempt",
+    "effects": {
+      "cash": -6000,
+      "users": -180,
+      "quality": -20,
+      "hype": -30,
+      "xp": 10
+    },
+    "triggers": [
+      "tech"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_11",
+    "name": "Partnership Opportunity",
+    "description": "An unexpected event: partnership opportunity",
+    "effects": {
+      "cash": -2000,
+      "users": 300,
+      "hype": 25,
+      "xp": 70
+    },
+    "triggers": [
+      "business_dev"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_12",
+    "name": "Product Recall",
+    "description": "An unexpected event: product recall",
+    "effects": {
+      "cash": -12000,
+      "users": -250,
+      "quality": -25,
+      "hype": -35,
+      "xp": 12
+    },
+    "triggers": [
+      "product",
+      "tech"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_13",
+    "name": "Talent Acquisition",
+    "description": "An unexpected event: talent acquisition",
+    "effects": {
+      "cash": -5000,
+      "quality": 20,
+      "hype": 15,
+      "xp": 60
+    },
+    "triggers": [
+      "operations"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_14",
+    "name": "Patent Filing",
+    "description": "An unexpected event: patent filing",
+    "effects": {
+      "cash": -3000,
+      "hype": 20,
+      "xp": 50
+    },
+    "triggers": [
+      "research",
+      "product"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_15",
+    "name": "Acquisition Offer",
+    "description": "An unexpected event: acquisition offer",
+    "effects": {
+      "cash": 100000,
+      "hype": 40,
+      "xp": 200
+    },
+    "triggers": [
+      "business_dev"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_16",
+    "name": "Unexpected Windfall",
+    "description": "An unexpected event: unexpected windfall",
+    "effects": {
+      "cash": 25000,
+      "xp": 50
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_17",
+    "name": "Server Outage",
+    "description": "An unexpected event: server outage",
+    "effects": {
+      "cash": -4000,
+      "users": -120,
+      "quality": -10,
+      "hype": -20,
+      "xp": 8
+    },
+    "triggers": [
+      "tech"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_18",
+    "name": "Celebrity Endorsement",
+    "description": "An unexpected event: celebrity endorsement",
+    "effects": {
+      "cash": -5000,
+      "users": 600,
+      "hype": 45,
+      "xp": 100
+    },
+    "triggers": [
+      "marketing"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_19",
+    "name": "Supply Chain Disruption",
+    "description": "An unexpected event: supply chain disruption",
+    "effects": {
+      "cash": -7000,
+      "quality": -8,
+      "xp": 12
+    },
+    "triggers": [
+      "operations"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_20",
+    "name": "Market Expansion Opportunity",
+    "description": "An unexpected event: market expansion opportunity",
+    "effects": {
+      "cash": -3000,
+      "users": 250,
+      "hype": 20,
+      "xp": 70
+    },
+    "triggers": [
+      "business_dev"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_21",
+    "name": "Technology Breakthrough",
+    "description": "An unexpected event: technology breakthrough",
+    "effects": {
+      "cash": -2000,
+      "quality": 25,
+      "hype": 30,
+      "xp": 80
+    },
+    "triggers": [
+      "tech",
+      "research"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_22",
+    "name": "Customer Success Story",
+    "description": "An unexpected event: customer success story",
+    "effects": {
+      "cash": -500,
+      "users": 150,
+      "hype": 15,
+      "xp": 40
+    },
+    "triggers": [
+      "marketing"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_23",
+    "name": "Competitive Threat",
+    "description": "An unexpected event: competitive threat",
+    "effects": {
+      "cash": -3000,
+      "users": -150,
+      "hype": -18,
+      "xp": 10
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_24",
+    "name": "Industry Award",
+    "description": "An unexpected event: industry award",
+    "effects": {
+      "cash": -1000,
+      "hype": 35,
+      "xp": 60
+    },
+    "triggers": [
+      "marketing",
+      "product"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_25",
+    "name": "Economic Downturn",
+    "description": "An unexpected event: economic downturn",
+    "effects": {
+      "cash": -15000,
+      "users": -200,
+      "hype": -25,
+      "xp": 8
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_26",
+    "name": "Strategic Partnership Success",
+    "description": "An unexpected event: strategic partnership success",
+    "effects": {
+      "cash": -1500,
+      "users": 350,
+      "hype": 28,
+      "xp": 75
+    },
+    "triggers": [
+      "business_dev"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_27",
+    "name": "Security Vulnerability Found",
+    "description": "An unexpected event: security vulnerability found",
+    "effects": {
+      "cash": -4000,
+      "quality": -12,
+      "hype": -15,
+      "xp": 8
+    },
+    "triggers": [
+      "tech"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_28",
+    "name": "User Base Explosion",
+    "description": "An unexpected event: user base explosion",
+    "effects": {
+      "cash": -3000,
+      "users": 800,
+      "hype": 40,
+      "xp": 120
+    },
+    "triggers": [
+      "marketing",
+      "product"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_29",
+    "name": "Regulatory Compliance Issue",
+    "description": "An unexpected event: regulatory compliance issue",
+    "effects": {
+      "cash": -10000,
+      "quality": -15,
+      "hype": -20,
+      "xp": 10
+    },
+    "triggers": [],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_30",
+    "name": "Innovation Recognition",
+    "description": "An unexpected event: innovation recognition",
+    "effects": {
+      "cash": -500,
+      "hype": 25,
+      "xp": 55
+    },
+    "triggers": [
+      "product",
+      "research"
+    ],
+    "flags": []
+  },
+  {
+    "anomalyId": "anomaly_31",
+    "name": "Market Leader Endorsement",
+    "description": "An unexpected event: market leader endorsement",
+    "effects": {
+      "cash": -2000,
+      "users": 500,
+      "hype": 38,
+      "xp": 90
+    },
+    "triggers": [
+      "business_dev",
+      "marketing"
+    ],
+    "flags": []
+  }
+]

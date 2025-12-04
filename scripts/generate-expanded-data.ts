@@ -489,7 +489,7 @@ function generateExpandedActions(): any[] {
   return allActions;
 }
 
-// Generate expanded events (40+ per category)
+// Generate expanded events (60+ per category to cover all action references)
 function generateExpandedEvents(): any[] {
   const allEvents: any[] = [];
   
@@ -497,10 +497,12 @@ function generateExpandedEvents(): any[] {
     const prefix = category === 'business_dev' ? 'business' : category;
     const templates = eventTemplates[category] || [];
     
-    // Generate 40 events per category
-    for (let i = 0; i < 40; i++) {
+    // Generate 60 events per category (actions.json references up to event_56)
+    for (let i = 0; i < 60; i++) {
       const eventId = `${prefix}_event_${i + 1}`;
-      const eventName = templates[i] || `${category} Event ${i + 1}`;
+      // Cycle through templates if we need more than available
+      const templateIndex = i % templates.length;
+      const eventName = templates[templateIndex] || `${category} Event ${i + 1}`;
       allEvents.push(generateEvent(category, eventId, eventName));
     }
   });
