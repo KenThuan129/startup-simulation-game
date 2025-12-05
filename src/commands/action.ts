@@ -54,7 +54,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
           .setStyle(ButtonStyle.Secondary)
       );
 
-      const row = new ActionRowBuilder().addComponents(choiceButtons);
+      const row = new ActionRowBuilder<ButtonBuilder>().addComponents(choiceButtons);
 
       return interaction.reply({
         embeds: [embed],
