@@ -146,10 +146,19 @@ client.on('interactionCreate', async interaction => {
     }
     
     if (customId.startsWith('skill_upgrade_')) {
-      // Handle skill upgrade button (format: skill_upgrade_<companyId>_<skillId>)
-      const parts = customId.replace('skill_upgrade_', '').split('_');
-      const companyId = parts.slice(0, -1).join('_'); // Everything except last part
-      const skillId = parts[parts.length - 1]; // Last part is skillId
+      // Handle skill upgrade button (format: skill_upgrade_<companyId>__<skillId>)
+      // Using double underscore as separator since skillIds contain single underscores
+      const withoutPrefix = customId.replace('skill_upgrade_', '');
+      const separatorIndex = withoutPrefix.indexOf('__');
+      if (separatorIndex === -1) {
+        console.error(`[Skill Upgrade] Invalid customId format: ${customId}`);
+        return interaction.reply({
+          embeds: [EmbedUtils.createErrorEmbed('Invalid button format. Please try again.')],
+          ephemeral: true,
+        });
+      }
+      const companyId = withoutPrefix.substring(0, separatorIndex);
+      const skillId = withoutPrefix.substring(separatorIndex + 2); // +2 to skip '__'
       const { handleSkillUpgrade } = await import('./commands/skill-tree');
       await handleSkillUpgrade(interaction, companyId, skillId);
       return;

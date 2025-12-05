@@ -773,7 +773,7 @@ export async function handleCategorySelection(interaction: any, companyId: strin
       // Create button for each skill (only if upgradeable)
       if (canUpgrade) {
         const button = new ButtonBuilder()
-          .setCustomId(`skill_upgrade_${companyId}_${skill.skillId}`)
+          .setCustomId(`skill_upgrade_${companyId}__${skill.skillId}`)
           .setLabel(`${skill.name.substring(0, 20)} (Lv ${currentLevel}→${currentLevel + 1})`)
           .setStyle(ButtonStyle.Success)
           .setDisabled(false);
