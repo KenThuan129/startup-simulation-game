@@ -1,4 +1,4 @@
-import { ChatInputCommandInteraction, SlashCommandBuilder } from 'discord.js';
+import { ChatInputCommandInteraction, SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder } from 'discord.js';
 import { DatabaseQueries } from '../db/queries';
 import { ActionSystem } from '../game/actions/action-system';
 import { EmbedUtils } from '../utils/embeds';
@@ -109,7 +109,6 @@ export async function execute(interaction: ChatInputCommandInteraction) {
     // Check if there are pending events from previous day - show them first
     if (updatedCompany.pendingEvents.length > 0) {
       const { EventDataLoader } = await import('../game/data/event-loader');
-      const { ButtonBuilder, ButtonStyle, ActionRowBuilder } = await import('discord.js');
       
       const firstEvent = updatedCompany.pendingEvents[0];
       const eventData = EventDataLoader.getEvent(firstEvent.eventId);
