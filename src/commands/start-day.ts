@@ -86,7 +86,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       ? updatedCompany.inBreakUntil
       : null;
 
-    // Update company
+    // Update company with new daily actions
     updatedCompany = await DatabaseQueries.updateCompany(updatedCompany.companyId, {
       dailyActions,
       actionPointsRemaining,
@@ -106,7 +106,37 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       });
     }
 
-    // Cleaner UI - just show day started message
+    // Check if there are pending events from previous day - show them first
+    if (updatedCompany.pendingEvents.length > 0) {
+      const { EventDataLoader } = await import('../game/data/event-loader');
+      const { ButtonBuilder, ButtonStyle, ActionRowBuilder } = await import('discord.js');
+      
+      const firstEvent = updatedCompany.pendingEvents[0];
+      const eventData = EventDataLoader.getEvent(firstEvent.eventId);
+      
+      const embed = EmbedUtils.createEventEmbed({
+        name: eventData?.name || firstEvent.eventId,
+        description: eventData?.description || 'Event from previous day',
+        choices: firstEvent.choices,
+      });
+
+      const choiceButtons = firstEvent.choices.map((choice: any, index: number) =>
+        new ButtonBuilder()
+          .setCustomId(`choice_select_${firstEvent.eventId}__${choice.choiceId}`)
+          .setLabel(choice.label || `Option ${String.fromCharCode(65 + index)}`)
+          .setStyle(ButtonStyle.Secondary)
+      );
+
+      const row = new ActionRowBuilder().addComponents(choiceButtons);
+
+      return interaction.reply({
+        embeds: [embed],
+        content: `**📋 Day ${updatedCompany.day} Started!**\n\n**Pending Event from Day ${updatedCompany.day - 1}** - Choose an outcome to continue:`,
+        components: [row],
+      });
+    }
+
+    // No pending events - show normal day start message
     const embed = EmbedUtils.createSuccessEmbed(`Day ${updatedCompany.day} has begun!`);
     let description = `You have **${actionPointsRemaining} action points** remaining.\n\n`;
     

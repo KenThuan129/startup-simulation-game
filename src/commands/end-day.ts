@@ -5,8 +5,6 @@ import { CompanyState } from '../game/state/company-state';
 import { EmbedUtils } from '../utils/embeds';
 import { gameConfig } from '../config/bot.config';
 import { BossSystem } from '../game/systems/boss-system';
-import { AnomalySystem } from '../game/systems/anomaly-system';
-import { EventDataLoader } from '../game/data/event-loader';
 
 export const data = new SlashCommandBuilder()
   .setName('end-day')
@@ -33,54 +31,15 @@ export async function execute(interaction: ChatInputCommandInteraction) {
 
     // Check if there are pending events
     // Allow ending day if action points are 0 (player exhausted all actions)
+    // Pending events will be carried over to the next day
     if (company.pendingEvents.length > 0 && company.actionPointsRemaining > 0) {
       return interaction.editReply({
         embeds: [EmbedUtils.createErrorEmbed('You have pending events! Use /choose to resolve them first.')],
       });
     }
 
-    // Auto-resolve any remaining pending events if action points are 0
-    // (Player exhausted actions but didn't resolve all events)
-    const autoResolvedEventsList: Array<{
-      eventName: string;
-      choiceLabel: string;
-      choiceText: string;
-      outcomeType: string;
-    }> = [];
-    
-    if (company.pendingEvents.length > 0 && company.actionPointsRemaining === 0) {
-      // Auto-resolve by applying the first choice of each pending event
-      for (const event of company.pendingEvents) {
-        if (event.choices.length > 0) {
-          const defaultChoice = event.choices[0]; // Use first choice as default
-          
-          // Get event data for display
-          const eventData = EventDataLoader.getEvent(event.eventId);
-          const eventName = eventData?.name || event.eventId;
-          
-          // Track auto-resolved event details
-          autoResolvedEventsList.push({
-            eventName,
-            choiceLabel: defaultChoice.label || 'Option A',
-            choiceText: defaultChoice.text,
-            outcomeType: defaultChoice.type,
-          });
-          
-          company = CompanyState.applyOutcome(company, defaultChoice.effects);
-          
-          // Check for anomalies
-          const anomaly = await AnomalySystem.generateAnomaly(
-            company,
-            defaultChoice.effects.flags
-          );
-          if (anomaly) {
-            company = await AnomalySystem.applyAnomaly(company, anomaly);
-          }
-        }
-      }
-      // Clear all pending events
-      company.pendingEvents = [];
-    }
+    // Note: Pending events are now carried over to the next day instead of auto-resolving
+    // They will be shown first when starting the next day
 
     // Process daily tick
     let updatedCompany = await DailyTickSystem.processDailyTick(company);
@@ -108,6 +67,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       dailyActions: [],
       actionPointsRemaining: 0,
       inBreakUntil: breakUntil,
+      // Keep pending events - they will be shown first when starting the next day
     };
 
     // Snapshot stats
@@ -118,7 +78,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       updatedCompany.alive = false; // Win condition - survived 90 days
     }
 
-    // Save company (include pendingEvents if they were auto-resolved)
+    // Save company (keep pendingEvents to carry over to next day)
     await DatabaseQueries.updateCompany(company.companyId, {
       day: updatedCompany.day,
       cash: updatedCompany.cash,
@@ -128,7 +88,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       virality: updatedCompany.virality,
       dailyActions: updatedCompany.dailyActions,
       actionPointsRemaining: updatedCompany.actionPointsRemaining,
-      pendingEvents: updatedCompany.pendingEvents, // Should be empty after auto-resolve
+      pendingEvents: updatedCompany.pendingEvents, // Carry over to next day
       statsHistory: updatedCompany.statsHistory,
       alive: updatedCompany.alive,
     });
@@ -136,23 +96,9 @@ export async function execute(interaction: ChatInputCommandInteraction) {
     const embed = EmbedUtils.createCompanyStatsEmbed(updatedCompany);
     let description = `**Day ${company.day} Complete!**\n\n`;
 
-    // Show message if events were auto-resolved
-    if (autoResolvedEventsList.length > 0) {
-      description += `⚠️ **Note:** ${autoResolvedEventsList.length} pending event${autoResolvedEventsList.length > 1 ? 's were' : ' was'} auto-resolved (you ran out of action points).\n\n`;
-      
-      // Display details of auto-resolved events
-      description += `**Auto-Resolved Events:**\n`;
-      for (const resolvedEvent of autoResolvedEventsList) {
-        const outcomeEmoji = {
-          'critical_success': '🎯',
-          'success': '✅',
-          'failure': '❌',
-          'critical_failure': '💥'
-        }[resolvedEvent.outcomeType] || '⚪';
-        
-        description += `${outcomeEmoji} **${resolvedEvent.eventName}** - ${resolvedEvent.choiceLabel}: ${resolvedEvent.choiceText}\n`;
-      }
-      description += `\n`;
+    // Show message if there are pending events to resolve next day
+    if (company.pendingEvents.length > 0) {
+      description += `📋 **Note:** You have ${company.pendingEvents.length} pending event${company.pendingEvents.length > 1 ? 's' : ''} that will be shown first when you start the next day.\n\n`;
     }
 
     if (!updatedCompany.alive) {

@@ -33,6 +33,37 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       });
     }
 
+    // Check if there are pending events that need to be resolved first
+    if (company.pendingEvents.length > 0) {
+      const { EventDataLoader } = await import('../game/data/event-loader');
+      const { ButtonBuilder, ButtonStyle, ActionRowBuilder } = await import('discord.js');
+      
+      const firstEvent = company.pendingEvents[0];
+      const eventData = EventDataLoader.getEvent(firstEvent.eventId);
+      
+      const embed = EmbedUtils.createEventEmbed({
+        name: eventData?.name || firstEvent.eventId,
+        description: eventData?.description || 'Pending event',
+        choices: firstEvent.choices,
+      });
+
+      const choiceButtons = firstEvent.choices.map((choice: any, index: number) =>
+        new ButtonBuilder()
+          .setCustomId(`choice_select_${firstEvent.eventId}__${choice.choiceId}`)
+          .setLabel(choice.label || `Option ${String.fromCharCode(65 + index)}`)
+          .setStyle(ButtonStyle.Secondary)
+      );
+
+      const row = new ActionRowBuilder().addComponents(choiceButtons);
+
+      return interaction.reply({
+        embeds: [embed],
+        content: `**📋 You have ${company.pendingEvents.length} pending event${company.pendingEvents.length > 1 ? 's' : ''} to resolve first!**\n\nChoose an outcome to continue:`,
+        components: [row],
+        ephemeral: true,
+      });
+    }
+
     const actionId = interaction.options.getString('actionid');
 
     // If no actionId provided, show list of available actions with buttons
