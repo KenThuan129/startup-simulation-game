@@ -318,30 +318,82 @@ export async function handleViewCategorySkills(interaction: any, companyId: stri
       for (const tree of trees) {
         const treeSkills = allSkills.filter(s => s.tree === tree);
         let treeText = '';
+        let fieldIndex = 0;
+        const maxFieldLength = 1024;
+        
         for (const skill of treeSkills) {
           const level = company.skills[skill.skillId] || 0;
           const effectsText = formatSkillEffects(skill.effects);
-          treeText += `**${skill.name}** (Lv ${level}/${skill.maxLevel})\n${effectsText}\n\n`;
+          const skillText = `**${skill.name}** (Lv ${level}/${skill.maxLevel})\n${effectsText}\n\n`;
+          
+          // Check if adding this skill would exceed the limit
+          if (treeText.length + skillText.length > maxFieldLength && treeText.length > 0) {
+            // Add current field and start a new one
+            embed.addFields({ 
+              name: fieldIndex === 0 ? `📁 ${tree.toUpperCase()}` : `📁 ${tree.toUpperCase()} (cont.)`, 
+              value: treeText.trim() || 'No skills', 
+              inline: true 
+            });
+            treeText = skillText;
+            fieldIndex++;
+          } else {
+            treeText += skillText;
+          }
         }
-        embed.addFields({ 
-          name: `📁 ${tree.toUpperCase()}`, 
-          value: treeText || 'No skills', 
-          inline: true 
-        });
+        
+        // Add remaining text as final field
+        if (treeText.length > 0) {
+          embed.addFields({ 
+            name: fieldIndex === 0 ? `📁 ${tree.toUpperCase()}` : `📁 ${tree.toUpperCase()} (cont.)`, 
+            value: treeText.trim() || 'No skills', 
+            inline: true 
+          });
+        } else if (treeSkills.length === 0) {
+          embed.addFields({ 
+            name: `📁 ${tree.toUpperCase()}`, 
+            value: 'No skills', 
+            inline: true 
+          });
+        }
       }
     } else {
       // Show skills in selected category
+      // Use fields instead of description to avoid length limits
+      const headerText = `**Skill Points:** ${company.skillPoints}\n**Level:** ${company.level}/50`;
+      embed.setDescription(headerText);
+      
       let categoryText = '';
+      let fieldIndex = 0;
+      const maxFieldLength = 1024;
+      
       for (const skill of categorySkills) {
         const level = company.skills[skill.skillId] || 0;
         const effectsText = formatSkillEffects(skill.effects);
-        categoryText += `**${skill.name}** (Lv ${level}/${skill.maxLevel})\n${effectsText}\n\n`;
+        const skillText = `**${skill.name}** (Lv ${level}/${skill.maxLevel})\n${effectsText}\n\n`;
+        
+        // Check if adding this skill would exceed the limit
+        if (categoryText.length + skillText.length > maxFieldLength && categoryText.length > 0) {
+          // Add current field and start a new one
+          embed.addFields({ 
+            name: fieldIndex === 0 ? `${category.toUpperCase()} Skills` : `${category.toUpperCase()} Skills (cont.)`, 
+            value: categoryText.trim(), 
+            inline: false 
+          });
+          categoryText = skillText;
+          fieldIndex++;
+        } else {
+          categoryText += skillText;
+        }
       }
-      embed.setDescription(
-        `**Skill Points:** ${company.skillPoints}\n` +
-        `**Level:** ${company.level}/50\n\n` +
-        `**${category.toUpperCase()} Skills:**\n\n${categoryText}`
-      );
+      
+      // Add remaining text as final field
+      if (categoryText.length > 0) {
+        embed.addFields({ 
+          name: fieldIndex === 0 ? `${category.toUpperCase()} Skills` : `${category.toUpperCase()} Skills (cont.)`, 
+          value: categoryText.trim(), 
+          inline: false 
+        });
+      }
     }
 
     // Add back button
