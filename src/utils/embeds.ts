@@ -225,7 +225,7 @@ export class EmbedUtils {
   /**
    * Create an embed showing broadcast effects for a specific category
    */
-  static createBroadcastEffectsEmbed(broadcast: any, category: string): string {
+  static createBroadcastEffectsEmbed(broadcast: any, category: string): string | null {
     const effects = broadcast.effects[category] || {};
     const parts: string[] = [];
 
@@ -253,7 +253,10 @@ export class EmbedUtils {
       parts.push(`💰 Cash Bonus: ${change}${percent}%`);
     }
 
-    return parts.length > 0 ? parts.join(' | ') : null;
+    if (parts.length > 0) {
+      return parts.join(' | ');
+    }
+    return null;
   }
 
   /**
