@@ -15,7 +15,7 @@
     "actionId": "product_action_2",
     "category": "product",
     "name": "Improve User Experience",
-    "description": "Perform improve user experience",
+    "description": "You redesign user flows and interfaces to make your product easier to use and more intuitive",
     "eventPool": [
       "product_event_5",
       "product_event_6",
@@ -27,7 +27,7 @@
     "actionId": "product_action_3",
     "category": "product",
     "name": "Fix Critical Bugs",
-    "description": "Perform fix critical bugs",
+    "description": "Your team drops everything to fix bugs that are causing user complaints and support tickets",
     "eventPool": [
       "product_event_9",
       "product_event_10",
@@ -39,7 +39,7 @@
     "actionId": "product_action_4",
     "category": "product",
     "name": "Performance Optimization",
-    "description": "Perform performance optimization",
+    "description": "You optimize slow queries, add caching, and improve page load times to reduce bounce rates",
     "eventPool": [
       "product_event_13",
       "product_event_14",
@@ -51,7 +51,7 @@
     "actionId": "product_action_5",
     "category": "product",
     "name": "Add Mobile Support",
-    "description": "Perform add mobile support",
+    "description": "You build a mobile app or responsive web version to reach users on their phones",
     "eventPool": [
       "product_event_17",
       "product_event_18",
@@ -63,7 +63,7 @@
     "actionId": "product_action_6",
     "category": "product",
     "name": "Implement Analytics",
-    "description": "Perform implement analytics",
+    "description": "You add tracking to understand how users actually use your product and where they drop off",
     "eventPool": [
       "product_event_21",
       "product_event_22",
@@ -75,7 +75,7 @@
     "actionId": "product_action_7",
     "category": "product",
     "name": "User Onboarding Flow",
-    "description": "Perform user onboarding flow",
+    "description": "You create a guided onboarding experience that helps new users understand your product's value",
     "eventPool": [
       "product_event_25",
       "product_event_26",
@@ -87,7 +87,7 @@
     "actionId": "product_action_8",
     "category": "product",
     "name": "A/B Testing Framework",
-    "description": "Perform a/b testing framework",
+    "description": "You set up A/B testing infrastructure to make data-driven decisions about product changes",
     "eventPool": [
       "product_event_29",
       "product_event_30",
@@ -99,7 +99,7 @@
     "actionId": "product_action_9",
     "category": "product",
     "name": "API Development",
-    "description": "Perform api development",
+    "description": "You build APIs that allow third-party integrations and enable partnerships",
     "eventPool": [
       "product_event_33",
       "product_event_34",
@@ -111,7 +111,7 @@
     "actionId": "product_action_10",
     "category": "product",
     "name": "Accessibility Improvements",
-    "description": "Perform accessibility improvements",
+    "description": "You make your product accessible to users with disabilities, expanding your addressable market",
     "eventPool": [
       "product_event_37",
       "product_event_38",
@@ -123,7 +123,7 @@
     "actionId": "product_action_11",
     "category": "product",
     "name": "Internationalization",
-    "description": "Perform internationalization",
+    "description": "You translate your product and adapt it for international markets to expand globally",
     "eventPool": [
       "product_event_41",
       "product_event_42",
@@ -135,7 +135,7 @@
     "actionId": "product_action_12",
     "category": "product",
     "name": "Product Documentation",
-    "description": "Perform product documentation",
+    "description": "You write clear documentation that helps users and reduces support burden",
     "eventPool": [
       "product_event_45",
       "product_event_46",
@@ -147,7 +147,7 @@
     "actionId": "product_action_13",
     "category": "product",
     "name": "Beta Testing Program",
-    "description": "Perform beta testing program",
+    "description": "You recruit beta users to test new features before public launch and gather feedback",
     "eventPool": [
       "product_event_49",
       "product_event_50",
@@ -159,7 +159,7 @@
     "actionId": "product_action_14",
     "category": "product",
     "name": "Feature Flags System",
-    "description": "Perform feature flags system",
+    "description": "You implement feature flags so you can roll out features gradually and roll back if needed",
     "eventPool": [
       "product_event_53",
       "product_event_54",
@@ -171,7 +171,7 @@
     "actionId": "marketing_action_1",
     "category": "marketing",
     "name": "Social Media Campaign",
-    "description": "Perform social media campaign",
+    "description": "You create and run social media campaigns across platforms to drive awareness and signups",
     "eventPool": [
       "marketing_event_1",
       "marketing_event_2",
@@ -183,7 +183,7 @@
     "actionId": "marketing_action_2",
     "category": "marketing",
     "name": "Influencer Partnership",
-    "description": "Perform influencer partnership",
+    "description": "You partner with influencers who can authentically promote your product to their audience",
     "eventPool": [
       "marketing_event_5",
       "marketing_event_6",
@@ -195,7 +195,7 @@
     "actionId": "marketing_action_3",
     "category": "marketing",
     "name": "Content Marketing",
-    "description": "Perform content marketing",
+    "description": "You create blog posts, videos, and other content that attracts potential customers organically",
     "eventPool": [
       "marketing_event_9",
       "marketing_event_10",
@@ -207,7 +207,7 @@
     "actionId": "marketing_action_4",
     "category": "marketing",
     "name": "Paid Advertising",
-    "description": "Perform paid advertising",
+    "description": "You run paid ads on Google, Facebook, or other platforms to acquire customers",
     "eventPool": [
       "marketing_event_13",
       "marketing_event_14",
@@ -219,7 +219,7 @@
     "actionId": "marketing_action_5",
     "category": "marketing",
     "name": "Email Marketing",
-    "description": "Perform email marketing",
+    "description": "You send targeted email campaigns to nurture leads and re-engage inactive users",
     "eventPool": [
       "marketing_event_17",
       "marketing_event_18",
@@ -231,7 +231,7 @@
     "actionId": "marketing_action_6",
     "category": "marketing",
     "name": "SEO Optimization",
-    "description": "Perform seo optimization",
+    "description": "You optimize your website and content to rank higher in search results and get organic traffic",
     "eventPool": [
       "marketing_event_21",
       "marketing_event_22",
@@ -243,7 +243,7 @@
     "actionId": "marketing_action_7",
     "category": "marketing",
     "name": "Webinar Series",
-    "description": "Perform webinar series",
+    "description": "You host educational webinars that position you as an expert and generate qualified leads",
     "eventPool": [
       "marketing_event_25",
       "marketing_event_26",
@@ -255,7 +255,7 @@
     "actionId": "marketing_action_8",
     "category": "marketing",
     "name": "Community Building",
-    "description": "Perform community building",
+    "description": "You build a community around your product where users help each other and become advocates",
     "eventPool": [
       "marketing_event_29",
       "marketing_event_30",
@@ -267,7 +267,7 @@
     "actionId": "marketing_action_9",
     "category": "marketing",
     "name": "Referral Program",
-    "description": "Perform referral program",
+    "description": "You create a referral program that incentivizes existing users to bring in new customers",
     "eventPool": [
       "marketing_event_33",
       "marketing_event_34",
@@ -279,7 +279,7 @@
     "actionId": "marketing_action_10",
     "category": "marketing",
     "name": "PR Campaign",
-    "description": "Perform pr campaign",
+    "description": "You pitch journalists and get press coverage that builds credibility and drives signups",
     "eventPool": [
       "marketing_event_37",
       "marketing_event_38",
@@ -291,7 +291,7 @@
     "actionId": "marketing_action_11",
     "category": "marketing",
     "name": "Trade Show Participation",
-    "description": "Perform trade show participation",
+    "description": "You attend industry conferences and trade shows to network and generate leads",
     "eventPool": [
       "marketing_event_41",
       "marketing_event_42",
@@ -303,7 +303,7 @@
     "actionId": "marketing_action_12",
     "category": "marketing",
     "name": "Partnership Marketing",
-    "description": "Perform partnership marketing",
+    "description": "You form marketing partnerships with complementary companies to reach new audiences",
     "eventPool": [
       "marketing_event_45",
       "marketing_event_46",
@@ -315,7 +315,7 @@
     "actionId": "marketing_action_13",
     "category": "marketing",
     "name": "Video Marketing",
-    "description": "Perform video marketing",
+    "description": "You create video content that explains your product and gets shared on social media",
     "eventPool": [
       "marketing_event_49",
       "marketing_event_50",
@@ -327,7 +327,7 @@
     "actionId": "marketing_action_14",
     "category": "marketing",
     "name": "Podcast Sponsorship",
-    "description": "Perform podcast sponsorship",
+    "description": "You sponsor podcasts that your target customers listen to, reaching them in their natural habitat",
     "eventPool": [
       "marketing_event_53",
       "marketing_event_54",
@@ -339,7 +339,7 @@
     "actionId": "tech_action_1",
     "category": "tech",
     "name": "Upgrade Infrastructure",
-    "description": "Perform upgrade infrastructure",
+    "description": "You upgrade servers, databases, and hosting to handle more traffic and improve reliability",
     "eventPool": [
       "tech_event_1",
       "tech_event_2",
@@ -351,7 +351,7 @@
     "actionId": "tech_action_2",
     "category": "tech",
     "name": "Security Audit",
-    "description": "Perform security audit",
+    "description": "You hire security experts to audit your systems and fix vulnerabilities before hackers find them",
     "eventPool": [
       "tech_event_5",
       "tech_event_6",
@@ -363,7 +363,7 @@
     "actionId": "tech_action_3",
     "category": "tech",
     "name": "Implement CI/CD",
-    "description": "Perform implement ci/cd",
+    "description": "You automate your deployment pipeline so code goes from commit to production faster and safer",
     "eventPool": [
       "tech_event_9",
       "tech_event_10",
@@ -375,7 +375,7 @@
     "actionId": "tech_action_4",
     "category": "tech",
     "name": "Database Optimization",
-    "description": "Perform database optimization",
+    "description": "You optimize slow database queries and add indexes to improve performance and reduce costs",
     "eventPool": [
       "tech_event_13",
       "tech_event_14",
@@ -387,7 +387,7 @@
     "actionId": "tech_action_5",
     "category": "tech",
     "name": "API Rate Limiting",
-    "description": "Perform api rate limiting",
+    "description": "You implement rate limiting to prevent abuse and ensure fair usage of your API",
     "eventPool": [
       "tech_event_17",
       "tech_event_18",
@@ -399,7 +399,7 @@
     "actionId": "tech_action_6",
     "category": "tech",
     "name": "Monitoring System",
-    "description": "Perform monitoring system",
+    "description": "You set up monitoring and alerting so you know when things break before users complain",
     "eventPool": [
       "tech_event_21",
       "tech_event_22",
@@ -411,7 +411,7 @@
     "actionId": "tech_action_7",
     "category": "tech",
     "name": "Load Testing",
-    "description": "Perform load testing",
+    "description": "You test your system under heavy load to find breaking points before real traffic hits",
     "eventPool": [
       "tech_event_25",
       "tech_event_26",
@@ -423,7 +423,7 @@
     "actionId": "tech_action_8",
     "category": "tech",
     "name": "Backup System",
-    "description": "Perform backup system",
+    "description": "You implement automated backups so you can recover quickly if data gets corrupted or deleted",
     "eventPool": [
       "tech_event_29",
       "tech_event_30",
@@ -435,7 +435,7 @@
     "actionId": "tech_action_9",
     "category": "tech",
     "name": "Code Review Process",
-    "description": "Perform code review process",
+    "description": "You establish code review practices so bugs get caught before they reach production",
     "eventPool": [
       "tech_event_33",
       "tech_event_34",
@@ -447,7 +447,7 @@
     "actionId": "tech_action_10",
     "category": "tech",
     "name": "Automated Testing",
-    "description": "Perform automated testing",
+    "description": "You write automated tests that run on every deployment to catch regressions early",
     "eventPool": [
       "tech_event_37",
       "tech_event_38",
@@ -459,7 +459,7 @@
     "actionId": "tech_action_11",
     "category": "tech",
     "name": "Cloud Migration",
-    "description": "Perform cloud migration",
+    "description": "You migrate your infrastructure to the cloud to improve scalability and reduce costs",
     "eventPool": [
       "tech_event_41",
       "tech_event_42",
@@ -471,7 +471,7 @@
     "actionId": "tech_action_12",
     "category": "tech",
     "name": "Microservices Architecture",
-    "description": "Perform microservices architecture",
+    "description": "You break your monolithic application into microservices so teams can work independently",
     "eventPool": [
       "tech_event_45",
       "tech_event_46",
@@ -483,7 +483,7 @@
     "actionId": "tech_action_13",
     "category": "tech",
     "name": "Container Orchestration",
-    "description": "Perform container orchestration",
+    "description": "You containerize your applications and use orchestration tools to manage deployments at scale",
     "eventPool": [
       "tech_event_49",
       "tech_event_50",
@@ -495,7 +495,7 @@
     "actionId": "tech_action_14",
     "category": "tech",
     "name": "Service Mesh",
-    "description": "Perform service mesh",
+    "description": "You implement a service mesh to manage communication between microservices securely",
     "eventPool": [
       "tech_event_53",
       "tech_event_54",
@@ -507,7 +507,7 @@
     "actionId": "business_action_1",
     "category": "business_dev",
     "name": "Strategic Partnership",
-    "description": "Perform strategic partnership",
+    "description": "You negotiate partnerships with larger companies that can help you reach new customers",
     "eventPool": [
       "business_event_1",
       "business_event_2",
@@ -519,7 +519,7 @@
     "actionId": "business_action_2",
     "category": "business_dev",
     "name": "Pitch to Investors",
-    "description": "Perform pitch to investors",
+    "description": "You prepare and deliver pitches to investors to raise funding for growth",
     "eventPool": [
       "business_event_5",
       "business_event_6",
@@ -531,7 +531,7 @@
     "actionId": "business_action_3",
     "category": "business_dev",
     "name": "Customer Discovery",
-    "description": "Perform customer discovery",
+    "description": "You interview potential customers to understand their problems before building solutions",
     "eventPool": [
       "business_event_9",
       "business_event_10",
@@ -543,7 +543,7 @@
     "actionId": "business_action_4",
     "category": "business_dev",
     "name": "B2B Sales Outreach",
-    "description": "Perform b2b sales outreach",
+    "description": "You reach out to potential B2B customers through cold emails, LinkedIn, and networking events",
     "eventPool": [
       "business_event_13",
       "business_event_14",
@@ -555,7 +555,7 @@
     "actionId": "business_action_5",
     "category": "business_dev",
     "name": "Channel Partnerships",
-    "description": "Perform channel partnerships",
+    "description": "You partner with resellers and distributors who can sell your product to their customers",
     "eventPool": [
       "business_event_17",
       "business_event_18",
@@ -567,7 +567,7 @@
     "actionId": "business_action_6",
     "category": "business_dev",
     "name": "Enterprise Sales",
-    "description": "Perform enterprise sales",
+    "description": "You pursue large enterprise deals that require long sales cycles but bring significant revenue",
     "eventPool": [
       "business_event_21",
       "business_event_22",
@@ -579,7 +579,7 @@
     "actionId": "business_action_7",
     "category": "business_dev",
     "name": "Strategic Alliances",
-    "description": "Perform strategic alliances",
+    "description": "You form strategic alliances with companies that complement your product offering",
     "eventPool": [
       "business_event_25",
       "business_event_26",
@@ -591,7 +591,7 @@
     "actionId": "business_action_8",
     "category": "business_dev",
     "name": "Investor Relations",
-    "description": "Perform investor relations",
+    "description": "You maintain relationships with investors through regular updates and board meetings",
     "eventPool": [
       "business_event_29",
       "business_event_30",
@@ -603,7 +603,7 @@
     "actionId": "business_action_9",
     "category": "business_dev",
     "name": "Customer Success Program",
-    "description": "Perform customer success program",
+    "description": "You create a customer success program to help users get value and reduce churn",
     "eventPool": [
       "business_event_33",
       "business_event_34",
@@ -615,7 +615,7 @@
     "actionId": "business_action_10",
     "category": "business_dev",
     "name": "Sales Team Building",
-    "description": "Perform sales team building",
+    "description": "You hire and train a sales team to scale your revenue beyond what founders can do alone",
     "eventPool": [
       "business_event_37",
       "business_event_38",
@@ -627,7 +627,7 @@
     "actionId": "business_action_11",
     "category": "business_dev",
     "name": "Market Expansion",
-    "description": "Perform market expansion",
+    "description": "You expand into new geographic markets or customer segments to grow revenue",
     "eventPool": [
       "business_event_41",
       "business_event_42",
@@ -639,7 +639,7 @@
     "actionId": "business_action_12",
     "category": "business_dev",
     "name": "Distribution Partnerships",
-    "description": "Perform distribution partnerships",
+    "description": "You partner with companies that can distribute your product through their channels",
     "eventPool": [
       "business_event_45",
       "business_event_46",
@@ -651,7 +651,7 @@
     "actionId": "business_action_13",
     "category": "business_dev",
     "name": "Strategic Acquisition",
-    "description": "Perform strategic acquisition",
+    "description": "You acquire a smaller company to gain their technology, team, or customer base",
     "eventPool": [
       "business_event_49",
       "business_event_50",
@@ -663,7 +663,7 @@
     "actionId": "business_action_14",
     "category": "business_dev",
     "name": "Joint Ventures",
-    "description": "Perform joint ventures",
+    "description": "You form joint ventures with other companies to pursue opportunities neither could do alone",
     "eventPool": [
       "business_event_53",
       "business_event_54",
@@ -675,7 +675,7 @@
     "actionId": "operations_action_1",
     "category": "operations",
     "name": "Hire Developer",
-    "description": "Perform hire developer",
+    "description": "You recruit and hire developers to build features faster and improve product quality",
     "eventPool": [
       "operations_event_1",
       "operations_event_2",
@@ -687,7 +687,7 @@
     "actionId": "operations_action_2",
     "category": "operations",
     "name": "Hire Marketer",
-    "description": "Perform hire marketer",
+    "description": "You hire marketers to scale your customer acquisition beyond what you can do yourself",
     "eventPool": [
       "operations_event_5",
       "operations_event_6",
@@ -699,7 +699,7 @@
     "actionId": "operations_action_3",
     "category": "operations",
     "name": "Improve Processes",
-    "description": "Perform improve processes",
+    "description": "You document and improve internal processes to make your team more efficient",
     "eventPool": [
       "operations_event_9",
       "operations_event_10",
@@ -711,7 +711,7 @@
     "actionId": "operations_action_4",
     "category": "operations",
     "name": "Team Building",
-    "description": "Perform team building",
+    "description": "You organize team events and activities to build stronger relationships and improve morale",
     "eventPool": [
       "operations_event_13",
       "operations_event_14",
@@ -723,7 +723,7 @@
     "actionId": "operations_action_5",
     "category": "operations",
     "name": "Office Setup",
-    "description": "Perform office setup",
+    "description": "You set up a physical office space or improve your remote work infrastructure",
     "eventPool": [
       "operations_event_17",
       "operations_event_18",
@@ -735,7 +735,7 @@
     "actionId": "operations_action_6",
     "category": "operations",
     "name": "Remote Work Infrastructure",
-    "description": "Perform remote work infrastructure",
+    "description": "You invest in tools and systems that enable effective remote work and collaboration",
     "eventPool": [
       "operations_event_21",
       "operations_event_22",
@@ -747,7 +747,7 @@
     "actionId": "operations_action_7",
     "category": "operations",
     "name": "HR Policies",
-    "description": "Perform hr policies",
+    "description": "You establish HR policies and procedures to protect the company and support employees",
     "eventPool": [
       "operations_event_25",
       "operations_event_26",
@@ -759,7 +759,7 @@
     "actionId": "operations_action_8",
     "category": "operations",
     "name": "Employee Training",
-    "description": "Perform employee training",
+    "description": "You invest in training programs to help employees develop skills and grow with the company",
     "eventPool": [
       "operations_event_29",
       "operations_event_30",
@@ -771,7 +771,7 @@
     "actionId": "operations_action_9",
     "category": "operations",
     "name": "Vendor Management",
-    "description": "Perform vendor management",
+    "description": "You negotiate better terms with vendors and manage relationships to reduce costs",
     "eventPool": [
       "operations_event_33",
       "operations_event_34",
@@ -783,7 +783,7 @@
     "actionId": "operations_action_10",
     "category": "operations",
     "name": "Supply Chain Optimization",
-    "description": "Perform supply chain optimization",
+    "description": "You optimize your supply chain to reduce costs and improve delivery times",
     "eventPool": [
       "operations_event_37",
       "operations_event_38",
@@ -795,7 +795,7 @@
     "actionId": "operations_action_11",
     "category": "operations",
     "name": "Quality Assurance",
-    "description": "Perform quality assurance",
+    "description": "You establish QA processes to ensure product quality before releases reach customers",
     "eventPool": [
       "operations_event_41",
       "operations_event_42",
@@ -807,7 +807,7 @@
     "actionId": "operations_action_12",
     "category": "operations",
     "name": "Customer Support",
-    "description": "Perform customer support",
+    "description": "You build a customer support system to help users and reduce churn from frustration",
     "eventPool": [
       "operations_event_45",
       "operations_event_46",
@@ -819,7 +819,7 @@
     "actionId": "operations_action_13",
     "category": "operations",
     "name": "Legal Compliance",
-    "description": "Perform legal compliance",
+    "description": "You ensure your company complies with regulations to avoid fines and legal issues",
     "eventPool": [
       "operations_event_49",
       "operations_event_50",
@@ -831,7 +831,7 @@
     "actionId": "operations_action_14",
     "category": "operations",
     "name": "Risk Management",
-    "description": "Perform risk management",
+    "description": "You identify and mitigate business risks before they become crises that threaten the company",
     "eventPool": [
       "operations_event_53",
       "operations_event_54",
@@ -843,7 +843,7 @@
     "actionId": "finance_action_1",
     "category": "finance",
     "name": "Budget Review",
-    "description": "Perform budget review",
+    "description": "You review your budget and spending to identify areas where you can cut costs or invest more",
     "eventPool": [
       "finance_event_1",
       "finance_event_2",
@@ -855,7 +855,7 @@
     "actionId": "finance_action_2",
     "category": "finance",
     "name": "Cost Cutting",
-    "description": "Perform cost cutting",
+    "description": "You identify and eliminate unnecessary expenses to extend your runway",
     "eventPool": [
       "finance_event_5",
       "finance_event_6",
@@ -867,7 +867,7 @@
     "actionId": "finance_action_3",
     "category": "finance",
     "name": "Pricing Strategy",
-    "description": "Perform pricing strategy",
+    "description": "You analyze the market and adjust pricing to maximize revenue without losing customers",
     "eventPool": [
       "finance_event_9",
       "finance_event_10",
@@ -879,7 +879,7 @@
     "actionId": "finance_action_4",
     "category": "finance",
     "name": "Revenue Optimization",
-    "description": "Perform revenue optimization",
+    "description": "You optimize your revenue streams by improving conversion rates and finding new monetization",
     "eventPool": [
       "finance_event_13",
       "finance_event_14",
@@ -891,7 +891,7 @@
     "actionId": "finance_action_5",
     "category": "finance",
     "name": "Financial Planning",
-    "description": "Perform financial planning",
+    "description": "You create financial forecasts and plans to ensure you have enough cash to reach milestones",
     "eventPool": [
       "finance_event_17",
       "finance_event_18",
@@ -903,7 +903,7 @@
     "actionId": "finance_action_6",
     "category": "finance",
     "name": "Tax Optimization",
-    "description": "Perform tax optimization",
+    "description": "You structure your finances to minimize tax burden legally and maximize after-tax cash",
     "eventPool": [
       "finance_event_21",
       "finance_event_22",
@@ -915,7 +915,7 @@
     "actionId": "finance_action_7",
     "category": "finance",
     "name": "Invoice Management",
-    "description": "Perform invoice management",
+    "description": "You streamline invoicing and collections to get paid faster and reduce outstanding receivables",
     "eventPool": [
       "finance_event_25",
       "finance_event_26",
@@ -927,7 +927,7 @@
     "actionId": "finance_action_8",
     "category": "finance",
     "name": "Expense Tracking",
-    "description": "Perform expense tracking",
+    "description": "You implement systems to track expenses so you know where every dollar is going",
     "eventPool": [
       "finance_event_29",
       "finance_event_30",
@@ -939,7 +939,7 @@
     "actionId": "finance_action_9",
     "category": "finance",
     "name": "Financial Reporting",
-    "description": "Perform financial reporting",
+    "description": "You create financial reports that help you make informed decisions and satisfy investors",
     "eventPool": [
       "finance_event_33",
       "finance_event_34",
@@ -951,7 +951,7 @@
     "actionId": "finance_action_10",
     "category": "finance",
     "name": "Cash Flow Management",
-    "description": "Perform cash flow management",
+    "description": "You manage the timing of cash inflows and outflows to avoid running out of money",
     "eventPool": [
       "finance_event_37",
       "finance_event_38",
@@ -963,7 +963,7 @@
     "actionId": "finance_action_11",
     "category": "finance",
     "name": "Investment Strategy",
-    "description": "Perform investment strategy",
+    "description": "You decide how to invest excess cash to generate returns while maintaining liquidity",
     "eventPool": [
       "finance_event_41",
       "finance_event_42",
@@ -975,7 +975,7 @@
     "actionId": "finance_action_12",
     "category": "finance",
     "name": "Credit Line",
-    "description": "Perform credit line",
+    "description": "You secure a line of credit as a safety net for unexpected expenses or cash flow gaps",
     "eventPool": [
       "finance_event_45",
       "finance_event_46",
@@ -987,7 +987,7 @@
     "actionId": "finance_action_13",
     "category": "finance",
     "name": "Equity Financing",
-    "description": "Perform equity financing",
+    "description": "You raise capital by selling equity to investors in exchange for funding to grow",
     "eventPool": [
       "finance_event_49",
       "finance_event_50",
@@ -999,7 +999,7 @@
     "actionId": "finance_action_14",
     "category": "finance",
     "name": "Debt Refinancing",
-    "description": "Perform debt refinancing",
+    "description": "You refinance existing debt to get better terms and reduce interest payments",
     "eventPool": [
       "finance_event_53",
       "finance_event_54",
@@ -1011,7 +1011,7 @@
     "actionId": "research_action_1",
     "category": "research",
     "name": "Market Research",
-    "description": "Perform market research",
+    "description": "You research your target market to understand size, trends, and customer needs",
     "eventPool": [
       "research_event_1",
       "research_event_2",
@@ -1023,7 +1023,7 @@
     "actionId": "research_action_2",
     "category": "research",
     "name": "User Research",
-    "description": "Perform user research",
+    "description": "You interview and observe users to understand how they actually use your product",
     "eventPool": [
       "research_event_5",
       "research_event_6",
@@ -1035,7 +1035,7 @@
     "actionId": "research_action_3",
     "category": "research",
     "name": "Technology Research",
-    "description": "Perform technology research",
+    "description": "You research new technologies and tools that could improve your product or reduce costs",
     "eventPool": [
       "research_event_9",
       "research_event_10",
@@ -1047,7 +1047,7 @@
     "actionId": "research_action_4",
     "category": "research",
     "name": "Competitive Analysis",
-    "description": "Perform competitive analysis",
+    "description": "You analyze competitors to understand their strengths, weaknesses, and positioning",
     "eventPool": [
       "research_event_13",
       "research_event_14",
@@ -1059,7 +1059,7 @@
     "actionId": "research_action_5",
     "category": "research",
     "name": "User Interviews",
-    "description": "Perform user interviews",
+    "description": "You conduct one-on-one interviews with users to understand their problems and needs",
     "eventPool": [
       "research_event_17",
       "research_event_18",
@@ -1071,7 +1071,7 @@
     "actionId": "research_action_6",
     "category": "research",
     "name": "Surveys and Polls",
-    "description": "Perform surveys and polls",
+    "description": "You send surveys to gather quantitative feedback from a large number of users",
     "eventPool": [
       "research_event_21",
       "research_event_22",
@@ -1083,7 +1083,7 @@
     "actionId": "research_action_7",
     "category": "research",
     "name": "Data Analysis",
-    "description": "Perform data analysis",
+    "description": "You analyze user behavior data to identify patterns and opportunities for improvement",
     "eventPool": [
       "research_event_25",
       "research_event_26",
@@ -1095,7 +1095,7 @@
     "actionId": "research_action_8",
     "category": "research",
     "name": "Trend Analysis",
-    "description": "Perform trend analysis",
+    "description": "You analyze industry trends to anticipate changes and position your product accordingly",
     "eventPool": [
       "research_event_29",
       "research_event_30",
@@ -1107,7 +1107,7 @@
     "actionId": "research_action_9",
     "category": "research",
     "name": "Technology Evaluation",
-    "description": "Perform technology evaluation",
+    "description": "You evaluate new technologies to decide if they're worth adopting or if they're just hype",
     "eventPool": [
       "research_event_33",
       "research_event_34",
@@ -1119,7 +1119,7 @@
     "actionId": "research_action_10",
     "category": "research",
     "name": "Customer Segmentation",
-    "description": "Perform customer segmentation",
+    "description": "You segment your customers into groups to target them with relevant messaging and features",
     "eventPool": [
       "research_event_37",
       "research_event_38",
@@ -1131,7 +1131,7 @@
     "actionId": "research_action_11",
     "category": "research",
     "name": "Market Validation",
-    "description": "Perform market validation",
+    "description": "You validate that there's real demand for your product before investing heavily in building it",
     "eventPool": [
       "research_event_41",
       "research_event_42",
@@ -1143,7 +1143,7 @@
     "actionId": "research_action_12",
     "category": "research",
     "name": "Product-Market Fit",
-    "description": "Perform product-market fit",
+    "description": "You measure and improve product-market fit to ensure you're building something people want",
     "eventPool": [
       "research_event_45",
       "research_event_46",
@@ -1155,7 +1155,7 @@
     "actionId": "research_action_13",
     "category": "research",
     "name": "User Personas",
-    "description": "Perform user personas",
+    "description": "You create detailed user personas to guide product decisions and marketing messaging",
     "eventPool": [
       "research_event_49",
       "research_event_50",
@@ -1167,7 +1167,7 @@
     "actionId": "research_action_14",
     "category": "research",
     "name": "Market Sizing",
-    "description": "Perform market sizing",
+    "description": "You calculate the total addressable market to understand your growth potential",
     "eventPool": [
       "research_event_53",
       "research_event_54",
@@ -1179,7 +1179,7 @@
     "actionId": "high_risk_action_1",
     "category": "high_risk",
     "name": "Rapid Expansion",
-    "description": "Perform rapid expansion",
+    "description": "You aggressively expand into new markets or launch new products, risking overextension",
     "eventPool": [
       "high_risk_event_1",
       "high_risk_event_2",
@@ -1191,7 +1191,7 @@
     "actionId": "high_risk_action_2",
     "category": "high_risk",
     "name": "Major Pivot",
-    "description": "Perform major pivot",
+    "description": "You pivot your product or business model based on learning that your original idea won't work",
     "eventPool": [
       "high_risk_event_5",
       "high_risk_event_6",
@@ -1203,7 +1203,7 @@
     "actionId": "high_risk_action_3",
     "category": "high_risk",
     "name": "Acquisition Attempt",
-    "description": "Perform acquisition attempt",
+    "description": "You attempt to acquire another company, risking integration challenges and cultural clashes",
     "eventPool": [
       "high_risk_event_9",
       "high_risk_event_10",
@@ -1215,7 +1215,7 @@
     "actionId": "high_risk_action_4",
     "category": "high_risk",
     "name": "All-In Marketing Blitz",
-    "description": "Perform all-in marketing blitz",
+    "description": "You spend heavily on marketing in a high-risk, high-reward attempt to rapidly acquire customers",
     "eventPool": [
       "high_risk_event_13",
       "high_risk_event_14",
@@ -1227,7 +1227,7 @@
     "actionId": "high_risk_action_5",
     "category": "high_risk",
     "name": "Major Technology Rewrite",
-    "description": "Perform major technology rewrite",
+    "description": "You rewrite major parts of your technology stack, risking delays and introducing new bugs",
     "eventPool": [
       "high_risk_event_17",
       "high_risk_event_18",
@@ -1239,7 +1239,7 @@
     "actionId": "high_risk_action_6",
     "category": "high_risk",
     "name": "International Expansion",
-    "description": "Perform international expansion",
+    "description": "You expand internationally, facing language barriers, regulations, and cultural differences",
     "eventPool": [
       "high_risk_event_21",
       "high_risk_event_22",
@@ -1251,7 +1251,7 @@
     "actionId": "high_risk_action_7",
     "category": "high_risk",
     "name": "Competitive Attack",
-    "description": "Perform competitive attack",
+    "description": "You aggressively compete with a rival, potentially starting a price war or feature race",
     "eventPool": [
       "high_risk_event_25",
       "high_risk_event_26",
@@ -1263,7 +1263,7 @@
     "actionId": "high_risk_action_8",
     "category": "high_risk",
     "name": "High-Stakes Partnership",
-    "description": "Perform high-stakes partnership",
+    "description": "You form a high-stakes partnership that could make or break your company",
     "eventPool": [
       "high_risk_event_29",
       "high_risk_event_30",
@@ -1275,7 +1275,7 @@
     "actionId": "high_risk_action_9",
     "category": "high_risk",
     "name": "Major Hiring Spree",
-    "description": "Perform major hiring spree",
+    "description": "You hire many people quickly, risking culture dilution and burn rate increase",
     "eventPool": [
       "high_risk_event_33",
       "high_risk_event_34",
@@ -1287,7 +1287,7 @@
     "actionId": "high_risk_action_10",
     "category": "high_risk",
     "name": "Product Line Expansion",
-    "description": "Perform product line expansion",
+    "description": "You launch new products beyond your core offering, risking focus and resource dilution",
     "eventPool": [
       "high_risk_event_37",
       "high_risk_event_38",
@@ -1299,7 +1299,7 @@
     "actionId": "high_risk_action_11",
     "category": "high_risk",
     "name": "Market Disruption",
-    "description": "Perform market disruption",
+    "description": "You attempt to disrupt an established market with an innovative approach, facing resistance",
     "eventPool": [
       "high_risk_event_41",
       "high_risk_event_42",
@@ -1311,7 +1311,7 @@
     "actionId": "high_risk_action_12",
     "category": "high_risk",
     "name": "Regulatory Challenge",
-    "description": "Perform regulatory challenge",
+    "description": "You challenge existing regulations or operate in a gray area, risking legal consequences",
     "eventPool": [
       "high_risk_event_45",
       "high_risk_event_46",
@@ -1323,7 +1323,7 @@
     "actionId": "high_risk_action_13",
     "category": "high_risk",
     "name": "Major Investment",
-    "description": "Perform major investment",
+    "description": "You make a major investment in infrastructure or technology that could transform the company",
     "eventPool": [
       "high_risk_event_49",
       "high_risk_event_50",
@@ -1335,7 +1335,7 @@
     "actionId": "high_risk_action_14",
     "category": "high_risk",
     "name": "Strategic Bet",
-    "description": "Perform strategic bet",
+    "description": "You make a strategic bet on an unproven direction that could pay off big or fail spectacularly",
     "eventPool": [
       "high_risk_event_53",
       "high_risk_event_54",

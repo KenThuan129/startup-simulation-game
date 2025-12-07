@@ -3,7 +3,7 @@
     "actionId": "boss_attack_1",
     "type": "attack",
     "name": "Aggressive Marketing Blitz",
-    "description": "The competitor launches a massive marketing campaign targeting your users.",
+    "description": "A well-funded competitor floods social media and search engines with ads targeting your exact customer base, stealing your visibility.",
     "effects": {
       "users": -50,
       "hype": -10
@@ -13,7 +13,7 @@
     "actionId": "boss_attack_2",
     "type": "attack",
     "name": "Price War",
-    "description": "The competitor slashes prices, forcing you to match or lose customers.",
+    "description": "Your competitor cuts prices below cost to undercut you, forcing you to either match their prices and bleed cash or lose customers to cheaper alternatives.",
     "effects": {
       "cash": -2000,
       "users": -30
@@ -23,7 +23,7 @@
     "actionId": "boss_attack_3",
     "type": "attack",
     "name": "Talent Poaching",
-    "description": "The competitor poaches your key employees.",
+    "description": "A competitor offers your best engineers and marketers significantly higher salaries and equity, causing key team members to leave.",
     "effects": {
       "quality": -15,
       "hype": -8
@@ -33,7 +33,7 @@
     "actionId": "boss_attack_4",
     "type": "attack",
     "name": "Feature Copy",
-    "description": "The competitor copies your key features and launches them first.",
+    "description": "Your competitor reverse-engineers your product and launches your planned features before you can, making you look like the copycat.",
     "effects": {
       "users": -80,
       "hype": -15
@@ -43,7 +43,7 @@
     "actionId": "boss_attack_5",
     "type": "attack",
     "name": "Negative PR Campaign",
-    "description": "The competitor spreads negative rumors about your company.",
+    "description": "Anonymous accounts spread rumors on social media and review sites claiming your product is buggy, your company is struggling, or your data is insecure.",
     "effects": {
       "hype": -25,
       "users": -40
@@ -53,7 +53,7 @@
     "actionId": "boss_defense_1",
     "type": "defense",
     "name": "Counter-Marketing Campaign",
-    "description": "Launch your own marketing campaign to retain users.",
+    "description": "You quickly launch a counter-marketing campaign to remind users why they chose you and highlight your unique value proposition.",
     "effects": {
       "cash": -1500,
       "users": 20,
@@ -64,7 +64,7 @@
     "actionId": "boss_defense_2",
     "type": "defense",
     "name": "Focus on Quality",
-    "description": "Double down on product quality to differentiate.",
+    "description": "You invest heavily in improving product quality and reliability, betting that superior execution will win over price-sensitive customers.",
     "effects": {
       "cash": -1000,
       "quality": 10
@@ -74,7 +74,7 @@
     "actionId": "boss_defense_3",
     "type": "defense",
     "name": "Innovation Push",
-    "description": "Accelerate innovation to stay ahead.",
+    "description": "You push your team to ship innovative features faster, trying to outpace competitors before they can catch up.",
     "effects": {
       "cash": -2000,
       "quality": 15,
@@ -85,7 +85,7 @@
     "actionId": "boss_defense_4",
     "type": "defense",
     "name": "Customer Loyalty Program",
-    "description": "Launch a loyalty program to retain customers.",
+    "description": "You create a loyalty program with rewards and exclusive features to make switching costs too high for existing customers.",
     "effects": {
       "cash": -800,
       "users": 30,
@@ -96,7 +96,7 @@
     "actionId": "boss_defense_5",
     "type": "defense",
     "name": "Strategic Partnership",
-    "description": "Form a strategic partnership to counter the threat.",
+    "description": "You partner with a larger company that can help you compete, gaining access to their customer base and resources.",
     "effects": {
       "cash": -1200,
       "users": 50,
@@ -107,7 +107,7 @@
     "actionId": "boss_attack_6",
     "type": "attack",
     "name": "Market Saturation",
-    "description": "The competitor floods the market, making it harder to stand out.",
+    "description": "Your competitor spends heavily on advertising, saturating the market with their brand and making it harder for you to get noticed.",
     "effects": {
       "users": -60,
       "hype": -12
@@ -117,7 +117,7 @@
     "actionId": "boss_attack_7",
     "type": "attack",
     "name": "Exclusive Deals",
-    "description": "The competitor signs exclusive deals with key partners.",
+    "description": "Your competitor locks up exclusive partnerships with major distributors or platforms, cutting off your access to key channels.",
     "effects": {
       "users": -70,
       "hype": -18
@@ -127,7 +127,7 @@
     "actionId": "boss_defense_6",
     "type": "defense",
     "name": "Rapid Feature Development",
-    "description": "Quickly develop new features to compete.",
+    "description": "Your engineering team works overtime to ship competitive features quickly, sacrificing some quality for speed.",
     "effects": {
       "cash": -1800,
       "quality": 12,
@@ -138,7 +138,7 @@
     "actionId": "boss_defense_7",
     "type": "defense",
     "name": "Community Building",
-    "description": "Build a strong community to defend against attacks.",
+    "description": "You invest in building a passionate community of users who become advocates and help defend your brand against competitors.",
     "effects": {
       "cash": -600,
       "users": 40,
@@ -149,7 +149,7 @@
     "actionId": "boss_attack_8",
     "type": "attack",
     "name": "Technology Superiority",
-    "description": "The competitor showcases superior technology.",
+    "description": "Your competitor demonstrates advanced technology at conferences and in press releases, making your product look outdated by comparison.",
     "effects": {
       "quality": -10,
       "hype": -20
