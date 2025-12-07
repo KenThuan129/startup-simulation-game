@@ -360,7 +360,7 @@ const eventTemplates: Record<string, string[]> = {
   ],
 };
 
-// Generate realistic choice text that presents real trade-offs and consequences
+// Generate decision-based choice text - describes ACTION/DECISION, not outcome
 function generateOutcomeText(type: string, category: string, eventName: string): string {
   // Create nuanced scenarios that reflect real startup decision-making
   const realisticChoices: Record<string, Record<string, Record<string, string[]>>> = {
