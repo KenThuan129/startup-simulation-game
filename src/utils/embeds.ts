@@ -41,9 +41,14 @@ export class EmbedUtils {
   static createEventEmbed(event: any): EmbedBuilder {
     const embed = new EmbedBuilder()
       .setTitle(`You face: ${event.name}`)
-      .setDescription(event.description)
       .setColor(0xff9900)
       .setFooter({ text: 'Choose one using /choose <choiceId>' });
+
+    // Build description with contextual information and italicized warning
+    let description = `${event.description}\n\n`;
+    description += `*You are facing critical decisions, choose wisely.*\n\n`;
+
+    embed.setDescription(description);
 
     // Show neutral labels - hide outcome types and IDs until reveal
     for (const choice of event.choices) {

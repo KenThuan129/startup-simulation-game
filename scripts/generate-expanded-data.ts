@@ -529,13 +529,177 @@ function generateOutcomeText(type: string, category: string, eventName: string):
   return templates[Math.floor(Math.random() * templates.length)];
 }
 
+// Generate contextual description based on event type
+function generateContextualDescription(category: string, eventName: string): string {
+  const contextualTemplates: Record<string, Record<string, string[]>> = {
+    finance: {
+      'Budget Review Meeting': [
+        'You are reviewing your financial situation and need to make critical budget decisions.',
+        'Your team is analyzing spending patterns and you must decide how to allocate resources.',
+        'Financial planning is underway and you face important choices about budget allocation.',
+      ],
+      'Investment Strategy Review': [
+        'You are evaluating investment opportunities and must decide where to allocate capital.',
+        'Your startup is considering different investment strategies to grow capital.',
+        'Investment decisions are on the table and you need to choose your approach.',
+      ],
+      'Cost Cutting Initiative': [
+        'You are looking to reduce expenses and must decide which areas to cut.',
+        'Cost optimization is needed and you face difficult choices about spending.',
+        'Your startup needs to trim costs and you must choose what to prioritize.',
+      ],
+      'High-Risk Investment': [
+        'You are considering a high-risk investment opportunity that could transform or break your startup.',
+        'A risky investment option has appeared and you must decide whether to take the gamble.',
+        'You are facing a high-stakes investment decision that could make or break your company.',
+      ],
+    },
+    tech: {
+      'Infrastructure Scaling': [
+        'You are scaling up your infrastructure to handle growth and must choose your approach.',
+        'Your systems are under pressure and you need to decide how to scale.',
+        'Infrastructure expansion is needed and you face critical technical decisions.',
+      ],
+      'Security Breach Attempt': [
+        'A security threat has been detected and you must decide how to respond.',
+        'Your systems are under attack and you need to choose your defense strategy.',
+        'Security concerns have emerged and you must decide how to protect your startup.',
+      ],
+      'Database Migration': [
+        'You are migrating your database and must choose the migration strategy.',
+        'Database upgrade is necessary and you face critical technical decisions.',
+        'You are moving to a new database system and need to decide your approach.',
+      ],
+      'Performance Bottleneck': [
+        'Performance issues are slowing down your system and you must decide how to fix them.',
+        'Your application is experiencing slowdowns and you need to choose an optimization strategy.',
+        'Performance problems have emerged and you face critical technical decisions.',
+      ],
+    },
+    product: {
+      'Feature Development Challenge': [
+        'You are developing a new feature and must decide how to approach the development.',
+        'Feature development is underway and you face critical product decisions.',
+        'A new feature is being built and you need to choose your development strategy.',
+      ],
+      'User Feedback Integration': [
+        'Users are providing feedback and you must decide how to incorporate it.',
+        'Customer feedback has come in and you need to choose how to respond.',
+        'User suggestions are piling up and you face important product decisions.',
+      ],
+      'Feature Launch': [
+        'You are preparing to launch a new feature and must decide your launch strategy.',
+        'A feature is ready to go live and you need to choose how to roll it out.',
+        'Feature launch is imminent and you face critical go-to-market decisions.',
+      ],
+    },
+    marketing: {
+      'Social Media Campaign': [
+        'You are planning a social media campaign and must decide your marketing approach.',
+        'Social media marketing is on the agenda and you face important promotional decisions.',
+        'You are launching a social campaign and need to choose your strategy.',
+      ],
+      'Influencer Partnership': [
+        'Influencer partnership opportunities have emerged and you must decide how to proceed.',
+        'You are considering influencer collaborations and need to choose your approach.',
+        'Influencer marketing options are available and you face critical partnership decisions.',
+      ],
+    },
+    business_dev: {
+      'Strategic Partnership Opportunity': [
+        'A strategic partnership opportunity has appeared and you must decide how to proceed.',
+        'You are evaluating a potential partnership and need to choose your negotiation strategy.',
+        'Partnership discussions are underway and you face critical business decisions.',
+      ],
+      'Investor Meeting': [
+        'An investor meeting is scheduled and you must decide how to present your startup.',
+        'You are preparing for investor discussions and need to choose your pitch approach.',
+        'Investor interest has emerged and you face important fundraising decisions.',
+      ],
+    },
+    high_risk: {
+      'Rapid Market Expansion': [
+        'You are considering rapid expansion and must decide whether to take the risk.',
+        'Market expansion opportunities have appeared and you face high-stakes decisions.',
+        'You are scaling up your market presence and need to choose your expansion strategy.',
+      ],
+      'Major Strategic Pivot': [
+        'You are considering a major pivot and must decide if it\'s the right move.',
+        'Strategic changes are being discussed and you face critical directional decisions.',
+        'A pivot opportunity has emerged and you need to choose whether to change course.',
+      ],
+      'Major Technology Rewrite': [
+        'You are considering rewriting your technology stack and must decide if it\'s worth the risk.',
+        'A major technical overhaul is being considered and you face critical engineering decisions.',
+        'Technology rewrite options are on the table and you need to choose your approach.',
+      ],
+    },
+  };
+
+  // Try to find specific contextual description
+  const categoryTemplates = contextualTemplates[category];
+  if (categoryTemplates && categoryTemplates[eventName]) {
+    const templates = categoryTemplates[eventName];
+    return templates[Math.floor(Math.random() * templates.length)];
+  }
+
+  // Fallback: Generate generic contextual descriptions
+  const genericContexts: Record<string, string[]> = {
+    finance: [
+      'You are facing financial decisions that will impact your startup\'s future.',
+      'Financial planning is underway and you must make critical choices.',
+      'You are evaluating financial options and need to decide your approach.',
+    ],
+    tech: [
+      'You are facing technical challenges and must decide how to address them.',
+      'Technical decisions are needed and you face critical infrastructure choices.',
+      'You are dealing with technical issues and need to choose your solution approach.',
+    ],
+    product: [
+      'You are making product decisions that will shape your startup\'s direction.',
+      'Product development is underway and you face critical feature choices.',
+      'You are working on product improvements and need to decide your strategy.',
+    ],
+    marketing: [
+      'You are planning marketing initiatives and must decide your promotional approach.',
+      'Marketing opportunities have emerged and you face important campaign decisions.',
+      'You are evaluating marketing strategies and need to choose your tactics.',
+    ],
+    business_dev: [
+      'You are facing business development opportunities and must decide how to proceed.',
+      'Partnership and growth opportunities are available and you face critical decisions.',
+      'You are exploring business opportunities and need to choose your approach.',
+    ],
+    operations: [
+      'You are making operational decisions that will affect your team and processes.',
+      'Operational improvements are needed and you face critical management choices.',
+      'You are optimizing operations and need to decide your strategy.',
+    ],
+    research: [
+      'You are conducting research and must decide how to gather and use insights.',
+      'Research opportunities have emerged and you face important analytical decisions.',
+      'You are evaluating market data and need to choose your research approach.',
+    ],
+    high_risk: [
+      'You are facing high-risk decisions that could transform or endanger your startup.',
+      'High-stakes opportunities have appeared and you must decide whether to take the gamble.',
+      'You are considering risky moves and need to choose your approach carefully.',
+    ],
+  };
+
+  const contexts = genericContexts[category] || genericContexts['product'] || ['You face a critical decision.'];
+  return contexts[Math.floor(Math.random() * contexts.length)];
+}
+
 // Generate a single event
 function generateEvent(category: string, eventId: string, eventName: string): any {
+  const contextualDesc = generateContextualDescription(category, eventName);
+  
   return {
     eventId,
     category,
     name: eventName,
-    description: `You face a critical decision about ${eventName.toLowerCase()}. Each choice has real consequences with trade-offs between risk, resources, and timing.`,
+    description: contextualDesc,
     choices: [
       {
         choiceId: `${eventId}_cs`,
