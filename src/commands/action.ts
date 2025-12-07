@@ -6,6 +6,7 @@ import { ActionDataLoader } from '../game/data/action-loader';
 import { EventDataLoader } from '../game/data/event-loader';
 import { EmbedUtils } from '../utils/embeds';
 import { CompanyState } from '../game/state/company-state';
+import { BroadcastSystem } from '../game/systems/broadcast-system';
 
 export const data = new SlashCommandBuilder()
   .setName('action')
@@ -78,7 +79,19 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       }
 
       const embed = EmbedUtils.createInfoEmbed('Available Actions');
-      embed.setDescription(`You have **${company.actionPointsRemaining}** action points remaining.\n\nSelect an action below:`);
+      let description = `You have **${company.actionPointsRemaining}** action points remaining.\n\n`;
+      
+      // Show broadcast effects if active
+      if (BroadcastSystem.isBroadcastActive(company) && company.broadcastId) {
+        const broadcast = BroadcastSystem.getBroadcast(company.broadcastId);
+        if (broadcast) {
+          description += `📡 **Active Broadcast:** ${broadcast.name}\n`;
+          description += `*Check individual actions for category-specific bonuses/penalties*\n\n`;
+        }
+      }
+      
+      description += `Select an action below:`;
+      embed.setDescription(description);
       
       // Create buttons for actions (max 5 buttons per row, Discord limit)
       if (availableActions.length <= 5) {
@@ -219,9 +232,24 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       choices: firstEvent.choices,
     });
 
+    let replyContent = `**Action Selected:** ${action.name}\n\n`;
+    
+    // Show broadcast effects for this action category if active
+    if (BroadcastSystem.isBroadcastActive(company) && company.broadcastId && actionData.category) {
+      const broadcast = BroadcastSystem.getBroadcast(company.broadcastId);
+      if (broadcast) {
+        const effectText = EmbedUtils.createBroadcastEffectsEmbed(broadcast, actionData.category);
+        if (effectText) {
+          replyContent += `📡 **Broadcast Effects (${actionData.category.replace('_', ' ').toUpperCase()}):** ${effectText}\n\n`;
+        }
+      }
+    }
+    
+    replyContent += `Choose an outcome using \`/choose <choiceId>\``;
+
     return interaction.reply({
       embeds: [embed],
-      content: `**Action Selected:** ${action.name}\n\nChoose an outcome using \`/choose <choiceId>\``,
+      content: replyContent,
     });
   } catch (error) {
     console.error('Error selecting action:', error);

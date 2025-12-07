@@ -360,61 +360,173 @@ const eventTemplates: Record<string, string[]> = {
   ],
 };
 
-// Generate narrative text for outcomes
+// Generate realistic choice text that presents real trade-offs and consequences
 function generateOutcomeText(type: string, category: string, eventName: string): string {
-  const templates: Record<string, Record<string, string[]>> = {
+  // Create nuanced scenarios that reflect real startup decision-making
+  const realisticChoices: Record<string, Record<string, Record<string, string[]>>> = {
+    critical_success: {
+      product: {
+        'Feature Development Challenge': [
+          `Push aggressively for MVP launch - Your risk pays off spectacularly. You beat competitors to market, and users love the feature. Early adoption gives you a significant advantage.`,
+          `Invest heavily in the feature - Your commitment pays off. The feature becomes a differentiator that drives growth.`,
+        ],
+        'User Feedback Integration': [
+          `Implement all top requests immediately - Users are thrilled. Your responsiveness creates loyal advocates who spread the word.`,
+          `Take the comprehensive approach - You address user needs systematically, building strong product-market fit.`,
+        ],
+      },
+      marketing: {
+        'Social Media Campaign': [
+          `Double down with paid ads across platforms - Your campaign hits at the perfect moment. The investment pays off many times over as you capture the market.`,
+          `Go all-in on the campaign - Your bold move pays off. The campaign goes viral, bringing unprecedented attention.`,
+        ],
+        'Influencer Partnership': [
+          `Partner with top-tier influencers - The partnership is a game-changer. Their endorsement brings massive credibility and reach.`,
+          `Invest in multiple influencer collaborations - Your diversified approach captures different audiences, maximizing impact.`,
+        ],
+      },
+      tech: {
+        'Infrastructure Scaling': [
+          `Invest in robust, scalable infrastructure - Your forward-thinking approach pays off. The system handles growth beautifully.`,
+          `Choose enterprise-grade solutions - Premium infrastructure becomes a competitive advantage, enabling rapid scaling.`,
+        ],
+      },
+      business_dev: {
+        'Strategic Partnership Opportunity': [
+          `Pursue the partnership aggressively - The deal transforms your business. New markets open, revenue multiplies.`,
+          `Negotiate for maximum value - Your strategic approach secures an incredible deal that accelerates growth.`,
+        ],
+      },
+    },
+    success: {
+      product: {
+        'Feature Development Challenge': [
+          `Take a balanced approach - Careful planning pays off. You deliver a solid feature that meets user needs without overcommitting.`,
+          `Follow best practices - Your methodical approach delivers reliable results. Steady progress builds confidence.`,
+        ],
+      },
+      marketing: {
+        'Social Media Campaign': [
+          `Use a measured marketing strategy - Your balanced approach finds the right audience. Steady, sustainable growth follows.`,
+          `Try a conservative campaign - A safe play that delivers consistent results without burning cash.`,
+        ],
+      },
+    },
+    failure: {
+      product: {
+        'Feature Development Challenge': [
+          `Play it too safe - You avoid risks, but also miss opportunities. Competitors move faster, and you're left behind.`,
+          `Take the conservative route - While you avoid disaster, you also miss the window. The feature arrives too late to matter.`,
+        ],
+      },
+      marketing: {
+        'Social Media Campaign': [
+          `Cut marketing budget to save costs - You save money short-term but lose momentum. Your market presence shrinks while competitors grow.`,
+          `Spread marketing too thin - Trying to reach everyone means you don't resonate with anyone. Weak results.`,
+        ],
+      },
+    },
+    critical_failure: {
+      product: {
+        'Feature Development Challenge': [
+          `Rush an unfinished feature to market - The feature crashes on launch, damaging your reputation. Users lose trust, competitors gain ground.`,
+          `Ignore user feedback completely - You build what you think users want, but they don't. Resources wasted, opportunity lost.`,
+        ],
+      },
+      marketing: {
+        'Social Media Campaign': [
+          `Bet everything on a single channel - The channel fails, and you've burned through your marketing budget with nothing to show.`,
+          `Use deceptive marketing tactics - Backlash is severe. Negative publicity damages your brand for months.`,
+        ],
+      },
+    },
+  };
+
+  // Get category-specific templates or fallback to generic realistic scenarios
+  const categoryChoices = realisticChoices[type]?.[category];
+  if (categoryChoices && categoryChoices[eventName]) {
+    const templates = categoryChoices[eventName];
+    return templates[Math.floor(Math.random() * templates.length)];
+  }
+
+  // Fallback: Generate realistic scenarios based on category and type
+  const fallbackTemplates: Record<string, Record<string, string[]>> = {
     critical_success: {
       product: [
-        `The ${eventName.toLowerCase()} exceeds all expectations, delivering exceptional results.`,
-        `Your team achieves remarkable success with ${eventName.toLowerCase()}, setting new standards.`,
-        `The ${eventName.toLowerCase()} is a resounding success, generating massive positive impact.`,
+        `Take the bold, aggressive approach - Your risk pays off spectacularly. Perfect timing and execution create exceptional results.`,
+        `Go all-in with full commitment - Your dedication pays off. The outcome exceeds all expectations.`,
       ],
       marketing: [
-        `Your ${eventName.toLowerCase()} goes viral, bringing unprecedented attention to your startup.`,
-        `The ${eventName.toLowerCase()} is a massive hit, driving exponential growth.`,
-        `Your ${eventName.toLowerCase()} achieves exceptional results beyond expectations.`,
+        `Double down on the strategy - Your bold move hits at the perfect moment. Exceptional results follow.`,
+        `Invest heavily - The commitment pays off many times over. Growth accelerates dramatically.`,
+      ],
+      tech: [
+        `Invest in premium solutions - Your forward-thinking approach becomes a competitive advantage.`,
+        `Take the comprehensive approach - Building it right prevents future problems and enables growth.`,
+      ],
+      business_dev: [
+        `Pursue aggressively - The deal transforms your business trajectory. Strategic wins compound.`,
+        `Negotiate for maximum value - Your approach secures an incredible opportunity.`,
       ],
     },
     success: {
       product: [
-        `The ${eventName.toLowerCase()} goes well and delivers solid results.`,
-        `Your ${eventName.toLowerCase()} is successful and meets expectations.`,
-        `The ${eventName.toLowerCase()} completes successfully with good outcomes.`,
+        `Take a balanced, measured approach - Careful planning delivers solid, reliable results.`,
+        `Follow best practices - Your methodical approach yields steady progress.`,
       ],
       marketing: [
-        `Your ${eventName.toLowerCase()} performs well and generates positive results.`,
-        `The ${eventName.toLowerCase()} is successful and brings good visibility.`,
-        `Your ${eventName.toLowerCase()} achieves its goals effectively.`,
+        `Use a moderate strategy - Balanced approach finds the right audience without overspending.`,
+        `Try a conservative campaign - Safe play that delivers consistent results.`,
+      ],
+      tech: [
+        `Balance cost and capability - Pragmatic solution that meets needs without over-engineering.`,
+        `Choose proven solutions - Established technology reduces risk while delivering results.`,
+      ],
+      business_dev: [
+        `Negotiate a balanced deal - Mutually beneficial agreement creates steady value.`,
+        `Take a cautious approach - You avoid bad deals while securing reasonable terms.`,
       ],
     },
     failure: {
       product: [
-        `The ${eventName.toLowerCase()} encounters some challenges but you manage to recover.`,
-        `Your ${eventName.toLowerCase()} has issues that require additional resources.`,
-        `The ${eventName.toLowerCase()} doesn't go as smoothly as planned.`,
+        `Play it too safe - You avoid risks but miss opportunities. Competitors move faster.`,
+        `Take the conservative route - While safe, you miss the timing window. Results are lackluster.`,
       ],
       marketing: [
-        `Your ${eventName.toLowerCase()} doesn't generate as much interest as expected.`,
-        `The ${eventName.toLowerCase()} has limited impact and requires adjustments.`,
-        `Your ${eventName.toLowerCase()} struggles to gain traction.`,
+        `Cut budget to save costs - Short-term savings cost long-term momentum. Market presence shrinks.`,
+        `Spread efforts too thin - Trying to reach everyone means resonating with no one.`,
+      ],
+      tech: [
+        `Cut corners to save money - Short-term savings lead to technical debt and future problems.`,
+        `Choose the cheapest option - You get what you pay for. The solution fails under pressure.`,
+      ],
+      business_dev: [
+        `Be too conservative - You play it so safe that no meaningful deals materialize.`,
+        `Rush into agreements - Deals look good on paper but fail to deliver expected value.`,
       ],
     },
     critical_failure: {
       product: [
-        `The ${eventName.toLowerCase()} fails catastrophically, causing significant damage.`,
-        `Your ${eventName.toLowerCase()} backfires completely, wasting resources.`,
-        `The ${eventName.toLowerCase()} is a disaster that hurts your company.`,
+        `Rush an unfinished solution - It crashes spectacularly, damaging reputation and losing users.`,
+        `Ignore best practices completely - Fundamental flaws require complete rebuild, wasting all resources.`,
       ],
       marketing: [
-        `Your ${eventName.toLowerCase()} backfires and creates negative publicity.`,
-        `The ${eventName.toLowerCase()} is a complete failure, damaging your brand.`,
-        `Your ${eventName.toLowerCase()} causes significant harm to your reputation.`,
+        `Bet everything on a single failed channel - Budget burned with zero results.`,
+        `Use deceptive tactics - Severe backlash damages brand for months.`,
+      ],
+      tech: [
+        `Ignore infrastructure needs - Systems crumble under pressure, causing major outages.`,
+        `Make rushed technical decisions - Quick fixes create problems requiring complete rebuild.`,
+      ],
+      business_dev: [
+        `Sign a bad deal - Partnership becomes a liability, draining resources.`,
+        `Burn bridges with aggressive tactics - Reputation damaged, future deals harder to secure.`,
       ],
     },
   };
 
-  const categoryTemplates = templates[type]?.[category] || templates[type]?.['product'] || ['Outcome text'];
-  return categoryTemplates[Math.floor(Math.random() * categoryTemplates.length)];
+  const templates = fallbackTemplates[type]?.[category] || fallbackTemplates[type]?.['product'] || ['You make a decision.'];
+  return templates[Math.floor(Math.random() * templates.length)];
 }
 
 // Generate a single event
@@ -423,7 +535,7 @@ function generateEvent(category: string, eventId: string, eventName: string): an
     eventId,
     category,
     name: eventName,
-    description: `You encounter a situation related to ${eventName.toLowerCase()}.`,
+    description: `You face a critical decision about ${eventName.toLowerCase()}. Each choice has real consequences with trade-offs between risk, resources, and timing.`,
     choices: [
       {
         choiceId: `${eventId}_cs`,

@@ -107,24 +107,26 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       levelUpEmbed.setColor(0x00ff00);
     }
     
-    let replyContent = '';
-    if (anomaly) {
-      replyContent += `**⚡ Anomaly:** ${anomaly.name}\n${anomaly.description}\n\n`;
-    }
-    
-    if (updatedCompany.actionPointsRemaining === 0) {
-      replyContent += `\n**Action points remaining: 0**\nUse \`/end-day\` to process the day.`;
-    } else {
-      replyContent += `\n**Action points remaining:** ${updatedCompany.actionPointsRemaining}`;
-    }
-
     const statsEmbed = EmbedUtils.createCompanyStatsEmbed(updatedCompany);
     
     const embeds = [outcomeEmbed];
     if (levelUpEmbed) {
       embeds.unshift(levelUpEmbed); // Put level up embed first
     }
+    
+    // Show anomaly effects with detailed embed if triggered
+    if (anomaly) {
+      embeds.push(EmbedUtils.createAnomalyEffectsEmbed(anomaly));
+    }
+    
     embeds.push(statsEmbed);
+    
+    let replyContent = '';
+    if (updatedCompany.actionPointsRemaining === 0) {
+      replyContent += `**Action points remaining: 0**\nUse \`/end-day\` to process the day.`;
+    } else {
+      replyContent += `**Action points remaining:** ${updatedCompany.actionPointsRemaining}`;
+    }
     
     return interaction.reply({ 
       embeds,

@@ -136,11 +136,15 @@ export async function execute(interaction: ChatInputCommandInteraction) {
     }
 
     // No pending events - show normal day start message
+    const embeds = [];
     const embed = EmbedUtils.createSuccessEmbed(`Day ${updatedCompany.day} has begun!`);
     let description = `You have **${actionPointsRemaining} action points** remaining.\n\n`;
     
+    // Show anomaly effects with detailed embed if any
     if (anomalyActivations.length > 0) {
-      description += `⚡ **Anomaly:** ${anomalyActivations[0].anomaly.name}\n${anomalyActivations[0].anomaly.description}\n\n`;
+      for (const activation of anomalyActivations) {
+        embeds.push(EmbedUtils.createAnomalyEffectsEmbed(activation.anomaly));
+      }
     }
     
     // Show broadcast info if active
@@ -148,14 +152,33 @@ export async function execute(interaction: ChatInputCommandInteraction) {
       const broadcast = BroadcastSystem.getBroadcast(updatedCompany.broadcastId);
       const daysRemaining = BroadcastSystem.getDaysRemaining(updatedCompany);
       if (broadcast) {
-        description += `📡 **Broadcast:** ${broadcast.name}\n${broadcast.description}\n*${daysRemaining} days remaining*\n\n`;
+        const broadcastEmbed = EmbedUtils.createInfoEmbed(`📡 Broadcast: ${broadcast.name}`);
+        let broadcastDesc = `${broadcast.description}\n\n**Duration:** ${daysRemaining} days remaining\n\n`;
+        
+        // Show effects for all affected categories
+        const affectedCategories = Object.keys(broadcast.effects);
+        if (affectedCategories.length > 0) {
+          broadcastDesc += `**Effects by Category:**\n`;
+          for (const category of affectedCategories) {
+            const effectText = EmbedUtils.createBroadcastEffectsEmbed(broadcast, category);
+            if (effectText) {
+              broadcastDesc += `\n• **${category.replace('_', ' ').toUpperCase()}:** ${effectText}`;
+            }
+          }
+        }
+        
+        broadcastEmbed.setDescription(broadcastDesc);
+        broadcastEmbed.setColor(0x9b59b6);
+        embeds.push(broadcastEmbed);
       }
     }
     
     description += `Use \`/action\` to see available actions.`;
     embed.setDescription(description);
+    
+    embeds.unshift(embed); // Put day start embed first
 
-    return interaction.reply({ embeds: [embed] });
+    return interaction.reply({ embeds });
   } catch (error) {
     console.error('Error starting day:', error);
     return interaction.reply({

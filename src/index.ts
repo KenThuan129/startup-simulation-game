@@ -45,7 +45,14 @@ for (const file of commandFiles) {
 async function registerCommands() {
   const commands = [];
   
+  // Collect commands and check for duplicates
+  const commandNames = new Set<string>();
   for (const [name, command] of client.commands) {
+    if (commandNames.has(name)) {
+      console.warn(`[WARNING] Duplicate command name detected: ${name}. Skipping duplicate.`);
+      continue;
+    }
+    commandNames.add(name);
     commands.push(command.data.toJSON());
   }
 
@@ -55,18 +62,31 @@ async function registerCommands() {
     console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
     // Use guild commands if guildId is provided, otherwise use global commands
+    // IMPORTANT: Only register in ONE place to avoid duplicates
     const route = botConfig.guildId
       ? Routes.applicationGuildCommands(botConfig.clientId, botConfig.guildId)
       : Routes.applicationCommands(botConfig.clientId);
 
+    // rest.put() replaces ALL commands with the new array, preventing duplicates
     const data: any = await rest.put(route, { body: commands });
 
     console.log(`Successfully reloaded ${data.length} application (/) commands.`);
-    if (!botConfig.guildId) {
+    console.log(`Registered commands: ${commands.map((c: any) => c.name).join(', ')}`);
+    
+    // Warn if both guild and global commands might exist
+    if (botConfig.guildId) {
+      console.log(`✅ Using guild commands (Guild ID: ${botConfig.guildId}).`);
+      console.log('⚠️  If you see duplicate commands, check if global commands also exist and delete them.');
+    } else {
       console.log('⚠️  Using global commands (no GUILD_ID provided). Commands may take up to 1 hour to appear.');
+      console.log('⚠️  If you see duplicate commands, ensure you deleted any guild-specific commands.');
     }
   } catch (error) {
     console.error('Error registering commands:', error);
+    if (error instanceof Error) {
+      console.error('Error details:', error.message);
+      console.error('Stack:', error.stack);
+    }
   }
 }
 
@@ -436,9 +456,24 @@ async function handleActionSelection(interaction: any, actionId: string) {
 
     const row = new ActionRowBuilder().addComponents(choiceButtons);
 
+    let replyContent = `**Action Selected:** ${action.name}\n\n`;
+    
+    // Show broadcast effects for this action category if active
+    if (BroadcastSystem.isBroadcastActive(updatedCompany) && updatedCompany.broadcastId && actionData.category) {
+      const broadcast = BroadcastSystem.getBroadcast(updatedCompany.broadcastId);
+      if (broadcast) {
+        const effectText = EmbedUtils.createBroadcastEffectsEmbed(broadcast, actionData.category);
+        if (effectText) {
+          replyContent += `📡 **Broadcast Effects (${actionData.category.replace('_', ' ').toUpperCase()}):** ${effectText}\n\n`;
+        }
+      }
+    }
+    
+    replyContent += `Choose an outcome:`;
+
     await interaction.update({
       embeds: [embed],
-      content: `**Action Selected:** ${action.name}\n\nChoose an outcome:`,
+      content: replyContent,
       components: [row],
     });
   } catch (error) {

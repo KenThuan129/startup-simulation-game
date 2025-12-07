@@ -55,8 +55,40 @@ export class GoalSystem {
   }
 
   static getGoalProgressText(goal: Goal): string {
-    const percentage = Math.min(100, Math.floor((goal.progress / goal.targetValue) * 100));
-    return `${goal.progress}/${goal.targetValue} (${percentage}%)`;
+    const percentage = Math.min(100, Math.max(0, (goal.progress / goal.targetValue) * 100));
+    const roundedPercentage = Math.floor(percentage);
+    
+    // Format numbers based on goal type
+    let formattedProgress: string;
+    let formattedTarget: string;
+    
+    switch (goal.goalType) {
+      case 'reach_cash':
+        formattedProgress = `$${Math.round(goal.progress).toLocaleString()}`;
+        formattedTarget = `$${Math.round(goal.targetValue).toLocaleString()}`;
+        break;
+      case 'reach_daily_revenue':
+        formattedProgress = `$${Math.round(goal.progress).toLocaleString()}`;
+        formattedTarget = `$${Math.round(goal.targetValue).toLocaleString()}`;
+        break;
+      case 'reach_quality':
+      case 'reach_hype':
+      case 'reach_virality':
+        formattedProgress = `${goal.progress.toFixed(1)}%`;
+        formattedTarget = `${goal.targetValue.toFixed(1)}%`;
+        break;
+      default:
+        formattedProgress = Math.round(goal.progress).toLocaleString();
+        formattedTarget = Math.round(goal.targetValue).toLocaleString();
+    }
+    
+    // Create visual progress bar (20 characters wide)
+    const barLength = 20;
+    const filledLength = Math.floor((percentage / 100) * barLength);
+    const emptyLength = barLength - filledLength;
+    const progressBar = '█'.repeat(filledLength) + '░'.repeat(emptyLength);
+    
+    return `${formattedProgress}/${formattedTarget} (${roundedPercentage}%)\n\`${progressBar}\``;
   }
 }
 
